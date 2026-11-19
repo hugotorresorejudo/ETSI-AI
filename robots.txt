@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hugotorresorejudo.github.io/ETSI-AI/sitemap.xml
