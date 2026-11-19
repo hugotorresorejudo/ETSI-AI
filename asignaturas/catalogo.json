@@ -65,6 +65,20 @@
      "ruta": "asignaturas/tecnologia-electrica-y-redes/resueltos/ter-siete-problemas-de-redes-temas-3-a-7.pdf",
      "paginas": 9,
      "kb": 75
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro de prueba con soluciones",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/simulacros/ter-simulacro-de-prueba-con-soluciones.pdf",
+     "paginas": 2,
+     "kb": 49
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios propuestos con resultados",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/ejercicios/ter-ejercicios-propuestos-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 38
     }
    ]
   },
@@ -200,7 +214,12 @@
      "paginas": 15,
      "kb": 167
     }
-   ]
+   ],
+   "sim": {
+    "ruta": "simulaciones/bode/",
+    "titulo": "Simulador del diagrama de Bode",
+    "desc": "Polos, ceros, asíntotas y márgenes de estabilidad con los ejemplos del temario."
+   }
   },
   {
    "clave": "TAER",
@@ -227,7 +246,7 @@
      "titulo": "Cinco problemas de diseño",
      "ruta": "asignaturas/energias-renovables/resueltos/taer-cinco-problemas-de-diseno.pdf",
      "paginas": 7,
-     "kb": 68
+     "kb": 70
     },
     {
      "cat": "formulario",
@@ -235,6 +254,20 @@
      "ruta": "asignaturas/energias-renovables/formulario/taer-formulario-y-chuleta.pdf",
      "paginas": 1,
      "kb": 46
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro de cuestionario con soluciones",
+     "ruta": "asignaturas/energias-renovables/simulacros/taer-simulacro-de-cuestionario-con-soluciones.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios propuestos con resultados",
+     "ruta": "asignaturas/energias-renovables/ejercicios/taer-ejercicios-propuestos-con-resultados.pdf",
+     "paginas": 2,
+     "kb": 36
     }
    ]
   },
@@ -249,7 +282,7 @@
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/recursos-energeticos/guia/tare-guia-de-estudio.pdf",
      "paginas": 3,
-     "kb": 37
+     "kb": 38
     },
     {
      "cat": "apuntes",
@@ -264,6 +297,20 @@
      "ruta": "asignaturas/recursos-energeticos/resueltos/tare-tres-problemas-de-gas-natural-y-gnl.pdf",
      "paginas": 5,
      "kb": 48
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios propuestos con resultados",
+     "ruta": "asignaturas/recursos-energeticos/ejercicios/tare-ejercicios-propuestos-con-resultados.pdf",
+     "paginas": 2,
+     "kb": 30
+    },
+    {
+     "cat": "formulario",
+     "titulo": "Formulario y chuleta",
+     "ruta": "asignaturas/recursos-energeticos/formulario/tare-formulario-y-chuleta.pdf",
+     "paginas": 1,
+     "kb": 41
     }
    ]
   },
@@ -321,6 +368,20 @@
      "ruta": "asignaturas/impactos-medioambientales/resueltos/imp-segunda-prueba-ejercicios-resueltos.pdf",
      "paginas": 6,
      "kb": 53
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro de la segunda prueba con soluciones",
+     "ruta": "asignaturas/impactos-medioambientales/simulacros/imp-simulacro-de-la-segunda-prueba-con-soluciones.pdf",
+     "paginas": 4,
+     "kb": 43
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios propuestos con resultados",
+     "ruta": "asignaturas/impactos-medioambientales/ejercicios/imp-ejercicios-propuestos-con-resultados.pdf",
+     "paginas": 2,
+     "kb": 33
     }
    ],
    "test": {
@@ -340,6 +401,34 @@
      "ruta": "asignaturas/energy-storage/guia/es-guia-de-estudio.pdf",
      "paginas": 4,
      "kb": 41
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "Apuntes completos: todas las tecnologías",
+     "ruta": "asignaturas/energy-storage/apuntes/es-apuntes-completos-todas-las-tecnologias.pdf",
+     "paginas": 8,
+     "kb": 82
+    },
+    {
+     "cat": "resueltos",
+     "titulo": "Siete problemas de dimensionamiento",
+     "ruta": "asignaturas/energy-storage/resueltos/es-siete-problemas-de-dimensionamiento.pdf",
+     "paginas": 9,
+     "kb": 65
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro tipo test (30 preguntas con soluciones)",
+     "ruta": "asignaturas/energy-storage/simulacros/es-simulacro-tipo-test-30-preguntas-con-soluciones.pdf",
+     "paginas": 8,
+     "kb": 51
+    },
+    {
+     "cat": "formulario",
+     "titulo": "Formulario y chuleta",
+     "ruta": "asignaturas/energy-storage/formulario/es-formulario-y-chuleta.pdf",
+     "paginas": 1,
+     "kb": 48
     },
     {
      "cat": "apuntes",
@@ -484,7 +573,7 @@
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/eficiencia-energetica/guia/ef-guia-de-estudio.pdf",
      "paginas": 3,
-     "kb": 40
+     "kb": 41
     },
     {
      "cat": "apuntes",
@@ -498,7 +587,7 @@
      "titulo": "Seis problemas tipo (energía primaria, cogeneración, pinch, VEEI, reactiva)",
      "ruta": "asignaturas/eficiencia-energetica/resueltos/ef-seis-problemas-tipo-energia-primaria-cogeneracion-pinch-veei-reactiva.pdf",
      "paginas": 8,
-     "kb": 63
+     "kb": 65
     },
     {
      "cat": "formulario",
@@ -506,6 +595,20 @@
      "ruta": "asignaturas/eficiencia-energetica/formulario/ef-formulario-y-chuleta.pdf",
      "paginas": 2,
      "kb": 49
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro de examen con soluciones",
+     "ruta": "asignaturas/eficiencia-energetica/simulacros/ef-simulacro-de-examen-con-soluciones.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios propuestos con resultados",
+     "ruta": "asignaturas/eficiencia-energetica/ejercicios/ef-ejercicios-propuestos-con-resultados.pdf",
+     "paginas": 2,
+     "kb": 34
     }
    ]
   },
@@ -535,6 +638,13 @@
      "ruta": "asignaturas/energia-nuclear/formulario/nuc-chuleta-de-datos-y-ordenes-de-magnitud.pdf",
      "paginas": 1,
      "kb": 41
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Doce preguntas de desarrollo con respuesta modelo",
+     "ruta": "asignaturas/energia-nuclear/simulacros/nuc-doce-preguntas-de-desarrollo-con-respuesta-modelo.pdf",
+     "paginas": 3,
+     "kb": 44
     }
    ]
   },
@@ -549,7 +659,7 @@
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/ingenieria-termica/guia/term-guia-de-estudio.pdf",
      "paginas": 3,
-     "kb": 36
+     "kb": 37
     },
     {
      "cat": "apuntes",
@@ -564,6 +674,20 @@
      "ruta": "asignaturas/ingenieria-termica/resueltos/term-combustion-ciclos-y-captura-de-co2.pdf",
      "paginas": 6,
      "kb": 56
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios propuestos con resultados",
+     "ruta": "asignaturas/ingenieria-termica/ejercicios/term-ejercicios-propuestos-con-resultados.pdf",
+     "paginas": 2,
+     "kb": 33
+    },
+    {
+     "cat": "formulario",
+     "titulo": "Formulario y chuleta",
+     "ruta": "asignaturas/ingenieria-termica/formulario/term-formulario-y-chuleta.pdf",
+     "paginas": 1,
+     "kb": 47
     }
    ]
   },
@@ -600,6 +724,20 @@
      "ruta": "asignaturas/economia-energia/formulario/eco-formulario-y-chuleta.pdf",
      "paginas": 2,
      "kb": 49
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro de examen con soluciones",
+     "ruta": "asignaturas/economia-energia/simulacros/eco-simulacro-de-examen-con-soluciones.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios propuestos con resultados",
+     "ruta": "asignaturas/economia-energia/ejercicios/eco-ejercicios-propuestos-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 35
     }
    ]
   }

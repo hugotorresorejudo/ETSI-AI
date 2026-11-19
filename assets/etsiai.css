@@ -435,3 +435,58 @@ a.asig:hover { background: var(--mist); }
 .pill--sm { padding: 8px 14px; font-size: 13px; }
 .lista { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
 @media (max-width: 640px) { .doc { grid-template-columns: 1fr; } .doc .pill { justify-self: start; } }
+
+/* --- Simulador de Bode --- */
+.bode { display: grid; grid-template-columns: 340px minmax(0, 1fr); border-top: 1px solid var(--line); }
+.bode__panel { padding: 28px var(--pad-x) 32px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; background: var(--mist); }
+.bode__plots { padding: 24px 28px 28px; min-width: 0; }
+.bode__lab { font: 700 12px/1.2 var(--display); letter-spacing: .06em; text-transform: uppercase; color: var(--sky-ink); margin: 10px 0 0; }
+.bode__sel { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; font: 600 15px var(--display); color: var(--ink); background: #fff; }
+.bode__nota { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.45; }
+.bode__fila { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.bode__seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: #fff; }
+.bode__seg button { border: 0; background: none; padding: 7px 12px; font: 600 13px var(--display); color: var(--muted); cursor: pointer; }
+.bode__seg button.on { background: var(--navy); color: #fff; }
+.bode__checks { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 14px; }
+.bode__checks input { accent-color: var(--navy); }
+.bode__formula { margin: 0; font: 500 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; word-break: break-word; }
+.bf { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; display: grid; gap: 6px; }
+.bf__top { display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+.bf__x { border: 0; background: none; font-size: 20px; line-height: 1; color: var(--muted); cursor: pointer; padding: 0 4px; }
+.bf__x:hover { color: #B42318; }
+.bf__row { display: grid; grid-template-columns: 22px 1fr auto; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }
+.bf__row input { width: 100%; accent-color: var(--sky-ink); }
+.bf__row output { font: 600 13px var(--display); color: var(--ink); min-width: 74px; text-align: right; }
+.bf__inv { font-size: 13px; color: var(--muted); }
+.bode__add { display: flex; flex-wrap: wrap; gap: 6px; }
+.bode__add button { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 6px 11px; font: 600 13px var(--display); color: var(--ink); cursor: pointer; }
+.bode__add button:hover { border-color: var(--navy); }
+.bode__kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px; }
+.bode__kpis div { border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.bode__kpis small { display: block; font-size: 12px; color: var(--muted); }
+.bode__kpis b { font: 700 18px/1.3 var(--display); color: var(--ink); }
+.st--ok { border-color: #12805C !important; } .st--ok b { color: #12805C !important; }
+.st--warn { border-color: #B54708 !important; } .st--warn b { color: #B54708 !important; }
+.st--bad { border-color: #B42318 !important; } .st--bad b { color: #B42318 !important; }
+.bode__plot { border: 1px solid var(--line); border-radius: 12px; padding: 8px 8px 2px; margin-bottom: 10px; }
+.bode__ttl { margin: 2px 6px 4px; font: 700 13px var(--display); color: var(--navy); }
+.bode__plot svg { width: 100%; height: 260px; display: block; touch-action: pan-y; cursor: crosshair; }
+.bode svg .gd { stroke: #C4CFDA; stroke-width: 1; } .bode svg .gm { stroke: #EDF1F5; stroke-width: 1; } .bode svg .g0 { stroke: #8FA1B3; stroke-width: 1.2; }
+.bode svg .tx { font: 12px var(--display); fill: var(--muted); }
+.bode svg .ln-ex { fill: none; stroke: var(--navy); stroke-width: 2.6; vector-effect: non-scaling-stroke; }
+.bode svg .ln-as { fill: none; stroke: var(--sky); stroke-width: 2; stroke-dasharray: 7 5; vector-effect: non-scaling-stroke; }
+.bode svg .ln-pt { fill: none; stroke: #9DB0C3; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+.bode svg .cur { stroke: var(--sky-ink); stroke-width: 1; stroke-dasharray: 3 3; }
+.bode svg .pt { fill: #fff; stroke: var(--sky-ink); stroke-width: 2; }
+.bode svg .mg { stroke: #12805C; stroke-width: 3; }
+.bode__leyenda { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; font-size: 13px; color: var(--muted); margin: 4px 0; }
+.lg { display: inline-block; width: 22px; height: 0; border-top: 3px solid var(--navy); vertical-align: middle; margin-right: 6px; }
+.lg--as { border-top: 2px dashed var(--sky); } .lg--pt { border-top: 2px solid #9DB0C3; }
+.bode__read { margin: 6px 0 0; font-size: 14px; color: var(--ink); min-height: 22px; }
+.faq--retos { padding-bottom: 40px; }
+.hero--sim { grid-template-columns: 1fr; }
+@media (max-width: 960px) { .bode { grid-template-columns: 1fr; } .bode__plots { order: -1; } .bode__panel { border-right: 0; border-bottom: 1px solid var(--line); } .bode__kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } .bode__plots { padding: 18px 14px; } .bode__plot svg { height: 210px; } }
+.bode__u { font-weight: 500; color: var(--muted); }
+.banco { padding: 0 var(--pad-x) 40px; }
+.banco iframe { width: 100%; height: 640px; border: 0; display: block; }
+@media (max-width: 640px) { .banco { padding: 0 8px 28px; } .banco iframe { height: 520px; } }

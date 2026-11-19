@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulador del diagrama de Bode | GEEE | ETSI-AI Open Lab</title>
+<meta name="description" content="Simulación interactiva para entender el diagrama de Bode: polos, ceros, asíntotas, resonancia del filtro LC y márgenes de estabilidad de un convertidor.">
+<meta name="author" content="Hugo Torres, ETSI-AI Open Lab">
+<meta name="theme-color" content="#0B2545">
+<link rel="canonical" href="https://hugotorresorejudo.github.io/ETSI-AI/simulaciones/bode/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ETSI-AI Open Lab">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Simulador del diagrama de Bode | GEEE | ETSI-AI Open Lab">
+<meta property="og:description" content="Simulación interactiva para entender el diagrama de Bode: polos, ceros, asíntotas, resonancia del filtro LC y márgenes de estabilidad de un convertidor.">
+<meta property="og:url" content="https://hugotorresorejudo.github.io/ETSI-AI/simulaciones/bode/">
+<meta property="og:image" content="https://hugotorresorejudo.github.io/ETSI-AI/assets/og/og-lab.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/ETSI-AI/assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/ETSI-AI/assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/ETSI-AI/assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/ETSI-AI/assets/etsiai.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site">
+  <div class="site__in">
+    <a class="site__logo" href="/ETSI-AI/" aria-label="ETSI-AI Open Lab, inicio"><img src="/ETSI-AI/assets/brand/logo-horizontal-color.svg" alt="ETSI-AI Open Lab" width="109" height="34"></a>
+    <nav class="site__nav" aria-label="Principal"><a href="/ETSI-AI/quienes-somos/">Quiénes somos</a><a href="/ETSI-AI/proposito/">Propósito</a><a href="/ETSI-AI/recursos/" aria-current="page">Recursos</a><a href="/ETSI-AI/metodologia/">Metodología</a><a href="/ETSI-AI/participa/">Participa</a></nav>
+    <a class="pill site__cta" href="/ETSI-AI/participa/">Únete</a>
+    <details class="menu"><summary>Menú</summary><nav aria-label="Principal (móvil)"><a href="/ETSI-AI/">Inicio</a><a href="/ETSI-AI/quienes-somos/">Quiénes somos</a><a href="/ETSI-AI/proposito/">Propósito</a><a href="/ETSI-AI/recursos/" aria-current="page">Recursos</a><a href="/ETSI-AI/metodologia/">Metodología</a><a href="/ETSI-AI/participa/">Participa</a><a href="/ETSI-AI/participa/">Únete a la comunidad</a></nav></details>
+  </div>
+</header>
+<div class="marco" id="contenido">
+  <nav class="migas" aria-label="Estás en"><a href="/ETSI-AI/">Inicio</a><span class="sl" aria-hidden="true">/</span><a href="/ETSI-AI/recursos/">Repositorio MIEN</a><span class="sl" aria-hidden="true">/</span><a href="/ETSI-AI/asignaturas/gestion-electronica-energia-electrica/">GEEE</a><span class="sl" aria-hidden="true">/</span><span aria-current="page">Simulador de Bode</span></nav>
+<section class="seccion">
+  <div class="hero hero--sim">
+    <div class="hero__txt">
+      <p class="etq">Simulación interactiva | GEEE</p>
+      <h1>El diagrama de Bode, <em>a mano y en vivo</em>.</h1>
+      <p class="hero__sub">Construye una función de transferencia con polos, ceros y ganancia, y mira a la vez la curva exacta, sus asíntotas y lo que aporta cada término. Con los ejemplos del temario: filtro LC del convertidor, lazo de control con PI y con regulador tipo III.</p>
+      <div class="hero__cta"><a class="pill" href="#bode-app">Abrir el simulador</a><a class="pill pill--ghost" href="#bode-retos">Ejercicios guiados</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="bode-banco">
+  <div class="cab" style="padding-bottom:32px"><p class="etq">El sistema físico</p><h2>Antes de las gráficas, <em>mira cómo se mueve</em>.</h2><p>Un muelle, una masa y un amortiguador forman el mismo sistema de segundo orden que el filtro LC del convertidor. Barre la frecuencia y compara los dos punteros sobre la regla: la amplitud es el módulo del Bode y el retraso, su fase.</p></div>
+  <div class="banco"><iframe id="banco-frame" src="banco.html" title="Banco de ensayo de respuesta en frecuencia (figura interactiva)" scrolling="no"></iframe></div>
+  <script>addEventListener("message",e=>{if(e.data&&e.data.banco){const f=document.getElementById("banco-frame"),h=e.data.banco+"px";if(f.style.height!==h)f.style.height=h;}});</script>
+</section>
+
+<section class="seccion" id="bode-app">
+  <div class="bode">
+    <div class="bode__panel">
+      <label class="bode__lab" for="bode-preset">Ejemplo de partida</label>
+      <select id="bode-preset" class="bode__sel"></select>
+      <p id="bode-preset-txt" class="bode__nota"></p>
+
+      <div class="bode__fila">
+        <span class="bode__lab">Eje de frecuencia</span>
+        <div class="bode__seg" role="group" aria-label="Unidad de frecuencia">
+          <button type="button" data-unit="Hz" class="on">Hz</button><button type="button" data-unit="rad/s">rad/s</button>
+        </div>
+      </div>
+      <div class="bode__checks">
+        <label><input type="checkbox" id="chk-asym" checked> Asíntotas</label>
+        <label><input type="checkbox" id="chk-parts"> Cada término</label>
+        <label><input type="checkbox" id="chk-loop" checked> Márgenes (es un lazo)</label>
+      </div>
+
+      <p class="bode__lab">Función de transferencia</p>
+      <p id="bode-formula" class="bode__formula"></p>
+      <div id="bode-factors"></div>
+
+      <p class="bode__lab">Añadir término</p>
+      <div class="bode__add">
+        <button type="button" data-add="polo">Polo real</button>
+        <button type="button" data-add="cero">Cero real</button>
+        <button type="button" data-add="polo2">Polos complejos</button>
+        <button type="button" data-add="cero2">Ceros complejos</button>
+        <button type="button" data-add="int">Integrador</button>
+        <button type="button" data-add="der">Derivador</button>
+        <button type="button" data-add="rhp">Cero en SPD</button>
+      </div>
+    </div>
+
+    <div class="bode__plots">
+      <div class="bode__kpis" id="bode-kpis" aria-live="polite"></div>
+      <div class="bode__plot"><p class="bode__ttl">Módulo (dB) <span class="bode__u"></span></p><svg id="svg-mag" role="img" aria-label="Diagrama de módulo"></svg></div>
+      <div class="bode__plot"><p class="bode__ttl">Fase (grados) <span class="bode__u"></span></p><svg id="svg-ph" role="img" aria-label="Diagrama de fase"></svg></div>
+      <p class="bode__leyenda"><span class="lg lg--ex"></span>Curva exacta <span class="lg lg--as"></span>Asíntotas <span class="lg lg--pt"></span>Términos sueltos</p>
+      <p id="bode-read" class="bode__read">Pasa el ratón o el dedo por las gráficas para leer valores.</p>
+    </div>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="cab"><p class="etq">Cómo se lee</p><h2>Las reglas que <em>tienes que saber</em>.</h2><p>Todo diagrama de Bode es la suma de unos pocos términos básicos. En escala logarítmica, multiplicar funciones es sumar sus curvas.</p></div>
+  <div class="celdas celdas--3">
+    <div><span class="ic"></span><h3>Ganancia K</h3><p>Desplaza el módulo 20·log|K| dB y no cambia la fase. Si K es negativa añade −180°.</p></div>
+    <div><span class="ic"></span><h3>Integrador ω₀/s</h3><p>Recta de −20 dB/década que corta 0 dB en ω₀. Fase constante de −90°. El derivador es el simétrico: +20 dB/década y +90°.</p></div>
+    <div><span class="ic"></span><h3>Polo real en ωp</h3><p>Asíntota plana hasta ωp y −20 dB/década después. En ωp la curva exacta está 3 dB por debajo. La fase baja de 0 a −90° entre ωp/10 y 10·ωp.</p></div>
+    <div><span class="ic"></span><h3>Cero real en ωz</h3><p>Lo mismo con el signo cambiado: +20 dB/década y fase de 0 a +90°.</p></div>
+    <div><span class="ic"></span><h3>Polos complejos (ωn, ζ)</h3><p>−40 dB/década desde ωn y la fase cae 180° alrededor de ωn, más brusca cuanto menor es ζ. En ωn el módulo vale −20·log(2ζ): con ζ=0,1 hay un pico de +14 dB que las asíntotas no ven.</p></div>
+    <div><span class="ic"></span><h3>Cero en el semiplano derecho</h3><p>Sube el módulo como un cero normal pero resta fase como un polo. Aparece en el boost y el buck-boost y limita la frecuencia de cruce del lazo.</p></div>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="texto">
+    <h2>Márgenes y <em>estabilidad</em></h2>
+    <div class="cuerpo">
+      <p>Si la función es la ganancia de lazo L(s), la <b>frecuencia de cruce</b> f<sub>c</sub> es donde |L| = 0 dB. El <b>margen de fase</b> es 180° más la fase en f<sub>c</sub>, y el <b>margen de ganancia</b> es lo que le falta al módulo para llegar a 0 dB cuando la fase vale −180°.</p>
+      <p>Para un lazo de fase mínima, el sistema en lazo cerrado es estable si el margen de fase es positivo. En convertidores se busca un margen de 45° a 60°: menos da oscilaciones en la respuesta y más hace el lazo lento.</p>
+      <p class="sec">El simulador calcula los márgenes con la curva exacta y la fase acumulada término a término. Con ceros en el semiplano derecho o retardos la lectura sigue siendo válida en la práctica, pero el criterio formal es el de Nyquist.</p>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="bode-retos">
+  <div class="cab"><p class="etq">Ejercicios guiados</p><h2>Practica <em>con el simulador</em>.</h2><p>Hazlos en orden. Cada uno se resuelve tocando solo uno o dos controles.</p></div>
+  <div class="faq faq--retos">
+    <details><summary>1. ¿Cuánto se equivoca la asíntota en un polo real?</summary><p>Carga «Polo real» y activa Asíntotas. Pon el cursor en f = f<sub>p</sub>: la exacta marca −3 dB y la asíntota 0 dB. Una década más arriba la diferencia ya es de unos 0,04 dB. En fase, en f<sub>p</sub> son −45° exactos y en f<sub>p</sub>/10 la curva marca −5,7° frente a 0° de la asíntota.</p></details>
+    <details><summary>2. Pico de resonancia del filtro LC</summary><p>Carga «Filtro LC del buck» y baja ζ de 0,5 a 0,05. El pico en f<sub>0</sub> crece de 0 dB a unos +20 dB por encima de la asíntota, y la fase cae de golpe. Es lo que pasa a carga ligera: casi no hay amortiguamiento resistivo.</p></details>
+    <details><summary>3. ¿Por qué un PI no basta para controlar el buck?</summary><p>Carga «Lazo buck con PI». El cruce cae por encima de la resonancia, donde el filtro LC ya ha restado 180° y el PI otros 90° menos lo que recupera su cero: el margen de fase sale negativo y el lazo cerrado sería inestable. Prueba a bajar la ganancia hasta cruzar por debajo de f<sub>0</sub>: el margen mejora, pero el lazo queda muy lento.</p></details>
+    <details><summary>4. Diseñar el tipo III</summary><p>Carga «Lazo buck con tipo III». Los dos ceros cerca de f<sub>0</sub> compensan la caída de fase de los polos del LC, y los polos en el cero de la ESR y en f<sub>sw</sub>/2 atenúan el ruido de conmutación. Ajusta la ganancia del integrador para cruzar entre 5 y 20 kHz y comprueba que el margen se mantiene entre 55° y 65°.</p></details>
+    <details><summary>5. El cero en el semiplano derecho</summary><p>Carga «Boost: cero en SPD» y sube f₀ del integrador de 2 kHz a 15 kHz. El cruce sube con ella y el margen cae de unos 78° a menos de 20°: el cero en el semiplano derecho resta fase como un polo aunque el módulo suba. Regla práctica: cruzar por debajo de f<sub>RHP</sub>/5 a f<sub>RHP</sub>/3.</p></details>
+  </div>
+</section>
+
+<script>
+(function(){
+const PRESETS={
+ polo:{n:'Polo real',t:'Un único polo real en 1 kHz. Mira el error de −3 dB en la frecuencia de corte y la fase de −45°.',loop:false,f:[{t:'k',k:1},{t:'polo',w:1000}]},
+ rc:{n:'Filtro RC de primer orden',t:'Filtro paso bajo con R = 1 kΩ y C = 1 µF: polo en 1/(2πRC) = 159 Hz.',loop:false,f:[{t:'k',k:1},{t:'polo',w:159.2}]},
+ lc:{n:'Filtro LC del buck',t:'Salida de un buck de 48 V con L = 100 µH y C = 100 µF (f₀ = 1,59 kHz) y cero de la ESR en 31,8 kHz. Cambia ζ para ver el efecto de la carga.',loop:false,f:[{t:'k',k:48},{t:'polo2',w:1592,z:0.1},{t:'cero',w:31800}]},
+ int:{n:'Lazo ideal L = ωc/s',t:'La ganancia de lazo «perfecta»: −20 dB/década en todo el rango y margen de fase de 90°.',loop:true,f:[{t:'k',k:1},{t:'int',w:10000}]},
+ pi:{n:'Lazo buck con PI',t:'Planta del buck con PWM de 2,5 V y un PI con su cero en 1,5 kHz. El margen de fase sale negativo: el PI no puede compensar la caída de 180° del LC.',loop:true,f:[{t:'k',k:19.2},{t:'polo2',w:1592,z:0.1},{t:'cero',w:31800},{t:'int',w:200},{t:'cero',w:1500}]},
+ t3:{n:'Lazo buck con tipo III',t:'Mismo buck con regulador tipo III: integrador, dos ceros en 1,3 kHz y polos en 31,8 kHz y 50 kHz. Cruce cerca de 9 kHz con unos 65° de margen.',loop:true,f:[{t:'k',k:19.2},{t:'polo2',w:1592,z:0.1},{t:'cero',w:31800},{t:'int',w:300},{t:'cero',w:1300},{t:'cero',w:1300},{t:'polo',w:31800},{t:'polo',w:50000}]},
+ rhp:{n:'Boost: cero en SPD',t:'Lazo simplificado de un boost ya compensado en baja frecuencia: integrador, cero en el semiplano derecho en 12 kHz y un polo de alta frecuencia en 40 kHz.',loop:true,f:[{t:'k',k:1},{t:'int',w:2000},{t:'rhp',w:12000},{t:'polo',w:40000}]}
+};
+const DEF={polo:{t:'polo',w:1000},cero:{t:'cero',w:1000},polo2:{t:'polo2',w:1000,z:0.3},cero2:{t:'cero2',w:1000,z:0.3},int:{t:'int',w:100},der:{t:'der',w:100},rhp:{t:'rhp',w:10000}};
+const NAME={k:'Ganancia K',polo:'Polo real',cero:'Cero real',polo2:'Polos complejos',cero2:'Ceros complejos',int:'Integrador ω₀/s',der:'Derivador s/ω₀',rhp:'Cero en SPD'};
+let S={unit:'Hz',asym:true,parts:false,loop:true,f:[],hover:null};
+const $=id=>document.getElementById(id);
+const L10=Math.log10,D=180/Math.PI;
+const fmt=(v,d=2)=>{if(!isFinite(v))return '—';const a=Math.abs(v);let s;if(a>=1e6)s=(v/1e6).toFixed(d)+'M';else if(a>=1e3)s=(v/1e3).toFixed(a>=1e4?1:d)+'k';else s=v.toFixed(a>=100?0:a>=10?1:d);return s.replace('.',',')};
+const num=(v,d=1)=>isFinite(v)?v.toFixed(d).replace('.',','):'—';
+const sym=()=>S.unit==='Hz'?'f':'ω';
+const axl=d=>{const v=Math.pow(10,d);return v>=1e6?(v/1e6)+'M':v>=1e3?(v/1e3)+'k':v>=1?String(v):String(v).replace('.',',')};
+function term(F,x){ // devuelve [modulo, fase_rad, mod_asint_dB, fase_asint_grados]
+ const r=x/F.w;
+ switch(F.t){
+  case 'k':{const a=Math.abs(F.k);return [a,F.k<0?-Math.PI:0,20*L10(a),F.k<0?-180:0];}
+  case 'int':return [1/r,-Math.PI/2,-20*L10(r),-90];
+  case 'der':return [r,Math.PI/2,20*L10(r),90];
+  case 'polo':case 'cero':case 'rhp':{const m=Math.hypot(1,r);const sg=F.t==='cero'?1:-1;const msg=F.t==='polo'?-1:1;
+    const pa=r<0.1?0:r>10?90:45*(1+L10(r));
+    return [msg>0?m:1/m,sg*Math.atan(r),msg*(r<1?0:20*L10(r)),sg*pa];}
+  case 'polo2':case 'cero2':{const m=Math.hypot(1-r*r,2*F.z*r);const ph=Math.atan2(2*F.z*r,1-r*r);const sg=F.t==='cero2'?1:-1;
+    return [sg>0?m:1/m,sg*ph,sg*(r<1?0:40*L10(r)),sg*(r<1?0:180)];}
+ }}
+function range(){let ws=S.f.filter(F=>F.t!=='k').map(F=>F.w);if(!ws.length)ws=[1000];
+ let lo=Math.floor(L10(Math.min(...ws)))-2,hi=Math.ceil(L10(Math.max(...ws)))+2;if(hi-lo<4)hi=lo+4;if(hi-lo>8){lo=Math.max(lo,hi-8)}return [lo,hi];}
+function evalAll(N=600){const [lo,hi]=range();const out={x:[],m:[],p:[],ma:[],pa:[],parts:S.f.map(()=>({m:[],p:[]}))};
+ for(let i=0;i<N;i++){const x=Math.pow(10,lo+(hi-lo)*i/(N-1));let m=1,p=0,ma=0,pa=0;
+  S.f.forEach((F,j)=>{const t=term(F,x);m*=t[0];p+=t[1];ma+=t[2];pa+=t[3];out.parts[j].m.push(20*L10(t[0]));out.parts[j].p.push(t[1]*D);});
+  out.x.push(x);out.m.push(20*L10(m));out.p.push(p*D);out.ma.push(ma);out.pa.push(pa);}
+ out.lo=lo;out.hi=hi;return out;}
+function margins(o){let fc=null,pm=null,gm=null,f180=null;
+ for(let i=o.x.length-2;i>=0;i--){if((o.m[i]>=0)!==(o.m[i+1]>=0)){const t=o.m[i]/(o.m[i]-o.m[i+1]);fc=Math.pow(10,L10(o.x[i])+t*(L10(o.x[i+1])-L10(o.x[i])));pm=180+o.p[i]+t*(o.p[i+1]-o.p[i]);break;}}
+ for(let i=0;i<o.x.length-1;i++){const a=o.p[i]+180,b=o.p[i+1]+180;if(a>=0&&b<0){const t=a/(a-b);f180=Math.pow(10,L10(o.x[i])+t*(L10(o.x[i+1])-L10(o.x[i])));gm=-(o.m[i]+t*(o.m[i+1]-o.m[i]));break;}}
+ return {fc,pm,gm,f180};}
+function niceRange(arr,step){let a=Math.min(...arr),b=Math.max(...arr);a=Math.floor(a/step)*step;b=Math.ceil(b/step)*step;if(b-a<2*step){b+=step;a-=step}return [a,b];}
+function plot(svg,o,key,akey,pkey,step,unitLbl,ref){
+ const W=Math.max(300,Math.round(svg.clientWidth||800)),H=Math.max(180,Math.round(svg.clientHeight||260)),ml=W<500?42:54,mr=10,mt=10,mb=28;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg._W=W;svg._ml=ml;const all=o[key].concat(S.asym?o[akey]:[]);
+ let [ya,yb]=niceRange(all.filter(isFinite).map(v=>Math.max(Math.min(v,400),-400)),step);
+ while((yb-ya)/step>10){step*=2;[ya,yb]=niceRange(all.filter(isFinite).map(v=>Math.max(Math.min(v,400),-400)),step);}
+ const X=x=>ml+(L10(x)-o.lo)/(o.hi-o.lo)*(W-ml-mr),Y=y=>mt+(yb-y)/(yb-ya)*(H-mt-mb);
+ let g='';
+ for(let d=o.lo;d<=o.hi;d++){for(let k=1;k<10;k++){const x=Math.pow(10,d)*k;if(L10(x)>o.hi)break;g+=`<line x1="${X(x)}" x2="${X(x)}" y1="${mt}" y2="${H-mb}" class="${k===1?'gd':'gm'}"/>`;}
+  g+=`<text x="${X(Math.pow(10,d))}" y="${H-8}" class="tx" text-anchor="middle">${axl(d)}</text>`;}
+ for(let y=ya;y<=yb+1e-9;y+=step){g+=`<line x1="${ml}" x2="${W-mr}" y1="${Y(y)}" y2="${Y(y)}" class="${y===ref?'g0':'gm'}"/><text x="${ml-6}" y="${Y(y)+4}" class="tx" text-anchor="end">${y}</text>`;}
+ const path=arr=>'M'+o.x.map((x,i)=>`${X(x).toFixed(1)},${Y(Math.max(Math.min(arr[i],yb+50),ya-50)).toFixed(1)}`).join('L');
+ g+=`<clipPath id="cl-${key}"><rect x="${ml}" y="${mt}" width="${W-ml-mr}" height="${H-mt-mb}"/></clipPath><g clip-path="url(#cl-${key})">`;
+ if(S.parts)o.parts.forEach(p=>{g+=`<path d="${path(p[pkey])}" class="ln-pt"/>`;});
+ if(S.asym)g+=`<path d="${path(o[akey])}" class="ln-as"/>`;
+ g+=`<path d="${path(o[key])}" class="ln-ex"/></g>`;
+ if(S.loop&&S._mg){const M=S._mg;
+  if(key==='m'&&M.fc)g+=`<circle cx="${X(M.fc)}" cy="${Y(0)}" r="5" class="pt"/>`;
+  if(key==='p'&&M.fc){g+=`<line x1="${X(M.fc)}" x2="${X(M.fc)}" y1="${Y(-180)}" y2="${Y(M.pm-180)}" class="mg"/><circle cx="${X(M.fc)}" cy="${Y(M.pm-180)}" r="5" class="pt"/>`;}
+ }
+ if(S.hover!=null){const i=S.hover;g+=`<line x1="${X(o.x[i])}" x2="${X(o.x[i])}" y1="${mt}" y2="${H-mb}" class="cur"/><circle cx="${X(o.x[i])}" cy="${Y(o[key][i])}" r="4" class="pt"/>`;}
+ svg.innerHTML=g;svg._X=X;svg._o=o;}
+function formula(){const parts=[];let k=1;
+ S.f.forEach(F=>{const w=fmt(F.w);switch(F.t){case 'k':k*=F.k;break;case 'int':parts.push(`(${w}/s)`);break;case 'der':parts.push(`(s/${w})`);break;
+  case 'polo':parts.push(`1/(1+s/${w})`);break;case 'cero':parts.push(`(1+s/${w})`);break;case 'rhp':parts.push(`(1−s/${w})`);break;
+  case 'polo2':parts.push(`1/(1+2·${num(F.z,2)}·s/${w}+(s/${w})²)`);break;case 'cero2':parts.push(`(1+2·${num(F.z,2)}·s/${w}+(s/${w})²)`);}});
+ $('bode-formula').textContent=`H(s) = ${num(k,2)}`+(parts.length?' · '+parts.join(' · '):'');}
+const LOGMIN=0,LOGMAX=7;
+function factorsUI(){const box=$('bode-factors');box.innerHTML='';
+ S.f.forEach((F,j)=>{const d=document.createElement('div');d.className='bf';
+  let h=`<div class="bf__top"><b>${NAME[F.t]}</b>${F.t==='k'?'':`<button type="button" class="bf__x" aria-label="Quitar término" data-del="${j}">×</button>`}</div>`;
+  if(F.t==='k')h+=`<label class="bf__row">K <input type="range" min="-40" max="60" step="0.5" value="${(20*L10(Math.abs(F.k))).toFixed(1)}" data-j="${j}" data-p="kdb"><output>${num(F.k,2)} (${num(20*L10(Math.abs(F.k)),1)} dB)</output></label><label class="bf__inv"><input type="checkbox" data-j="${j}" data-p="neg" ${F.k<0?'checked':''}> Signo negativo</label>`;
+  else h+=`<label class="bf__row">${F.t==='int'||F.t==='der'?sym()+'₀':sym()} <input type="range" min="${LOGMIN}" max="${LOGMAX}" step="0.01" value="${L10(F.w)}" data-j="${j}" data-p="w"><output>${fmt(F.w)} ${S.unit}</output></label>`;
+  if(F.z!=null)h+=`<label class="bf__row">ζ <input type="range" min="0.01" max="1.5" step="0.01" value="${F.z}" data-j="${j}" data-p="z"><output>${num(F.z,2)}</output></label>`;
+  d.innerHTML=h;box.appendChild(d);});}
+function kpis(o){const k=$('bode-kpis');if(!S.loop){k.innerHTML=`<div><small>Módulo máximo</small><b>${num(Math.max(...o.m),1)} dB</b></div><div><small>Módulo a baja frecuencia</small><b>${num(o.m[0],1)} dB</b></div><div><small>Fase final</small><b>${num(o.p[o.p.length-1],0)}°</b></div>`;return;}
+ const M=S._mg;const st=M.pm==null?['','Sin cruce por 0 dB']:M.pm>=45?['ok','Estable, margen holgado']:M.pm>0?['warn','Estable pero justo']:['bad','Inestable en lazo cerrado'];
+ k.innerHTML=`<div><small>Frecuencia de cruce</small><b>${M.fc?fmt(M.fc)+' '+S.unit:'—'}</b></div><div><small>Margen de fase</small><b>${M.pm!=null?num(M.pm,1)+'°':'—'}</b></div><div><small>Margen de ganancia</small><b>${M.gm!=null?num(M.gm,1)+' dB':'∞'}</b></div><div class="st st--${st[0]}"><small>Diagnóstico</small><b>${st[1]}</b></div>`;}
+function draw(){const o=evalAll();S._o=o;S._mg=margins(o);formula();kpis(o);
+ const u=S.unit==='Hz'?'f (Hz)':'ω (rad/s)';document.querySelectorAll('.bode__u').forEach(e=>e.textContent='frente a '+u);plot($('svg-mag'),o,'m','ma','m',20,u,0);plot($('svg-ph'),o,'p','pa','p',45,u,-180);
+ if(S.hover!=null){const i=S.hover;$('bode-read').innerHTML=`${sym()} = <b>${fmt(o.x[i])} ${S.unit}</b>  |H| = <b>${num(o.m[i],2)} dB</b>  fase = <b>${num(o.p[i],1)}°</b>${S.asym?`  (asíntotas: ${num(o.ma[i],1)} dB y ${num(o.pa[i],0)}°)`:''}`;}}
+function load(key){const P=PRESETS[key];S.f=JSON.parse(JSON.stringify(P.f));S.loop=P.loop;$('chk-loop').checked=P.loop;$('bode-preset-txt').textContent=P.t;S.hover=null;factorsUI();draw();}
+// eventos
+const sel=$('bode-preset');Object.entries(PRESETS).forEach(([k,P])=>{const o=document.createElement('option');o.value=k;o.textContent=P.n;sel.appendChild(o)});
+sel.addEventListener('change',()=>load(sel.value));
+document.querySelectorAll('.bode__seg button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.bode__seg button').forEach(c=>c.classList.toggle('on',c===b));S.unit=b.dataset.unit;factorsUI();draw();}));
+$('chk-asym').addEventListener('change',e=>{S.asym=e.target.checked;draw()});
+$('chk-parts').addEventListener('change',e=>{S.parts=e.target.checked;draw()});
+$('chk-loop').addEventListener('change',e=>{S.loop=e.target.checked;draw()});
+document.querySelectorAll('[data-add]').forEach(b=>b.addEventListener('click',()=>{S.f.push(JSON.parse(JSON.stringify(DEF[b.dataset.add])));factorsUI();draw();}));
+$('bode-factors').addEventListener('input',e=>{const t=e.target,j=+t.dataset.j,F=S.f[j];if(!F)return;const out=t.parentElement.querySelector('output');
+ if(t.dataset.p==='w'){F.w=Math.pow(10,+t.value);out.textContent=fmt(F.w)+' '+S.unit;}
+ else if(t.dataset.p==='z'){F.z=+t.value;out.textContent=num(F.z,2);}
+ else if(t.dataset.p==='kdb'){F.k=Math.sign(F.k||1)*Math.pow(10,+t.value/20);out.textContent=`${num(F.k,2)} (${num(+t.value,1)} dB)`;}
+ else if(t.dataset.p==='neg'){F.k=(t.checked?-1:1)*Math.abs(F.k);factorsUI();}
+ draw();});
+$('bode-factors').addEventListener('click',e=>{const j=e.target.dataset.del;if(j!=null){S.f.splice(+j,1);factorsUI();draw();}});
+['svg-mag','svg-ph'].forEach(id=>{const sv=$(id);const mv=ev=>{const r=sv.getBoundingClientRect();const W=sv._W||800,ml=sv._ml||54;const cx=((ev.touches?ev.touches[0].clientX:ev.clientX)-r.left)/r.width*W;const o=S._o;
+  const lx=o.lo+(cx-ml)/(W-ml-10)*(o.hi-o.lo);let best=0,bd=1e9;o.x.forEach((x,i)=>{const d=Math.abs(L10(x)-lx);if(d<bd){bd=d;best=i}});S.hover=best;draw();};
+ sv.addEventListener('mousemove',mv);sv.addEventListener('touchmove',mv,{passive:true});sv.addEventListener('mouseleave',()=>{S.hover=null;draw();});});
+sel.value='lc';load('lc');let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(draw,120)});
+})();
+</script>
+
+</div>
+<footer class="pie">
+  <div class="pie__in">
+    <div class="pie__top">
+      <div>
+        <a class="pie__logo" href="/ETSI-AI/"><img src="/ETSI-AI/assets/brand/logo-horizontal-negativo.svg" alt="ETSI-AI Open Lab" width="128" height="40"></a>
+        <p class="pie__lema">Conocimiento abierto, <span>inteligencia compartida.</span></p>
+      </div>
+      <div>
+        <h4>El proyecto</h4>
+        <ul>
+          <li><a href="/ETSI-AI/quienes-somos/">Quiénes somos</a></li>
+          <li><a href="/ETSI-AI/proposito/">Propósito y acciones</a></li>
+          <li><a href="/ETSI-AI/metodologia/">Metodología</a></li>
+          <li><a href="/ETSI-AI/uso-responsable-ia/">Uso responsable de la IA</a></li>
+          <li><a href="/ETSI-AI/novedades/">Novedades</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Recursos y comunidad</h4>
+        <ul>
+          <li><a href="/ETSI-AI/recursos/">Repositorio MIEN</a></li>
+          <li><a href="/ETSI-AI/participa/">Participa</a></li>
+          <li><a href="https://www.linkedin.com/company/etsi-ai-open-lab" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://www.instagram.com/etsi.ai/" target="_blank" rel="noopener">Instagram @etsi.ai ↗</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="pie__legal">
+      <span>Iniciativa independiente de estudiantes, nacida en el Máster en Ingeniería de la Energía de la UPM. No es un canal oficial de la universidad. Diseño y contenido: <b>Hugo Torres</b>.</span>
+      <span><a href="/ETSI-AI/aviso-legal/">Aviso legal y privacidad</a>  |  © 2026 ETSI-AI Open Lab <b>#ETSIAI</b></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
