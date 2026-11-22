@@ -87,6 +87,12 @@ button { font: inherit; color: inherit; }
 .ficha__datos div + div { border-left: 1px solid rgba(255,255,255,.14); }
 .ficha__datos b { display: block; font: 800 40px/1 var(--display); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 .ficha__datos span { display: block; margin-top: 8px; font-size: 13px; color: rgba(255,255,255,.72); }
+.ficha__enlace { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; padding: 22px 40px 26px; border-top: 1px solid rgba(255,255,255,.14); color: #fff; text-decoration: none; transition: background .2s; }
+.ficha__enlace small { grid-column: 1 / -1; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--sky); }
+.ficha__enlace span { font-size: 15px; line-height: 1.4; color: rgba(255,255,255,.82); max-width: 38ch; }
+.ficha__enlace i { font-style: normal; font-size: 24px; transition: transform .2s; }
+.ficha__enlace:hover, .ficha__enlace:focus-visible { background: rgba(255,255,255,.06); }
+.ficha__enlace:hover i, .ficha__enlace:focus-visible i { transform: translateX(4px); }
 
 /* ---------- Pestañas ---------- */
 .tabs { display: grid; grid-template-columns: 1fr 1fr; }
