@@ -79,20 +79,18 @@ button { font: inherit; color: inherit; }
 
 .ficha { position: relative; overflow: hidden; background: var(--navy); color: #fff; display: grid; grid-template-rows: 1fr auto; min-height: 100%; }
 .ficha__marca { position: absolute; right: -90px; top: -70px; width: 380px; opacity: .14; pointer-events: none; }
-.ficha__top { position: relative; padding: 40px; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; }
+.ficha__top { position: relative; padding: 40px 40px 56px; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px; }
 .ficha__top small { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--sky); }
-.ficha__top p { margin: 0; font: 700 22px/1.25 var(--display); letter-spacing: -.02em; max-width: 22ch; }
+.ficha__top p { margin: 0; font: 800 clamp(30px, 3.2vw, 40px)/1.12 var(--display); letter-spacing: -.03em; max-width: 18ch; }
 .ficha__datos { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(255,255,255,.14); }
 .ficha__datos div { padding: 22px 24px 26px; }
 .ficha__datos div + div { border-left: 1px solid rgba(255,255,255,.14); }
 .ficha__datos b { display: block; font: 800 40px/1 var(--display); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 .ficha__datos span { display: block; margin-top: 8px; font-size: 13px; color: rgba(255,255,255,.72); }
-.ficha__enlace { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; padding: 22px 40px 26px; border-top: 1px solid rgba(255,255,255,.14); color: #fff; text-decoration: none; transition: background .2s; }
-.ficha__enlace small { grid-column: 1 / -1; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--sky); }
-.ficha__enlace span { font-size: 15px; line-height: 1.4; color: rgba(255,255,255,.82); max-width: 38ch; }
-.ficha__enlace i { font-style: normal; font-size: 24px; transition: transform .2s; }
-.ficha__enlace:hover, .ficha__enlace:focus-visible { background: rgba(255,255,255,.06); }
-.ficha__enlace:hover i, .ficha__enlace:focus-visible i { transform: translateX(4px); }
+.ficha__cta { position: relative; display: grid; justify-items: start; gap: 12px; padding: 28px 40px 36px; border-top: 1px solid rgba(255,255,255,.14); }
+.ficha__cta small { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--sky); }
+.ficha__cta p { margin: 0; font-size: 16px; line-height: 1.45; color: rgba(255,255,255,.82); max-width: 40ch; }
+.ficha__cta .pill { margin-top: 4px; }
 
 /* ---------- Pestañas ---------- */
 .tabs { display: grid; grid-template-columns: 1fr 1fr; }
