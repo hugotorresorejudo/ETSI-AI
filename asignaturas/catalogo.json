@@ -43,28 +43,28 @@
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/guia/ter-guia-de-estudio.pdf",
      "paginas": 4,
-     "kb": 45
+     "kb": 46
     },
     {
      "cat": "formulario",
      "titulo": "Formulario de la primera prueba (temas 1 a 5)",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/formulario/ter-formulario-de-la-primera-prueba-temas-1-a-5.pdf",
      "paginas": 3,
-     "kb": 58
+     "kb": 60
     },
     {
      "cat": "apuntes",
      "titulo": "Temas 1 a 7",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-temas-1-a-7.pdf",
-     "paginas": 8,
-     "kb": 85
+     "paginas": 9,
+     "kb": 94
     },
     {
      "cat": "resueltos",
      "titulo": "Siete problemas de redes (temas 3 a 7)",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/resueltos/ter-siete-problemas-de-redes-temas-3-a-7.pdf",
-     "paginas": 10,
-     "kb": 81
+     "paginas": 8,
+     "kb": 79
     },
     {
      "cat": "simulacros",
@@ -93,112 +93,112 @@
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/guia/geee-guia-de-estudio.pdf",
      "paginas": 4,
-     "kb": 48
+     "kb": 49
     },
     {
      "cat": "apuntes",
      "titulo": "T1. Conceptos básicos: frecuencia, filtros y CC/CC",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t1-conceptos-basicos-frecuencia-filtros-y-cc-cc.pdf",
      "paginas": 25,
-     "kb": 286
+     "kb": 291
     },
     {
      "cat": "ejercicios",
      "titulo": "T1. Conceptos básicos: frecuencia, filtros y CC/CC",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t1-conceptos-basicos-frecuencia-filtros-y-cc-cc.pdf",
-     "paginas": 12,
-     "kb": 85
+     "paginas": 5,
+     "kb": 77
     },
     {
      "cat": "resueltos",
      "titulo": "T1. Conceptos básicos: frecuencia, filtros y CC/CC",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t1-conceptos-basicos-frecuencia-filtros-y-cc-cc.pdf",
-     "paginas": 26,
-     "kb": 236
+     "paginas": 23,
+     "kb": 237
     },
     {
      "cat": "apuntes",
      "titulo": "T2. Modelado y estabilidad",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t2-modelado-y-estabilidad.pdf",
-     "paginas": 23,
-     "kb": 406
+     "paginas": 24,
+     "kb": 413
     },
     {
      "cat": "ejercicios",
      "titulo": "T2. Modelado y estabilidad",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t2-modelado-y-estabilidad.pdf",
-     "paginas": 12,
-     "kb": 89
+     "paginas": 6,
+     "kb": 84
     },
     {
      "cat": "resueltos",
      "titulo": "T2. Modelado y estabilidad",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t2-modelado-y-estabilidad.pdf",
-     "paginas": 29,
-     "kb": 333
+     "paginas": 27,
+     "kb": 335
     },
     {
      "cat": "apuntes",
      "titulo": "T3. Almacenamiento de energía eléctrica",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t3-almacenamiento-de-energia-electrica.pdf",
      "paginas": 16,
-     "kb": 150
+     "kb": 152
     },
     {
      "cat": "ejercicios",
      "titulo": "T3. Almacenamiento de energía eléctrica",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t3-almacenamiento-de-energia-electrica.pdf",
-     "paginas": 12,
-     "kb": 73
+     "paginas": 5,
+     "kb": 68
     },
     {
      "cat": "resueltos",
      "titulo": "T3. Almacenamiento de energía eléctrica",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t3-almacenamiento-de-energia-electrica.pdf",
-     "paginas": 19,
-     "kb": 131
+     "paginas": 18,
+     "kb": 132
     },
     {
      "cat": "apuntes",
      "titulo": "T4. Paneles fotovoltaicos",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t4-paneles-fotovoltaicos.pdf",
      "paginas": 17,
-     "kb": 196
+     "kb": 197
     },
     {
      "cat": "ejercicios",
      "titulo": "T4. Paneles fotovoltaicos",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t4-paneles-fotovoltaicos.pdf",
-     "paginas": 12,
-     "kb": 75
+     "paginas": 5,
+     "kb": 71
     },
     {
      "cat": "resueltos",
      "titulo": "T4. Paneles fotovoltaicos",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t4-paneles-fotovoltaicos.pdf",
-     "paginas": 19,
+     "paginas": 16,
      "kb": 183
     },
     {
      "cat": "apuntes",
      "titulo": "T5. Rectificadores e inversores",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t5-rectificadores-e-inversores.pdf",
-     "paginas": 28,
-     "kb": 383
+     "paginas": 29,
+     "kb": 386
     },
     {
      "cat": "ejercicios",
      "titulo": "T5. Rectificadores e inversores",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t5-rectificadores-e-inversores.pdf",
-     "paginas": 12,
-     "kb": 78
+     "paginas": 4,
+     "kb": 71
     },
     {
      "cat": "resueltos",
      "titulo": "T5. Rectificadores e inversores",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t5-rectificadores-e-inversores.pdf",
-     "paginas": 24,
-     "kb": 161
+     "paginas": 21,
+     "kb": 164
     },
     {
      "cat": "formulario",
@@ -231,22 +231,22 @@
      "cat": "guia",
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/energias-renovables/guia/taer-guia-de-estudio.pdf",
-     "paginas": 3,
-     "kb": 43
+     "paginas": 4,
+     "kb": 45
     },
     {
      "cat": "apuntes",
      "titulo": "Fotovoltaica, eólica y solar térmica",
      "ruta": "asignaturas/energias-renovables/apuntes/taer-fotovoltaica-eolica-y-solar-termica.pdf",
-     "paginas": 6,
-     "kb": 75
+     "paginas": 7,
+     "kb": 94
     },
     {
      "cat": "resueltos",
      "titulo": "Cinco problemas de diseño",
      "ruta": "asignaturas/energias-renovables/resueltos/taer-cinco-problemas-de-diseno.pdf",
-     "paginas": 8,
-     "kb": 76
+     "paginas": 6,
+     "kb": 74
     },
     {
      "cat": "formulario",
@@ -260,7 +260,7 @@
      "titulo": "Simulacro de cuestionario con soluciones",
      "ruta": "asignaturas/energias-renovables/simulacros/taer-simulacro-de-cuestionario-con-soluciones.pdf",
      "paginas": 3,
-     "kb": 46
+     "kb": 47
     },
     {
      "cat": "ejercicios",
@@ -281,22 +281,22 @@
      "cat": "guia",
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/recursos-energeticos/guia/tare-guia-de-estudio.pdf",
-     "paginas": 3,
-     "kb": 43
+     "paginas": 4,
+     "kb": 44
     },
     {
      "cat": "apuntes",
      "titulo": "Temas 1 a 5: de los combustibles a la logística",
      "ruta": "asignaturas/recursos-energeticos/apuntes/tare-temas-1-a-5-de-los-combustibles-a-la-logistica.pdf",
-     "paginas": 5,
-     "kb": 64
+     "paginas": 6,
+     "kb": 78
     },
     {
      "cat": "resueltos",
      "titulo": "Tres problemas de gas natural y GNL",
      "ruta": "asignaturas/recursos-energeticos/resueltos/tare-tres-problemas-de-gas-natural-y-gnl.pdf",
-     "paginas": 6,
-     "kb": 54
+     "paginas": 4,
+     "kb": 52
     },
     {
      "cat": "ejercicios",
@@ -325,49 +325,49 @@
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/impactos-medioambientales/guia/imp-guia-de-estudio.pdf",
      "paginas": 4,
-     "kb": 42
+     "kb": 43
     },
     {
      "cat": "apuntes",
      "titulo": "Bloques de la primera prueba: atmósfera, combustibles y ciclo de vida",
      "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-bloques-de-la-primera-prueba-atmosfera-combustibles-y-ciclo-de-vida.pdf",
-     "paginas": 8,
-     "kb": 107
+     "paginas": 10,
+     "kb": 113
     },
     {
      "cat": "resueltos",
      "titulo": "Primera prueba: ejercicios resueltos",
      "ruta": "asignaturas/impactos-medioambientales/resueltos/imp-primera-prueba-ejercicios-resueltos.pdf",
      "paginas": 4,
-     "kb": 83
+     "kb": 85
     },
     {
      "cat": "formulario",
      "titulo": "Formulario y chuleta de la primera prueba",
      "ruta": "asignaturas/impactos-medioambientales/formulario/imp-formulario-y-chuleta-de-la-primera-prueba.pdf",
-     "paginas": 3,
-     "kb": 49
+     "paginas": 4,
+     "kb": 57
     },
     {
      "cat": "simulacros",
      "titulo": "Simulacro de la primera prueba (90 minutos)",
      "ruta": "asignaturas/impactos-medioambientales/simulacros/imp-simulacro-de-la-primera-prueba-90-minutos.pdf",
      "paginas": 3,
-     "kb": 48
+     "kb": 52
     },
     {
      "cat": "apuntes",
      "titulo": "Bloques de la segunda prueba: suelo, salud, agua y recursos",
      "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-bloques-de-la-segunda-prueba-suelo-salud-agua-y-recursos.pdf",
-     "paginas": 6,
-     "kb": 68
+     "paginas": 7,
+     "kb": 70
     },
     {
      "cat": "resueltos",
      "titulo": "Segunda prueba: ejercicios resueltos",
      "ruta": "asignaturas/impactos-medioambientales/resueltos/imp-segunda-prueba-ejercicios-resueltos.pdf",
-     "paginas": 7,
-     "kb": 59
+     "paginas": 5,
+     "kb": 56
     },
     {
      "cat": "simulacros",
@@ -407,14 +407,14 @@
      "titulo": "Apuntes completos: todas las tecnologías",
      "ruta": "asignaturas/energy-storage/apuntes/es-apuntes-completos-todas-las-tecnologias.pdf",
      "paginas": 8,
-     "kb": 87
+     "kb": 88
     },
     {
      "cat": "resueltos",
      "titulo": "Siete problemas de dimensionamiento",
      "ruta": "asignaturas/energy-storage/resueltos/es-siete-problemas-de-dimensionamiento.pdf",
-     "paginas": 10,
-     "kb": 71
+     "paginas": 6,
+     "kb": 66
     },
     {
      "cat": "simulacros",
@@ -434,43 +434,43 @@
      "cat": "apuntes",
      "titulo": "T1. Fundamentos y viabilidad económica",
      "ruta": "asignaturas/energy-storage/apuntes/es-t1-fundamentos-y-viabilidad-economica.pdf",
-     "paginas": 5,
+     "paginas": 6,
      "kb": 76
     },
     {
      "cat": "apuntes",
      "titulo": "T2. Almacenamiento térmico",
      "ruta": "asignaturas/energy-storage/apuntes/es-t2-almacenamiento-termico.pdf",
-     "paginas": 5,
-     "kb": 69
-    },
-    {
-     "cat": "apuntes",
-     "titulo": "T3. Baterías y supercondensadores",
-     "ruta": "asignaturas/energy-storage/apuntes/es-t3-baterias-y-supercondensadores.pdf",
-     "paginas": 5,
-     "kb": 81
-    },
-    {
-     "cat": "apuntes",
-     "titulo": "T4. Aire comprimido y aire líquido",
-     "ruta": "asignaturas/energy-storage/apuntes/es-t4-aire-comprimido-y-aire-liquido.pdf",
-     "paginas": 4,
-     "kb": 64
-    },
-    {
-     "cat": "apuntes",
-     "titulo": "T5. Volantes de inercia",
-     "ruta": "asignaturas/energy-storage/apuntes/es-t5-volantes-de-inercia.pdf",
-     "paginas": 5,
+     "paginas": 6,
      "kb": 72
     },
     {
      "cat": "apuntes",
-     "titulo": "T6. Vectores energéticos y aplicaciones",
-     "ruta": "asignaturas/energy-storage/apuntes/es-t6-vectores-energeticos-y-aplicaciones.pdf",
+     "titulo": "T3. Aire comprimido (CAES) y aire líquido (LAES)",
+     "ruta": "asignaturas/energy-storage/apuntes/es-t3-aire-comprimido-caes-y-aire-liquido-laes.pdf",
+     "paginas": 7,
+     "kb": 89
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T4. Volantes de inercia y supercondensadores",
+     "ruta": "asignaturas/energy-storage/apuntes/es-t4-volantes-de-inercia-y-supercondensadores.pdf",
      "paginas": 5,
-     "kb": 80
+     "kb": 70
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T5. Baterías",
+     "ruta": "asignaturas/energy-storage/apuntes/es-t5-baterias.pdf",
+     "paginas": 7,
+     "kb": 94
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T6. Hidrógeno, almacenamiento termoquímico y vectores",
+     "ruta": "asignaturas/energy-storage/apuntes/es-t6-hidrogeno-almacenamiento-termoquimico-y-vectores.pdf",
+     "paginas": 6,
+     "kb": 83
     },
     {
      "cat": "ejercicios",
@@ -488,29 +488,29 @@
     },
     {
      "cat": "ejercicios",
-     "titulo": "T3. Baterías y supercondensadores",
-     "ruta": "asignaturas/energy-storage/ejercicios/es-t3-baterias-y-supercondensadores.pdf",
+     "titulo": "T3. Aire comprimido (CAES) y aire líquido (LAES)",
+     "ruta": "asignaturas/energy-storage/ejercicios/es-t3-aire-comprimido-caes-y-aire-liquido-laes.pdf",
      "paginas": 2,
      "kb": 46
     },
     {
      "cat": "ejercicios",
-     "titulo": "T4. Aire comprimido y aire líquido",
-     "ruta": "asignaturas/energy-storage/ejercicios/es-t4-aire-comprimido-y-aire-liquido.pdf",
+     "titulo": "T4. Volantes de inercia y supercondensadores",
+     "ruta": "asignaturas/energy-storage/ejercicios/es-t4-volantes-de-inercia-y-supercondensadores.pdf",
      "paginas": 2,
      "kb": 40
     },
     {
      "cat": "ejercicios",
-     "titulo": "T5. Volantes de inercia",
-     "ruta": "asignaturas/energy-storage/ejercicios/es-t5-volantes-de-inercia.pdf",
+     "titulo": "T5. Baterías",
+     "ruta": "asignaturas/energy-storage/ejercicios/es-t5-baterias.pdf",
      "paginas": 2,
-     "kb": 46
+     "kb": 45
     },
     {
      "cat": "ejercicios",
-     "titulo": "T6. Vectores energéticos y aplicaciones",
-     "ruta": "asignaturas/energy-storage/ejercicios/es-t6-vectores-energeticos-y-aplicaciones.pdf",
+     "titulo": "T6. Hidrógeno, almacenamiento termoquímico y vectores",
+     "ruta": "asignaturas/energy-storage/ejercicios/es-t6-hidrogeno-almacenamiento-termoquimico-y-vectores.pdf",
      "paginas": 2,
      "kb": 45
     },
@@ -519,40 +519,40 @@
      "titulo": "T1. Fundamentos y viabilidad económica",
      "ruta": "asignaturas/energy-storage/resueltos/es-t1-fundamentos-y-viabilidad-economica.pdf",
      "paginas": 3,
-     "kb": 54
+     "kb": 57
     },
     {
      "cat": "resueltos",
      "titulo": "T2. Almacenamiento térmico",
      "ruta": "asignaturas/energy-storage/resueltos/es-t2-almacenamiento-termico.pdf",
      "paginas": 3,
-     "kb": 55
+     "kb": 59
     },
     {
      "cat": "resueltos",
-     "titulo": "T3. Baterías y supercondensadores",
-     "ruta": "asignaturas/energy-storage/resueltos/es-t3-baterias-y-supercondensadores.pdf",
+     "titulo": "T3. Aire comprimido (CAES) y aire líquido (LAES)",
+     "ruta": "asignaturas/energy-storage/resueltos/es-t3-aire-comprimido-caes-y-aire-liquido-laes.pdf",
      "paginas": 3,
-     "kb": 62
+     "kb": 63
     },
     {
      "cat": "resueltos",
-     "titulo": "T4. Aire comprimido y aire líquido",
-     "ruta": "asignaturas/energy-storage/resueltos/es-t4-aire-comprimido-y-aire-liquido.pdf",
+     "titulo": "T4. Volantes de inercia y supercondensadores",
+     "ruta": "asignaturas/energy-storage/resueltos/es-t4-volantes-de-inercia-y-supercondensadores.pdf",
      "paginas": 3,
      "kb": 52
     },
     {
      "cat": "resueltos",
-     "titulo": "T5. Volantes de inercia",
-     "ruta": "asignaturas/energy-storage/resueltos/es-t5-volantes-de-inercia.pdf",
+     "titulo": "T5. Baterías",
+     "ruta": "asignaturas/energy-storage/resueltos/es-t5-baterias.pdf",
      "paginas": 3,
-     "kb": 55
+     "kb": 54
     },
     {
      "cat": "resueltos",
-     "titulo": "T6. Vectores energéticos y aplicaciones",
-     "ruta": "asignaturas/energy-storage/resueltos/es-t6-vectores-energeticos-y-aplicaciones.pdf",
+     "titulo": "T6. Hidrógeno, almacenamiento termoquímico y vectores",
+     "ruta": "asignaturas/energy-storage/resueltos/es-t6-hidrogeno-almacenamiento-termoquimico-y-vectores.pdf",
      "paginas": 3,
      "kb": 56
     }
@@ -579,15 +579,15 @@
      "cat": "apuntes",
      "titulo": "Temas 1 a 4",
      "ruta": "asignaturas/eficiencia-energetica/apuntes/ef-temas-1-a-4.pdf",
-     "paginas": 7,
-     "kb": 74
+     "paginas": 8,
+     "kb": 82
     },
     {
      "cat": "resueltos",
      "titulo": "Seis problemas tipo (energía primaria, cogeneración, pinch, VEEI, reactiva)",
      "ruta": "asignaturas/eficiencia-energetica/resueltos/ef-seis-problemas-tipo-energia-primaria-cogeneracion-pinch-veei-reactiva.pdf",
-     "paginas": 9,
-     "kb": 71
+     "paginas": 6,
+     "kb": 67
     },
     {
      "cat": "formulario",
@@ -601,7 +601,7 @@
      "titulo": "Simulacro de examen con soluciones",
      "ruta": "asignaturas/eficiencia-energetica/simulacros/ef-simulacro-de-examen-con-soluciones.pdf",
      "paginas": 3,
-     "kb": 50
+     "kb": 51
     },
     {
      "cat": "ejercicios",
@@ -622,15 +622,15 @@
      "cat": "guia",
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/energia-nuclear/guia/nuc-guia-de-estudio.pdf",
-     "paginas": 3,
-     "kb": 39
+     "paginas": 4,
+     "kb": 40
     },
     {
      "cat": "apuntes",
      "titulo": "Temas 1 a 6",
      "ruta": "asignaturas/energia-nuclear/apuntes/nuc-temas-1-a-6.pdf",
-     "paginas": 6,
-     "kb": 73
+     "paginas": 7,
+     "kb": 85
     },
     {
      "cat": "formulario",
@@ -659,35 +659,35 @@
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/ingenieria-termica/guia/term-guia-de-estudio.pdf",
      "paginas": 4,
-     "kb": 42
+     "kb": 43
     },
     {
      "cat": "apuntes",
      "titulo": "Resumen en español de todos los bloques",
      "ruta": "asignaturas/ingenieria-termica/apuntes/term-resumen-en-espanol-de-todos-los-bloques.pdf",
-     "paginas": 5,
-     "kb": 80
+     "paginas": 6,
+     "kb": 88
     },
     {
      "cat": "resueltos",
      "titulo": "Combustión, ciclos y captura de CO2",
      "ruta": "asignaturas/ingenieria-termica/resueltos/term-combustion-ciclos-y-captura-de-co2.pdf",
-     "paginas": 7,
-     "kb": 62
+     "paginas": 5,
+     "kb": 61
     },
     {
      "cat": "ejercicios",
      "titulo": "Ejercicios propuestos con resultados",
      "ruta": "asignaturas/ingenieria-termica/ejercicios/term-ejercicios-propuestos-con-resultados.pdf",
      "paginas": 3,
-     "kb": 38
+     "kb": 39
     },
     {
      "cat": "formulario",
      "titulo": "Formulario y chuleta",
      "ruta": "asignaturas/ingenieria-termica/formulario/term-formulario-y-chuleta.pdf",
      "paginas": 2,
-     "kb": 50
+     "kb": 51
     }
    ]
   },
@@ -702,28 +702,28 @@
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/economia-energia/guia/eco-guia-de-estudio.pdf",
      "paginas": 4,
-     "kb": 46
+     "kb": 47
     },
     {
      "cat": "apuntes",
      "titulo": "Temas 1 a 7",
      "ruta": "asignaturas/economia-energia/apuntes/eco-temas-1-a-7.pdf",
-     "paginas": 9,
-     "kb": 86
+     "paginas": 10,
+     "kb": 103
     },
     {
      "cat": "resueltos",
      "titulo": "Diez problemas tipo examen",
      "ruta": "asignaturas/economia-energia/resueltos/eco-diez-problemas-tipo-examen.pdf",
-     "paginas": 13,
-     "kb": 86
+     "paginas": 9,
+     "kb": 82
     },
     {
      "cat": "formulario",
      "titulo": "Formulario y chuleta",
      "ruta": "asignaturas/economia-energia/formulario/eco-formulario-y-chuleta.pdf",
-     "paginas": 3,
-     "kb": 52
+     "paginas": 2,
+     "kb": 53
     },
     {
      "cat": "simulacros",
