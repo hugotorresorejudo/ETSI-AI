@@ -99,8 +99,8 @@
      "cat": "apuntes",
      "titulo": "T1. Conceptos básicos: frecuencia, filtros y CC/CC",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t1-conceptos-basicos-frecuencia-filtros-y-cc-cc.pdf",
-     "paginas": 25,
-     "kb": 291
+     "paginas": 26,
+     "kb": 293
     },
     {
      "cat": "ejercicios",
@@ -135,21 +135,21 @@
      "titulo": "T2. Modelado y estabilidad",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t2-modelado-y-estabilidad.pdf",
      "paginas": 27,
-     "kb": 335
+     "kb": 334
     },
     {
      "cat": "apuntes",
      "titulo": "T3. Almacenamiento de energía eléctrica",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t3-almacenamiento-de-energia-electrica.pdf",
      "paginas": 16,
-     "kb": 152
+     "kb": 153
     },
     {
      "cat": "ejercicios",
      "titulo": "T3. Almacenamiento de energía eléctrica",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t3-almacenamiento-de-energia-electrica.pdf",
      "paginas": 5,
-     "kb": 68
+     "kb": 70
     },
     {
      "cat": "resueltos",
@@ -163,7 +163,7 @@
      "titulo": "T4. Paneles fotovoltaicos",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t4-paneles-fotovoltaicos.pdf",
      "paginas": 17,
-     "kb": 197
+     "kb": 196
     },
     {
      "cat": "ejercicios",
@@ -191,7 +191,7 @@
      "titulo": "T5. Rectificadores e inversores",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t5-rectificadores-e-inversores.pdf",
      "paginas": 4,
-     "kb": 71
+     "kb": 70
     },
     {
      "cat": "resueltos",
@@ -463,14 +463,14 @@
      "titulo": "T5. Baterías",
      "ruta": "asignaturas/energy-storage/apuntes/es-t5-baterias.pdf",
      "paginas": 7,
-     "kb": 94
+     "kb": 92
     },
     {
      "cat": "apuntes",
      "titulo": "T6. Hidrógeno, almacenamiento termoquímico y vectores",
      "ruta": "asignaturas/energy-storage/apuntes/es-t6-hidrogeno-almacenamiento-termoquimico-y-vectores.pdf",
      "paginas": 6,
-     "kb": 83
+     "kb": 85
     },
     {
      "cat": "ejercicios",
