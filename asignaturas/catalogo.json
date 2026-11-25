@@ -612,27 +612,6 @@
      "kb": 88
     },
     {
-     "cat": "resueltos",
-     "titulo": "Siete problemas de dimensionamiento",
-     "ruta": "asignaturas/energy-storage/resueltos/es-siete-problemas-de-dimensionamiento.pdf",
-     "paginas": 6,
-     "kb": 66
-    },
-    {
-     "cat": "simulacros",
-     "titulo": "Simulacro tipo test (30 preguntas con soluciones)",
-     "ruta": "asignaturas/energy-storage/simulacros/es-simulacro-tipo-test-30-preguntas-con-soluciones.pdf",
-     "paginas": 9,
-     "kb": 57
-    },
-    {
-     "cat": "formulario",
-     "titulo": "Formulario y chuleta",
-     "ruta": "asignaturas/energy-storage/formulario/es-formulario-y-chuleta.pdf",
-     "paginas": 2,
-     "kb": 51
-    },
-    {
      "cat": "apuntes",
      "titulo": "T1. Fundamentos y viabilidad económica",
      "ruta": "asignaturas/energy-storage/apuntes/es-t1-fundamentos-y-viabilidad-economica.pdf",
@@ -673,6 +652,125 @@
      "ruta": "asignaturas/energy-storage/apuntes/es-t6-hidrogeno-almacenamiento-termoquimico-y-vectores.pdf",
      "paginas": 6,
      "kb": 85
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Clasificación del almacenamiento: potencia, energía y duración",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-01-clasificacion-del-almacenamiento-potencia-energia-y-duracion.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "LCOS y costes del almacenamiento",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-02-lcos-y-costes-del-almacenamiento.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Almacenamiento térmico sensible",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-03-almacenamiento-termico-sensible.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Almacenamiento térmico latente (PCM)",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-04-almacenamiento-termico-latente-pcm.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Almacenamiento termoquímico",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-05-almacenamiento-termoquimico.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Baterías de ion-litio",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-06-baterias-de-ion-litio.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Baterías de plomo-ácido",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-07-baterias-de-plomo-acido.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Baterías de flujo redox",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-08-baterias-de-flujo-redox.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Aplicaciones en red: arbitraje, regulación y firmeza",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-09-aplicaciones-en-red-arbitraje-regulacion-y-firmeza.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "CAES: diabático y adiabático",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-10-caes-diabatico-y-adiabatico.pdf",
+     "paginas": 2,
+     "kb": 48
+    },
+    {
+     "cat": "fichas",
+     "titulo": "LAES: almacenamiento con aire líquido",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-11-laes-almacenamiento-con-aire-liquido.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Volantes de inercia",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-12-volantes-de-inercia.pdf",
+     "paginas": 2,
+     "kb": 46
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Supercondensadores",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-13-supercondensadores.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Hidrógeno: electrolizador y pila de combustible",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-14-hidrogeno-electrolizador-y-pila-de-combustible.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Bombeo hidroeléctrico",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-15-bombeo-hidroelectrico.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Power-to-X y vectores: amoniaco y metanol",
+     "ruta": "asignaturas/energy-storage/fichas/es-ficha-16-power-to-x-y-vectores-amoniaco-y-metanol.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "formulario",
+     "titulo": "Formulario y chuleta",
+     "ruta": "asignaturas/energy-storage/formulario/es-formulario-y-chuleta.pdf",
+     "paginas": 2,
+     "kb": 51
     },
     {
      "cat": "ejercicios",
@@ -718,6 +816,13 @@
     },
     {
      "cat": "resueltos",
+     "titulo": "Siete problemas de dimensionamiento",
+     "ruta": "asignaturas/energy-storage/resueltos/es-siete-problemas-de-dimensionamiento.pdf",
+     "paginas": 6,
+     "kb": 66
+    },
+    {
+     "cat": "resueltos",
      "titulo": "T1. Fundamentos y viabilidad económica",
      "ruta": "asignaturas/energy-storage/resueltos/es-t1-fundamentos-y-viabilidad-economica.pdf",
      "paginas": 3,
@@ -757,6 +862,69 @@
      "ruta": "asignaturas/energy-storage/resueltos/es-t6-hidrogeno-almacenamiento-termoquimico-y-vectores.pdf",
      "paginas": 3,
      "kb": 56
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro tipo test (30 preguntas con soluciones)",
+     "ruta": "asignaturas/energy-storage/simulacros/es-simulacro-tipo-test-30-preguntas-con-soluciones.pdf",
+     "paginas": 9,
+     "kb": 57
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test 1: fundamentos, térmico, CAES y LAES (30 preguntas)",
+     "ruta": "asignaturas/energy-storage/cuestionarios/es-cuestionario-01-test-1-fundamentos-termico-caes-y-laes-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 59
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test 2: volantes, supercondensadores, baterías e hidrógeno (30 preguntas)",
+     "ruta": "asignaturas/energy-storage/cuestionarios/es-cuestionario-02-test-2-volantes-supercondensadores-baterias-e-hidrogeno-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 58
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Verdadero o falso razonado (40 afirmaciones)",
+     "ruta": "asignaturas/energy-storage/cuestionarios/es-cuestionario-03-verdadero-o-falso-razonado-40-afirmaciones.pdf",
+     "paginas": 4,
+     "kb": 52
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: dimensionado de almacenamiento para una planta FV",
+     "ruta": "asignaturas/energy-storage/trabajos/es-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/energy-storage/utiles/es-utiles-01-glosario-es-en.pdf",
+     "paginas": 3,
+     "kb": 35
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/energy-storage/utiles/es-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 31
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/energy-storage/utiles/es-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 35
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/energy-storage/utiles/es-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 54
     }
    ],
    "test": {
