@@ -648,11 +648,130 @@
      "kb": 78
     },
     {
-     "cat": "resueltos",
-     "titulo": "Tres problemas de gas natural y GNL",
-     "ruta": "asignaturas/recursos-energeticos/resueltos/tare-tres-problemas-de-gas-natural-y-gnl.pdf",
+     "cat": "apuntes",
+     "titulo": "Combustibles y tratamiento de gas",
+     "ruta": "asignaturas/recursos-energeticos/apuntes/tare-teoria-01-combustibles-y-tratamiento-de-gas.pdf",
      "paginas": 4,
-     "kb": 52
+     "kb": 67
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "Refino de combustibles",
+     "ruta": "asignaturas/recursos-energeticos/apuntes/tare-teoria-02-refino-de-combustibles.pdf",
+     "paginas": 4,
+     "kb": 56
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "Logística, presente y futuro de los hidrocarburos",
+     "ruta": "asignaturas/recursos-energeticos/apuntes/tare-teoria-03-logistica-presente-y-futuro-de-los-hidrocarburos.pdf",
+     "paginas": 4,
+     "kb": 51
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Tipos de combustibles y aplicaciones",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-01-tipos-de-combustibles-y-aplicaciones.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Gas natural: composición y propiedades",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-02-gas-natural-composicion-y-propiedades.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Tratamiento de gas: deshidratación y endulzamiento",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-03-tratamiento-de-gas-deshidratacion-y-endulzamiento.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Licuación de GNL: ciclos",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-04-licuacion-de-gnl-ciclos.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Regasificación y cadena de GNL",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-05-regasificacion-y-cadena-de-gnl.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Refino: destilación atmosférica",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-06-refino-destilacion-atmosferica.pdf",
+     "paginas": 2,
+     "kb": 48
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Craqueo y reformado",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-07-craqueo-y-reformado.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Hidrotratamiento y calidad de combustibles",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-08-hidrotratamiento-y-calidad-de-combustibles.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Oleoductos y gasoductos",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-09-oleoductos-y-gasoductos.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Almacenamiento y transporte marítimo",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-10-almacenamiento-y-transporte-maritimo.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Biocombustibles y combustibles sintéticos",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-11-biocombustibles-y-combustibles-sinteticos.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Presente y futuro de los hidrocarburos",
+     "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-12-presente-y-futuro-de-los-hidrocarburos.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "formulario",
+     "titulo": "Formulario y chuleta",
+     "ruta": "asignaturas/recursos-energeticos/formulario/tare-formulario-y-chuleta.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de combustibles, tratamiento de gas y GNL con resultados",
+     "ruta": "asignaturas/recursos-energeticos/ejercicios/tare-ejercicios-01-ejercicios-de-combustibles-tratamiento-de-gas-y-gnl-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 49
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de refino, logística y futuro de los hidrocarburos con resultados",
+     "ruta": "asignaturas/recursos-energeticos/ejercicios/tare-ejercicios-02-ejercicios-de-refino-logistica-y-futuro-de-los-hidrocarburos-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 51
     },
     {
      "cat": "ejercicios",
@@ -662,11 +781,60 @@
      "kb": 36
     },
     {
-     "cat": "formulario",
-     "titulo": "Formulario y chuleta",
-     "ruta": "asignaturas/recursos-energeticos/formulario/tare-formulario-y-chuleta.pdf",
+     "cat": "resueltos",
+     "titulo": "Tres problemas de gas natural y GNL",
+     "ruta": "asignaturas/recursos-energeticos/resueltos/tare-tres-problemas-de-gas-natural-y-gnl.pdf",
+     "paginas": 4,
+     "kb": 52
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test de combustibles, tratamiento de gas, GNL y refino (30 preguntas)",
+     "ruta": "asignaturas/recursos-energeticos/cuestionarios/tare-cuestionario-01-test-de-combustibles-tratamiento-de-gas-gnl-y-refino-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 56
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test de logística, biocombustibles y futuro de los hidrocarburos (30 preguntas)",
+     "ruta": "asignaturas/recursos-energeticos/cuestionarios/tare-cuestionario-02-test-de-logistica-biocombustibles-y-futuro-de-los-hidrocarburos-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 55
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: cadena de valor de una terminal de GNL",
+     "ruta": "asignaturas/recursos-energeticos/trabajos/tare-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 41
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/recursos-energeticos/utiles/tare-utiles-01-glosario-es-en.pdf",
+     "paginas": 3,
+     "kb": 39
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/recursos-energeticos/utiles/tare-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 31
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/recursos-energeticos/utiles/tare-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 34
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/recursos-energeticos/utiles/tare-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 52
     }
    ]
   },
