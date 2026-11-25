@@ -914,11 +914,116 @@
      "kb": 103
     },
     {
-     "cat": "resueltos",
-     "titulo": "Diez problemas tipo examen",
-     "ruta": "asignaturas/economia-energia/resueltos/eco-diez-problemas-tipo-examen.pdf",
-     "paginas": 9,
-     "kb": 82
+     "cat": "apuntes",
+     "titulo": "T1 y T2. Costes y mercados competitivos",
+     "ruta": "asignaturas/economia-energia/apuntes/eco-teoria-01-t1-y-t2-costes-y-mercados-competitivos.pdf",
+     "paginas": 4,
+     "kb": 56
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T3. Monopolio",
+     "ruta": "asignaturas/economia-energia/apuntes/eco-teoria-02-t3-monopolio.pdf",
+     "paginas": 4,
+     "kb": 55
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T4 y T5. Oligopolio estático: Nash, Cournot y Bertrand",
+     "ruta": "asignaturas/economia-energia/apuntes/eco-teoria-03-t4-y-t5-oligopolio-estatico-nash-cournot-y-bertrand.pdf",
+     "paginas": 4,
+     "kb": 62
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T6 y T7. Juegos dinámicos y repetidos",
+     "ruta": "asignaturas/economia-energia/apuntes/eco-teoria-04-t6-y-t7-juegos-dinamicos-y-repetidos.pdf",
+     "paginas": 4,
+     "kb": 59
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Tipos de costes: fijo, variable, hundido y marginal",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-01-tipos-de-costes-fijo-variable-hundido-y-marginal.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Curvas de coste y economías de escala",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-02-curvas-de-coste-y-economias-de-escala.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Competencia perfecta: corto y largo plazo",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-03-competencia-perfecta-corto-y-largo-plazo.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Monopolio: maximización y poder de mercado",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-04-monopolio-maximizacion-y-poder-de-mercado.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Discriminación de precios",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-05-discriminacion-de-precios.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Teoría de juegos: Nash y estrategia dominante",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-06-teoria-de-juegos-nash-y-estrategia-dominante.pdf",
+     "paginas": 2,
+     "kb": 38
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Oligopolio de Cournot",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-07-oligopolio-de-cournot.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Oligopolio de Bertrand",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-08-oligopolio-de-bertrand.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Modelo de Stackelberg",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-09-modelo-de-stackelberg.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Bertrand-Edgeworth: competencia en precio con capacidad",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-10-bertrand-edgeworth-competencia-en-precio-con-capacidad.pdf",
+     "paginas": 2,
+     "kb": 37
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Allaz y Vila: mercados a plazo",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-11-allaz-y-vila-mercados-a-plazo.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Juegos repetidos y colusión",
+     "ruta": "asignaturas/economia-energia/fichas/eco-ficha-12-juegos-repetidos-y-colusion.pdf",
+     "paginas": 2,
+     "kb": 44
     },
     {
      "cat": "formulario",
@@ -928,11 +1033,18 @@
      "kb": 53
     },
     {
-     "cat": "simulacros",
-     "titulo": "Simulacro de examen con soluciones",
-     "ruta": "asignaturas/economia-energia/simulacros/eco-simulacro-de-examen-con-soluciones.pdf",
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de los temas 1 a 3 con resultados",
+     "ruta": "asignaturas/economia-energia/ejercicios/eco-ejercicios-01-ejercicios-de-los-temas-1-a-3-con-resultados.pdf",
      "paginas": 3,
-     "kb": 49
+     "kb": 56
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de los temas 4 a 7 con resultados",
+     "ruta": "asignaturas/economia-energia/ejercicios/eco-ejercicios-02-ejercicios-de-los-temas-4-a-7-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 55
     },
     {
      "cat": "ejercicios",
@@ -940,6 +1052,69 @@
      "ruta": "asignaturas/economia-energia/ejercicios/eco-ejercicios-propuestos-con-resultados.pdf",
      "paginas": 3,
      "kb": 40
+    },
+    {
+     "cat": "resueltos",
+     "titulo": "Diez problemas tipo examen",
+     "ruta": "asignaturas/economia-energia/resueltos/eco-diez-problemas-tipo-examen.pdf",
+     "paginas": 9,
+     "kb": 82
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro de examen con soluciones",
+     "ruta": "asignaturas/economia-energia/simulacros/eco-simulacro-de-examen-con-soluciones.pdf",
+     "paginas": 3,
+     "kb": 49
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test T1 a T3 (30 preguntas)",
+     "ruta": "asignaturas/economia-energia/cuestionarios/eco-cuestionario-01-test-t1-a-t3-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 57
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test T4 a T7 (30 preguntas)",
+     "ruta": "asignaturas/economia-energia/cuestionarios/eco-cuestionario-02-test-t4-a-t7-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 57
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: modelo de oligopolio del mercado eléctrico",
+     "ruta": "asignaturas/economia-energia/trabajos/eco-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/economia-energia/utiles/eco-utiles-01-glosario-es-en.pdf",
+     "paginas": 3,
+     "kb": 35
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/economia-energia/utiles/eco-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 33
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/economia-energia/utiles/eco-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 35
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/economia-energia/utiles/eco-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 50
     }
    ]
   }
