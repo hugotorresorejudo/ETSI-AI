@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://etsiai.es/</loc></url>
-  <url><loc>https://etsiai.es/quienes-somos/</loc></url>
-  <url><loc>https://etsiai.es/proposito/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/tecnologia-electrica-y-redes/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/gestion-electronica-energia-electrica/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/energias-renovables/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/recursos-energeticos/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/impactos-medioambientales/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/energy-storage/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/eficiencia-energetica/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/energia-nuclear/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/ingenieria-termica/</loc></url>
-  <url><loc>https://etsiai.es/asignaturas/economia-energia/</loc></url>
-  <url><loc>https://etsiai.es/simulaciones/bode/</loc></url>
-  <url><loc>https://etsiai.es/recursos/</loc></url>
-  <url><loc>https://etsiai.es/metodologia/</loc></url>
-  <url><loc>https://etsiai.es/uso-responsable-ia/</loc></url>
-  <url><loc>https://etsiai.es/participa/</loc></url>
-  <url><loc>https://etsiai.es/novedades/</loc></url>
-  <url><loc>https://etsiai.es/aviso-legal/</loc></url>
-  <url><loc>https://etsiai.es/tests/energy-storage/</loc></url>
-  <url><loc>https://etsiai.es/tests/impactos-medioambientales/</loc></url>
+  <url><loc>https://etsiai.es/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://etsiai.es/quienes-somos/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://etsiai.es/proposito/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://etsiai.es/recursos/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://etsiai.es/metodologia/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://etsiai.es/uso-responsable-ia/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://etsiai.es/participa/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://etsiai.es/novedades/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://etsiai.es/tests/energy-storage/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://etsiai.es/tests/impactos-medioambientales/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
