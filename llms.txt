@@ -1,0 +1,24 @@
+# ETSI-AI Open Lab
+
+> Comunidad abierta de IA para estudiantes y docentes de ingeniería, nacida en el Máster en Ingeniería de la Energía de la UPM. Material de estudio no oficial, generado con IA y contrastable con los apuntes de cada asignatura.
+
+## Páginas principales
+
+- [Inicio](https://etsiai.es/): presentación de la comunidad
+- [Quiénes somos](https://etsiai.es/quienes-somos/): equipo y origen del proyecto
+- [Propósito y acciones](https://etsiai.es/proposito/): objetivos de la comunidad
+- [Recursos](https://etsiai.es/recursos/): repositorio de material de estudio (Biblioteca Virtual)
+- [Metodología](https://etsiai.es/metodologia/): cómo se elabora el material
+- [Guía de uso responsable de la IA](https://etsiai.es/uso-responsable-ia/)
+- [Participa](https://etsiai.es/participa/): cómo colaborar
+- [Novedades](https://etsiai.es/novedades/): anuncios de la comunidad
+
+## Tests
+
+- [Test de Energy Storage](https://etsiai.es/tests/energy-storage/)
+- [Test de Impactos Medioambientales](https://etsiai.es/tests/impactos-medioambientales/)
+
+## Contacto
+
+- [LinkedIn](https://www.linkedin.com/company/etsi-ai-open-lab)
+- [Instagram](https://www.instagram.com/etsi.ai)
