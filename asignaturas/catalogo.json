@@ -66,6 +66,139 @@
      "kb": 46
     },
     {
+     "cat": "apuntes",
+     "titulo": "Temas 1 a 7",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-temas-1-a-7.pdf",
+     "paginas": 9,
+     "kb": 94
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T1 y T2. Sistema eléctrico y aparamenta",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-teoria-01-t1-y-t2-sistema-electrico-y-aparamenta.pdf",
+     "paginas": 4,
+     "kb": 54
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T3 y T4. Trifásica y valores por unidad",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-teoria-02-t3-y-t4-sistemas-trifasicos-y-valores-por-unidad.pdf",
+     "paginas": 3,
+     "kb": 50
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T5. Transformadores y autotransformadores",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-teoria-03-t5-transformadores-y-autotransformadores.pdf",
+     "paginas": 3,
+     "kb": 53
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T6 y T7. Generador síncrono y líneas",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-teoria-04-t6-y-t7-generador-sincrono-y-lineas.pdf",
+     "paginas": 3,
+     "kb": 59
+    },
+    {
+     "cat": "fichas",
+     "titulo": "El sistema eléctrico español",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-01-el-sistema-electrico-espanol.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Aparamenta de media y alta tensión",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-02-aparamenta-de-media-y-alta-tension.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Protecciones y relés",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-03-protecciones-y-reles.pdf",
+     "paginas": 2,
+     "kb": 39
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Sistemas trifásicos equilibrados",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-04-sistemas-trifasicos-equilibrados.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Potencias P, Q y S",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-05-potencias-p-q-y-s.pdf",
+     "paginas": 2,
+     "kb": 46
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Valores por unidad",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-06-valores-por-unidad.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Transformador: circuito equivalente",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-07-transformador-circuito-equivalente.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Autotransformador y regulación",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-08-autotransformador-y-regulacion.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Transformador trifásico y grupos de conexión",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-09-transformador-trifasico-y-grupos-de-conexion.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Generador síncrono: diagrama fasorial",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-10-generador-sincrono-diagrama-fasorial.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Curva de capabilidad",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-11-curva-de-capabilidad.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Línea de parámetros distribuidos",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-12-linea-de-parametros-distribuidos.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Efecto Ferranti y regulación de línea",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-13-efecto-ferranti-y-regulacion-de-linea.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Modelos de línea corta, media y larga",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-14-modelos-de-linea-corta-media-y-larga.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
      "cat": "formulario",
      "titulo": "Formulario de la primera prueba (temas 1 a 5)",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/formulario/ter-formulario-de-la-primera-prueba-temas-1-a-5.pdf",
@@ -73,11 +206,25 @@
      "kb": 60
     },
     {
-     "cat": "apuntes",
-     "titulo": "Temas 1 a 7",
-     "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-temas-1-a-7.pdf",
-     "paginas": 9,
-     "kb": 94
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de sistema eléctrico, trifásica y valores por unidad con resultados",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/ejercicios/ter-ejercicios-01-ejercicios-de-sistema-electrico-trifasica-y-valores-por-unidad-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 46
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de transformadores, generador síncrono y líneas con resultados",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/ejercicios/ter-ejercicios-02-ejercicios-de-transformadores-generador-sincrono-y-lineas-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 49
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios propuestos con resultados",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/ejercicios/ter-ejercicios-propuestos-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 43
     },
     {
      "cat": "resueltos",
@@ -94,11 +241,53 @@
      "kb": 55
     },
     {
-     "cat": "ejercicios",
-     "titulo": "Ejercicios propuestos con resultados",
-     "ruta": "asignaturas/tecnologia-electrica-y-redes/ejercicios/ter-ejercicios-propuestos-con-resultados.pdf",
+     "cat": "cuestionarios",
+     "titulo": "Test de sistema eléctrico, aparamenta, trifásica y valores por unidad (30 preguntas)",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/cuestionarios/ter-cuestionario-01-test-de-sistema-electrico-aparamenta-trifasica-y-valores-por-unidad-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 56
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test de transformadores, generador síncrono y líneas (30 preguntas)",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/cuestionarios/ter-cuestionario-02-test-de-transformadores-generador-sincrono-y-lineas-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 61
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: flujo de cargas simplificado de una red",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/trabajos/ter-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
+     "paginas": 2,
+     "kb": 39
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/utiles/ter-utiles-01-glosario-es-en.pdf",
      "paginas": 3,
-     "kb": 43
+     "kb": 42
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/utiles/ter-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 32
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/utiles/ter-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 37
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/tecnologia-electrica-y-redes/utiles/ter-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 52
     }
    ]
   },
