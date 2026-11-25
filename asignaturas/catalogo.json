@@ -77,42 +77,42 @@
      "titulo": "T1 y T2. Sistema eléctrico y aparamenta",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-teoria-01-t1-y-t2-sistema-electrico-y-aparamenta.pdf",
      "paginas": 4,
-     "kb": 54
+     "kb": 58
     },
     {
      "cat": "apuntes",
      "titulo": "T3 y T4. Trifásica y valores por unidad",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-teoria-02-t3-y-t4-sistemas-trifasicos-y-valores-por-unidad.pdf",
-     "paginas": 3,
-     "kb": 50
+     "paginas": 4,
+     "kb": 62
     },
     {
      "cat": "apuntes",
      "titulo": "T5. Transformadores y autotransformadores",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-teoria-03-t5-transformadores-y-autotransformadores.pdf",
-     "paginas": 3,
-     "kb": 53
+     "paginas": 4,
+     "kb": 64
     },
     {
      "cat": "apuntes",
      "titulo": "T6 y T7. Generador síncrono y líneas",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/apuntes/ter-teoria-04-t6-y-t7-generador-sincrono-y-lineas.pdf",
-     "paginas": 3,
-     "kb": 59
+     "paginas": 4,
+     "kb": 68
     },
     {
      "cat": "fichas",
      "titulo": "El sistema eléctrico español",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-01-el-sistema-electrico-espanol.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 54
     },
     {
      "cat": "fichas",
      "titulo": "Aparamenta de media y alta tensión",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-02-aparamenta-de-media-y-alta-tension.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 54
     },
     {
      "cat": "fichas",
@@ -126,35 +126,35 @@
      "titulo": "Sistemas trifásicos equilibrados",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-04-sistemas-trifasicos-equilibrados.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 57
     },
     {
      "cat": "fichas",
      "titulo": "Potencias P, Q y S",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-05-potencias-p-q-y-s.pdf",
      "paginas": 2,
-     "kb": 46
+     "kb": 59
     },
     {
      "cat": "fichas",
      "titulo": "Valores por unidad",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-06-valores-por-unidad.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 55
     },
     {
      "cat": "fichas",
      "titulo": "Transformador: circuito equivalente",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-07-transformador-circuito-equivalente.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 53
     },
     {
      "cat": "fichas",
      "titulo": "Autotransformador y regulación",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-08-autotransformador-y-regulacion.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 59
     },
     {
      "cat": "fichas",
@@ -168,35 +168,35 @@
      "titulo": "Generador síncrono: diagrama fasorial",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-10-generador-sincrono-diagrama-fasorial.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 58
     },
     {
      "cat": "fichas",
      "titulo": "Curva de capabilidad",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-11-curva-de-capabilidad.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 56
     },
     {
      "cat": "fichas",
      "titulo": "Línea de parámetros distribuidos",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-12-linea-de-parametros-distribuidos.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 64
     },
     {
      "cat": "fichas",
      "titulo": "Efecto Ferranti y regulación de línea",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-13-efecto-ferranti-y-regulacion-de-linea.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 56
     },
     {
      "cat": "fichas",
      "titulo": "Modelos de línea corta, media y larga",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/fichas/ter-ficha-14-modelos-de-linea-corta-media-y-larga.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 58
     },
     {
      "cat": "formulario",
@@ -244,15 +244,15 @@
      "cat": "cuestionarios",
      "titulo": "Test de sistema eléctrico, aparamenta, trifásica y valores por unidad (30 preguntas)",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/cuestionarios/ter-cuestionario-01-test-de-sistema-electrico-aparamenta-trifasica-y-valores-por-unidad-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 56
+     "paginas": 7,
+     "kb": 57
     },
     {
      "cat": "cuestionarios",
      "titulo": "Test de transformadores, generador síncrono y líneas (30 preguntas)",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/cuestionarios/ter-cuestionario-02-test-de-transformadores-generador-sincrono-y-lineas-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 61
+     "paginas": 7,
+     "kb": 62
     },
     {
      "cat": "trabajos",
@@ -273,14 +273,14 @@
      "titulo": "Mapa conceptual de la asignatura",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/utiles/ter-utiles-02-mapa-conceptual.pdf",
      "paginas": 2,
-     "kb": 32
+     "kb": 33
     },
     {
      "cat": "utiles",
      "titulo": "Errores típicos y trampas de examen",
      "ruta": "asignaturas/tecnologia-electrica-y-redes/utiles/ter-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
      "paginas": 2,
-     "kb": 37
+     "kb": 38
     },
     {
      "cat": "utiles",
@@ -351,105 +351,105 @@
      "titulo": "Series de Fourier y THD",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-01-series-de-fourier-y-thd.pdf",
      "paginas": 2,
-     "kb": 52
+     "kb": 64
     },
     {
      "cat": "fichas",
      "titulo": "Filtros pasivos RC y LC",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-02-filtros-pasivos-rc-y-lc.pdf",
      "paginas": 2,
-     "kb": 49
+     "kb": 62
     },
     {
      "cat": "fichas",
      "titulo": "Convertidor reductor (buck)",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-03-convertidor-reductor-buck.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 59
     },
     {
      "cat": "fichas",
      "titulo": "Convertidor elevador (boost)",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-04-convertidor-elevador-boost.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 58
     },
     {
      "cat": "fichas",
      "titulo": "Convertidor buck-boost y SEPIC",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-05-convertidor-buck-boost-y-sepic.pdf",
      "paginas": 2,
-     "kb": 42
+     "kb": 55
     },
     {
      "cat": "fichas",
      "titulo": "Modos de conducción: CCM y DCM",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-06-modos-de-conduccion-ccm-y-dcm.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 60
     },
     {
      "cat": "fichas",
      "titulo": "Modelado en pequeña señal",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-07-modelado-en-pequena-senal.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 64
     },
     {
      "cat": "fichas",
      "titulo": "Estabilidad: Bode y márgenes",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-08-estabilidad-bode-y-margenes.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 59
     },
     {
      "cat": "fichas",
      "titulo": "Control de lazo: PI y compensación",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-09-control-de-lazo-pi-y-compensacion.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 56
     },
     {
      "cat": "fichas",
      "titulo": "Baterías y estado de carga",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-10-baterias-y-estado-de-carga.pdf",
      "paginas": 2,
-     "kb": 46
+     "kb": 57
     },
     {
      "cat": "fichas",
      "titulo": "Panel FV y MPPT: P&O e INC",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-11-panel-fv-y-mppt-p-o-e-inc.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 60
     },
     {
      "cat": "fichas",
      "titulo": "Rectificadores no controlados y controlados",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-12-rectificadores-no-controlados-y-controlados.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 58
     },
     {
      "cat": "fichas",
      "titulo": "Inversor monofásico y SPWM",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-13-inversor-monofasico-y-spwm.pdf",
      "paginas": 2,
-     "kb": 46
+     "kb": 61
     },
     {
      "cat": "fichas",
      "titulo": "Inversor trifásico y modulación",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-14-inversor-trifasico-y-modulacion.pdf",
      "paginas": 2,
-     "kb": 49
+     "kb": 59
     },
     {
      "cat": "fichas",
      "titulo": "Semiconductores de potencia: diodo, MOSFET e IGBT",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-15-semiconductores-de-potencia-diodo-mosfet-e-igbt.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 61
     },
     {
      "cat": "formulario",
@@ -532,15 +532,15 @@
      "cat": "cuestionarios",
      "titulo": "Test 1: Fourier, filtros, convertidores y control (30 preguntas)",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/cuestionarios/geee-cuestionario-01-test-1-fourier-filtros-convertidores-y-control-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 61
+     "paginas": 7,
+     "kb": 62
     },
     {
      "cat": "cuestionarios",
      "titulo": "Test 2: control, baterías, paneles, rectificadores e inversores (30 preguntas)",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/cuestionarios/geee-cuestionario-02-test-2-control-baterias-paneles-rectificadores-e-inversores-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 63
+     "paginas": 7,
+     "kb": 64
     },
     {
      "cat": "trabajos",
@@ -554,7 +554,7 @@
      "titulo": "Glosario ES/EN",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/utiles/geee-utiles-01-glosario-es-en.pdf",
      "paginas": 3,
-     "kb": 40
+     "kb": 41
     },
     {
      "cat": "utiles",
@@ -568,7 +568,7 @@
      "titulo": "Errores típicos y trampas de examen",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/utiles/geee-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
      "paginas": 2,
-     "kb": 37
+     "kb": 43
     },
     {
      "cat": "utiles",
@@ -609,49 +609,49 @@
      "titulo": "T1. Radiación solar y módulos fotovoltaicos",
      "ruta": "asignaturas/energias-renovables/apuntes/taer-teoria-01-t1-radiacion-solar-y-modulos-fotovoltaicos.pdf",
      "paginas": 4,
-     "kb": 64
+     "kb": 67
     },
     {
      "cat": "apuntes",
      "titulo": "T2. Inversores, campos y plantas fotovoltaicas",
      "ruta": "asignaturas/energias-renovables/apuntes/taer-teoria-02-t2-inversores-campos-y-plantas-fotovoltaicas.pdf",
      "paginas": 4,
-     "kb": 56
+     "kb": 66
     },
     {
      "cat": "apuntes",
      "titulo": "T3. Sistema eléctrico de un parque eólico",
      "ruta": "asignaturas/energias-renovables/apuntes/taer-teoria-03-t3-sistema-electrico-de-un-parque-eolico.pdf",
      "paginas": 4,
-     "kb": 60
+     "kb": 68
     },
     {
      "cat": "apuntes",
      "titulo": "T4. Energía solar térmica de alta temperatura",
      "ruta": "asignaturas/energias-renovables/apuntes/taer-teoria-04-t4-energia-solar-termica-de-alta-temperatura.pdf",
      "paginas": 4,
-     "kb": 55
+     "kb": 59
     },
     {
      "cat": "fichas",
      "titulo": "Posición solar y radiación extraterrestre",
      "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-01-posicion-solar-y-radiacion-extraterrestre.pdf",
      "paginas": 2,
-     "kb": 49
+     "kb": 61
     },
     {
      "cat": "fichas",
      "titulo": "Módulo fotovoltaico y curva I-V",
      "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-02-modulo-fotovoltaico-y-curva-i-v.pdf",
      "paginas": 2,
-     "kb": 50
+     "kb": 65
     },
     {
      "cat": "fichas",
      "titulo": "Asociación serie-paralelo de módulos",
      "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-03-asociacion-serie-paralelo-de-modulos.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 59
     },
     {
      "cat": "fichas",
@@ -672,7 +672,7 @@
      "titulo": "Índices de producción y performance ratio",
      "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-06-indices-de-produccion-y-performance-ratio.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 62
     },
     {
      "cat": "fichas",
@@ -700,14 +700,14 @@
      "titulo": "Caída de tensión y flujo de cargas",
      "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-10-caida-de-tension-y-flujo-de-cargas.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 58
     },
     {
      "cat": "fichas",
      "titulo": "Balance energético de un colector solar",
      "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-11-balance-energetico-de-un-colector-solar.pdf",
      "paginas": 2,
-     "kb": 48
+     "kb": 62
     },
     {
      "cat": "fichas",
@@ -735,7 +735,7 @@
      "titulo": "Ejercicios de fotovoltaica con resultados",
      "ruta": "asignaturas/energias-renovables/ejercicios/taer-ejercicios-01-ejercicios-de-fotovoltaica-con-resultados.pdf",
      "paginas": 3,
-     "kb": 58
+     "kb": 59
     },
     {
      "cat": "ejercicios",
@@ -769,15 +769,15 @@
      "cat": "cuestionarios",
      "titulo": "Test de fotovoltaica (30 preguntas)",
      "ruta": "asignaturas/energias-renovables/cuestionarios/taer-cuestionario-01-test-de-fotovoltaica-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 58
+     "paginas": 7,
+     "kb": 59
     },
     {
      "cat": "cuestionarios",
      "titulo": "Test de eólica y solar térmica (30 preguntas)",
      "ruta": "asignaturas/energias-renovables/cuestionarios/taer-cuestionario-02-test-de-eolica-y-solar-termica-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 58
+     "paginas": 7,
+     "kb": 59
     },
     {
      "cat": "trabajos",
@@ -791,7 +791,7 @@
      "titulo": "Glosario ES/EN",
      "ruta": "asignaturas/energias-renovables/utiles/taer-utiles-01-glosario-es-en.pdf",
      "paginas": 3,
-     "kb": 38
+     "kb": 39
     },
     {
      "cat": "utiles",
@@ -841,7 +841,7 @@
      "titulo": "Combustibles y tratamiento de gas",
      "ruta": "asignaturas/recursos-energeticos/apuntes/tare-teoria-01-combustibles-y-tratamiento-de-gas.pdf",
      "paginas": 4,
-     "kb": 67
+     "kb": 76
     },
     {
      "cat": "apuntes",
@@ -855,7 +855,7 @@
      "titulo": "Logística, presente y futuro de los hidrocarburos",
      "ruta": "asignaturas/recursos-energeticos/apuntes/tare-teoria-03-logistica-presente-y-futuro-de-los-hidrocarburos.pdf",
      "paginas": 4,
-     "kb": 51
+     "kb": 59
     },
     {
      "cat": "fichas",
@@ -869,14 +869,14 @@
      "titulo": "Gas natural: composición y propiedades",
      "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-02-gas-natural-composicion-y-propiedades.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 62
     },
     {
      "cat": "fichas",
      "titulo": "Tratamiento de gas: deshidratación y endulzamiento",
      "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-03-tratamiento-de-gas-deshidratacion-y-endulzamiento.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 58
     },
     {
      "cat": "fichas",
@@ -897,14 +897,14 @@
      "titulo": "Refino: destilación atmosférica",
      "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-06-refino-destilacion-atmosferica.pdf",
      "paginas": 2,
-     "kb": 48
+     "kb": 58
     },
     {
      "cat": "fichas",
      "titulo": "Craqueo y reformado",
      "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-07-craqueo-y-reformado.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 51
     },
     {
      "cat": "fichas",
@@ -918,7 +918,7 @@
      "titulo": "Oleoductos y gasoductos",
      "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-09-oleoductos-y-gasoductos.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 59
     },
     {
      "cat": "fichas",
@@ -932,7 +932,7 @@
      "titulo": "Biocombustibles y combustibles sintéticos",
      "ruta": "asignaturas/recursos-energeticos/fichas/tare-ficha-11-biocombustibles-y-combustibles-sinteticos.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 50
     },
     {
      "cat": "fichas",
@@ -980,15 +980,15 @@
      "cat": "cuestionarios",
      "titulo": "Test de combustibles, tratamiento de gas, GNL y refino (30 preguntas)",
      "ruta": "asignaturas/recursos-energeticos/cuestionarios/tare-cuestionario-01-test-de-combustibles-tratamiento-de-gas-gnl-y-refino-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 56
+     "paginas": 7,
+     "kb": 57
     },
     {
      "cat": "cuestionarios",
      "titulo": "Test de logística, biocombustibles y futuro de los hidrocarburos (30 preguntas)",
      "ruta": "asignaturas/recursos-energeticos/cuestionarios/tare-cuestionario-02-test-de-logistica-biocombustibles-y-futuro-de-los-hidrocarburos-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 55
+     "paginas": 7,
+     "kb": 56
     },
     {
      "cat": "trabajos",
@@ -1058,22 +1058,22 @@
      "cat": "apuntes",
      "titulo": "Atmósfera: composición, clima y dispersión",
      "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-teoria-01-atmosfera-composicion-clima-y-dispersion.pdf",
-     "paginas": 4,
-     "kb": 66
+     "paginas": 5,
+     "kb": 77
     },
     {
      "cat": "apuntes",
      "titulo": "Combustibles y análisis de ciclo de vida",
      "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-teoria-02-combustibles-y-analisis-de-ciclo-de-vida.pdf",
      "paginas": 4,
-     "kb": 60
+     "kb": 64
     },
     {
      "cat": "apuntes",
      "titulo": "Suelo, riesgos, agua y recursos",
      "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-teoria-03-suelo-riesgos-agua-y-recursos.pdf",
-     "paginas": 4,
-     "kb": 65
+     "paginas": 5,
+     "kb": 72
     },
     {
      "cat": "fichas",
@@ -1087,7 +1087,7 @@
      "titulo": "Tipos de combustibles y poder calorífico",
      "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-02-tipos-de-combustibles-y-poder-calorifico.pdf",
      "paginas": 2,
-     "kb": 46
+     "kb": 59
     },
     {
      "cat": "fichas",
@@ -1101,21 +1101,21 @@
      "titulo": "ACV: inventario e impactos",
      "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-04-acv-inventario-e-impactos.pdf",
      "paginas": 2,
-     "kb": 46
+     "kb": 57
     },
     {
      "cat": "fichas",
      "titulo": "Contaminantes atmosféricos primarios y secundarios",
      "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-05-contaminantes-atmosfericos-primarios-y-secundarios.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 54
     },
     {
      "cat": "fichas",
      "titulo": "Efecto invernadero y GWP",
      "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-06-efecto-invernadero-y-gwp.pdf",
      "paginas": 2,
-     "kb": 50
+     "kb": 62
     },
     {
      "cat": "fichas",
@@ -1129,35 +1129,35 @@
      "titulo": "Contaminación del suelo",
      "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-08-contaminacion-del-suelo.pdf",
      "paginas": 2,
-     "kb": 42
+     "kb": 55
     },
     {
      "cat": "fichas",
      "titulo": "Análisis de riesgos para la salud",
      "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-09-analisis-de-riesgos-para-la-salud.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 60
     },
     {
      "cat": "fichas",
      "titulo": "Contaminación del agua: DBO, DQO y eutrofización",
      "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-10-contaminacion-del-agua-dbo-dqo-y-eutrofizacion.pdf",
      "paginas": 2,
-     "kb": 47
+     "kb": 61
     },
     {
      "cat": "fichas",
      "titulo": "Agotamiento de recursos: reservas y R/P",
      "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-11-agotamiento-de-recursos-reservas-y-r-p.pdf",
      "paginas": 2,
-     "kb": 42
+     "kb": 52
     },
     {
      "cat": "fichas",
      "titulo": "Huella de carbono y huella hídrica",
      "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-12-huella-de-carbono-y-huella-hidrica.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 57
     },
     {
      "cat": "formulario",
@@ -1178,7 +1178,7 @@
      "titulo": "Ejercicios de la segunda prueba: suelo, riesgos, agua y recursos con resultados",
      "ruta": "asignaturas/impactos-medioambientales/ejercicios/imp-ejercicios-02-ejercicios-de-la-segunda-prueba-suelo-riesgos-agua-y-recursos-con-resultados.pdf",
      "paginas": 3,
-     "kb": 50
+     "kb": 51
     },
     {
      "cat": "ejercicios",
@@ -1219,22 +1219,22 @@
      "cat": "cuestionarios",
      "titulo": "Test de la primera prueba: atmósfera, combustibles y ACV (30 preguntas)",
      "ruta": "asignaturas/impactos-medioambientales/cuestionarios/imp-cuestionario-01-test-de-la-primera-prueba-atmosfera-combustibles-y-acv-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 55
+     "paginas": 7,
+     "kb": 57
     },
     {
      "cat": "cuestionarios",
      "titulo": "Test de la segunda prueba: suelo, riesgos, agua y recursos (30 preguntas)",
      "ruta": "asignaturas/impactos-medioambientales/cuestionarios/imp-cuestionario-02-test-de-la-segunda-prueba-suelo-riesgos-agua-y-recursos-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 58
+     "paginas": 7,
+     "kb": 59
     },
     {
      "cat": "trabajos",
      "titulo": "Propuesta de trabajo: ACV simplificado de un combustible",
      "ruta": "asignaturas/impactos-medioambientales/trabajos/imp-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
      "paginas": 2,
-     "kb": 41
+     "kb": 42
     },
     {
      "cat": "utiles",
@@ -1351,21 +1351,21 @@
      "titulo": "Almacenamiento térmico sensible",
      "ruta": "asignaturas/energy-storage/fichas/es-ficha-03-almacenamiento-termico-sensible.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 57
     },
     {
      "cat": "fichas",
      "titulo": "Almacenamiento térmico latente (PCM)",
      "ruta": "asignaturas/energy-storage/fichas/es-ficha-04-almacenamiento-termico-latente-pcm.pdf",
      "paginas": 2,
-     "kb": 41
+     "kb": 53
     },
     {
      "cat": "fichas",
      "titulo": "Almacenamiento termoquímico",
      "ruta": "asignaturas/energy-storage/fichas/es-ficha-05-almacenamiento-termoquimico.pdf",
      "paginas": 2,
-     "kb": 42
+     "kb": 52
     },
     {
      "cat": "fichas",
@@ -1400,7 +1400,7 @@
      "titulo": "CAES: diabático y adiabático",
      "ruta": "asignaturas/energy-storage/fichas/es-ficha-10-caes-diabatico-y-adiabatico.pdf",
      "paginas": 2,
-     "kb": 48
+     "kb": 64
     },
     {
      "cat": "fichas",
@@ -1414,14 +1414,14 @@
      "titulo": "Volantes de inercia",
      "ruta": "asignaturas/energy-storage/fichas/es-ficha-12-volantes-de-inercia.pdf",
      "paginas": 2,
-     "kb": 46
+     "kb": 59
     },
     {
      "cat": "fichas",
      "titulo": "Supercondensadores",
      "ruta": "asignaturas/energy-storage/fichas/es-ficha-13-supercondensadores.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 61
     },
     {
      "cat": "fichas",
@@ -1435,7 +1435,7 @@
      "titulo": "Bombeo hidroeléctrico",
      "ruta": "asignaturas/energy-storage/fichas/es-ficha-15-bombeo-hidroelectrico.pdf",
      "paginas": 2,
-     "kb": 42
+     "kb": 55
     },
     {
      "cat": "fichas",
@@ -1553,22 +1553,22 @@
      "cat": "cuestionarios",
      "titulo": "Test 1: fundamentos, térmico, CAES y LAES (30 preguntas)",
      "ruta": "asignaturas/energy-storage/cuestionarios/es-cuestionario-01-test-1-fundamentos-termico-caes-y-laes-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 59
+     "paginas": 7,
+     "kb": 60
     },
     {
      "cat": "cuestionarios",
      "titulo": "Test 2: volantes, supercondensadores, baterías e hidrógeno (30 preguntas)",
      "ruta": "asignaturas/energy-storage/cuestionarios/es-cuestionario-02-test-2-volantes-supercondensadores-baterias-e-hidrogeno-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 58
+     "paginas": 7,
+     "kb": 59
     },
     {
      "cat": "cuestionarios",
      "titulo": "Verdadero o falso razonado (40 afirmaciones)",
      "ruta": "asignaturas/energy-storage/cuestionarios/es-cuestionario-03-verdadero-o-falso-razonado-40-afirmaciones.pdf",
      "paginas": 4,
-     "kb": 52
+     "kb": 53
     },
     {
      "cat": "trabajos",
@@ -1636,49 +1636,49 @@
      "titulo": "T1. Introducción, conceptos y legislación",
      "ruta": "asignaturas/eficiencia-energetica/apuntes/ef-teoria-01-t1-introduccion-conceptos-y-legislacion.pdf",
      "paginas": 4,
-     "kb": 60
+     "kb": 65
     },
     {
      "cat": "apuntes",
      "titulo": "T2. Eficiencia en la edificación e iluminación",
      "ruta": "asignaturas/eficiencia-energetica/apuntes/ef-teoria-02-t2-eficiencia-en-la-edificacion-e-iluminacion.pdf",
-     "paginas": 4,
-     "kb": 63
+     "paginas": 5,
+     "kb": 72
     },
     {
      "cat": "apuntes",
      "titulo": "T3. Eficiencia térmica en la industria",
      "ruta": "asignaturas/eficiencia-energetica/apuntes/ef-teoria-03-t3-eficiencia-termica-en-la-industria.pdf",
      "paginas": 4,
-     "kb": 59
+     "kb": 66
     },
     {
      "cat": "apuntes",
      "titulo": "T4. Eficiencia eléctrica en la industria",
      "ruta": "asignaturas/eficiencia-energetica/apuntes/ef-teoria-04-t4-eficiencia-electrica-en-la-industria.pdf",
      "paginas": 4,
-     "kb": 54
+     "kb": 64
     },
     {
      "cat": "fichas",
      "titulo": "Conceptos de eficiencia energética y factores de paso",
      "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-01-conceptos-de-eficiencia-energetica-y-factores-de-paso.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 55
     },
     {
      "cat": "fichas",
      "titulo": "Demanda térmica, carga y grados-día",
      "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-02-demanda-termica-carga-y-grados-dia.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 56
     },
     {
      "cat": "fichas",
      "titulo": "Transmitancia térmica y envolvente",
      "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-03-transmitancia-termica-y-envolvente.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 59
     },
     {
      "cat": "fichas",
@@ -1699,14 +1699,14 @@
      "titulo": "Magnitudes fotométricas",
      "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-06-magnitudes-fotometricas.pdf",
      "paginas": 2,
-     "kb": 41
+     "kb": 53
     },
     {
      "cat": "fichas",
      "titulo": "Cálculo luminotécnico y VEEI",
      "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-07-calculo-luminotecnico-y-veei.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 61
     },
     {
      "cat": "fichas",
@@ -1720,7 +1720,7 @@
      "titulo": "Cogeneración: PES y REE",
      "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-09-cogeneracion-pes-y-ree.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 60
     },
     {
      "cat": "fichas",
@@ -1741,7 +1741,7 @@
      "titulo": "Energía reactiva y armónicos",
      "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-12-energia-reactiva-y-armonicos.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 57
     },
     {
      "cat": "formulario",
@@ -1755,7 +1755,7 @@
      "titulo": "Ejercicios de los temas 1 y 2 con resultados",
      "ruta": "asignaturas/eficiencia-energetica/ejercicios/ef-ejercicios-01-ejercicios-de-los-temas-1-y-2-con-resultados.pdf",
      "paginas": 3,
-     "kb": 51
+     "kb": 52
     },
     {
      "cat": "ejercicios",
@@ -1789,15 +1789,15 @@
      "cat": "cuestionarios",
      "titulo": "Test T1 y T2 (30 preguntas)",
      "ruta": "asignaturas/eficiencia-energetica/cuestionarios/ef-cuestionario-01-test-t1-y-t2-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 56
+     "paginas": 7,
+     "kb": 57
     },
     {
      "cat": "cuestionarios",
      "titulo": "Test T3 y T4 (30 preguntas)",
      "ruta": "asignaturas/eficiencia-energetica/cuestionarios/ef-cuestionario-02-test-t3-y-t4-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 57
+     "paginas": 7,
+     "kb": 58
     },
     {
      "cat": "trabajos",
@@ -1831,7 +1831,7 @@
      "cat": "utiles",
      "titulo": "Banco de preguntas cortas de autotest",
      "ruta": "asignaturas/eficiencia-energetica/utiles/ef-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
-     "paginas": 3,
+     "paginas": 4,
      "kb": 54
     }
    ]
@@ -1882,14 +1882,14 @@
      "titulo": "T5 y T6. Proyecciones, análisis y fusión",
      "ruta": "asignaturas/energia-nuclear/apuntes/nuc-teoria-04-t5-t6-proyecciones-analisis-y-fusion.pdf",
      "paginas": 4,
-     "kb": 51
+     "kb": 52
     },
     {
      "cat": "fichas",
      "titulo": "Fisión y reacción en cadena",
      "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-01-fision-y-reaccion-en-cadena.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 62
     },
     {
      "cat": "fichas",
@@ -2079,35 +2079,35 @@
      "titulo": "Contexto térmico y sistemas de ultra alta temperatura",
      "ruta": "asignaturas/ingenieria-termica/apuntes/term-teoria-01-contexto-termico-y-uhts.pdf",
      "paginas": 4,
-     "kb": 59
+     "kb": 62
     },
     {
      "cat": "apuntes",
      "titulo": "Centrales térmicas avanzadas y captura de CO2",
      "ruta": "asignaturas/ingenieria-termica/apuntes/term-teoria-02-centrales-termicas-avanzadas-y-captura-de-co2.pdf",
      "paginas": 4,
-     "kb": 63
+     "kb": 67
     },
     {
      "cat": "apuntes",
      "titulo": "Combustión e impacto ambiental",
      "ruta": "asignaturas/ingenieria-termica/apuntes/term-teoria-03-combustion-e-impacto-ambiental.pdf",
      "paginas": 4,
-     "kb": 58
+     "kb": 59
     },
     {
      "cat": "apuntes",
      "titulo": "Fuentes de energía térmica y futuro",
      "ruta": "asignaturas/ingenieria-termica/apuntes/term-teoria-04-fuentes-de-energia-termica-y-futuro.pdf",
      "paginas": 4,
-     "kb": 57
+     "kb": 62
     },
     {
      "cat": "fichas",
      "titulo": "Contexto térmico: demanda y emisiones",
      "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-01-contexto-termico-demanda-y-emisiones.pdf",
      "paginas": 2,
-     "kb": 46
+     "kb": 57
     },
     {
      "cat": "fichas",
@@ -2128,7 +2128,7 @@
      "titulo": "Ciclo Brayton y ciclo combinado",
      "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-04-ciclo-brayton-y-ciclo-combinado.pdf",
      "paginas": 2,
-     "kb": 48
+     "kb": 58
     },
     {
      "cat": "fichas",
@@ -2149,42 +2149,42 @@
      "titulo": "Combustión: estequiometría y exceso de aire",
      "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-07-combustion-estequiometria-y-exceso-de-aire.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 49
     },
     {
      "cat": "fichas",
      "titulo": "Reducción de NOx y SOx",
      "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-08-reduccion-de-nox-y-sox.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 53
     },
     {
      "cat": "fichas",
      "titulo": "Bombas de calor y COP",
      "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-09-bombas-de-calor-y-cop.pdf",
      "paginas": 2,
-     "kb": 45
+     "kb": 58
     },
     {
      "cat": "fichas",
      "titulo": "Refrigeración por absorción",
      "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-10-refrigeracion-por-absorcion.pdf",
      "paginas": 2,
-     "kb": 41
+     "kb": 52
     },
     {
      "cat": "fichas",
      "titulo": "District heating y cooling",
      "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-11-district-heating-y-cooling.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 55
     },
     {
      "cat": "fichas",
      "titulo": "Vectores energéticos: hidrógeno y amoníaco",
      "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-12-vectores-energeticos-hidrogeno-y-amoniaco.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 48
     },
     {
      "cat": "formulario",
@@ -2198,7 +2198,7 @@
      "titulo": "Ejercicios de termodinámica térmica, captura y combustión con resultados",
      "ruta": "asignaturas/ingenieria-termica/ejercicios/term-ejercicios-01-ejercicios-de-termodinamica-termica-captura-y-combustion-con-resultados.pdf",
      "paginas": 3,
-     "kb": 48
+     "kb": 49
     },
     {
      "cat": "ejercicios",
@@ -2218,15 +2218,15 @@
      "cat": "cuestionarios",
      "titulo": "Test de ciclos, captura de CO2 y centrales avanzadas (30 preguntas)",
      "ruta": "asignaturas/ingenieria-termica/cuestionarios/term-cuestionario-01-test-de-ciclos-captura-de-co2-y-centrales-avanzadas-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 57
+     "paginas": 7,
+     "kb": 58
     },
     {
      "cat": "cuestionarios",
      "titulo": "Test de combustión, emisiones, bombas de calor y vectores (30 preguntas)",
      "ruta": "asignaturas/ingenieria-termica/cuestionarios/term-cuestionario-02-test-de-combustion-emisiones-bombas-de-calor-y-vectores-30-preguntas.pdf",
-     "paginas": 6,
-     "kb": 56
+     "paginas": 7,
+     "kb": 57
     },
     {
      "cat": "trabajos",
@@ -2297,21 +2297,21 @@
      "titulo": "T3. Monopolio",
      "ruta": "asignaturas/economia-energia/apuntes/eco-teoria-02-t3-monopolio.pdf",
      "paginas": 4,
-     "kb": 54
+     "kb": 61
     },
     {
      "cat": "apuntes",
      "titulo": "T4 y T5. Oligopolio estático: Nash, Cournot y Bertrand",
      "ruta": "asignaturas/economia-energia/apuntes/eco-teoria-03-t4-y-t5-oligopolio-estatico-nash-cournot-y-bertrand.pdf",
-     "paginas": 4,
-     "kb": 62
+     "paginas": 5,
+     "kb": 69
     },
     {
      "cat": "apuntes",
      "titulo": "T6 y T7. Juegos dinámicos y repetidos",
      "ruta": "asignaturas/economia-energia/apuntes/eco-teoria-04-t6-y-t7-juegos-dinamicos-y-repetidos.pdf",
      "paginas": 4,
-     "kb": 59
+     "kb": 65
     },
     {
      "cat": "fichas",
@@ -2325,28 +2325,28 @@
      "titulo": "Curvas de coste y economías de escala",
      "ruta": "asignaturas/economia-energia/fichas/eco-ficha-02-curvas-de-coste-y-economias-de-escala.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 57
     },
     {
      "cat": "fichas",
      "titulo": "Competencia perfecta: corto y largo plazo",
      "ruta": "asignaturas/economia-energia/fichas/eco-ficha-03-competencia-perfecta-corto-y-largo-plazo.pdf",
      "paginas": 2,
-     "kb": 40
+     "kb": 50
     },
     {
      "cat": "fichas",
      "titulo": "Monopolio: maximización y poder de mercado",
      "ruta": "asignaturas/economia-energia/fichas/eco-ficha-04-monopolio-maximizacion-y-poder-de-mercado.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 57
     },
     {
      "cat": "fichas",
      "titulo": "Discriminación de precios",
      "ruta": "asignaturas/economia-energia/fichas/eco-ficha-05-discriminacion-de-precios.pdf",
      "paginas": 2,
-     "kb": 43
+     "kb": 54
     },
     {
      "cat": "fichas",
@@ -2360,14 +2360,14 @@
      "titulo": "Oligopolio de Cournot",
      "ruta": "asignaturas/economia-energia/fichas/eco-ficha-07-oligopolio-de-cournot.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 57
     },
     {
      "cat": "fichas",
      "titulo": "Oligopolio de Bertrand",
      "ruta": "asignaturas/economia-energia/fichas/eco-ficha-08-oligopolio-de-bertrand.pdf",
      "paginas": 2,
-     "kb": 42
+     "kb": 52
     },
     {
      "cat": "fichas",
@@ -2388,14 +2388,14 @@
      "titulo": "Allaz y Vila: mercados a plazo",
      "ruta": "asignaturas/economia-energia/fichas/eco-ficha-11-allaz-y-vila-mercados-a-plazo.pdf",
      "paginas": 2,
-     "kb": 42
+     "kb": 55
     },
     {
      "cat": "fichas",
      "titulo": "Juegos repetidos y colusión",
      "ruta": "asignaturas/economia-energia/fichas/eco-ficha-12-juegos-repetidos-y-colusion.pdf",
      "paginas": 2,
-     "kb": 44
+     "kb": 55
     },
     {
      "cat": "formulario",
@@ -2443,14 +2443,14 @@
      "cat": "cuestionarios",
      "titulo": "Test T1 a T3 (30 preguntas)",
      "ruta": "asignaturas/economia-energia/cuestionarios/eco-cuestionario-01-test-t1-a-t3-30-preguntas.pdf",
-     "paginas": 6,
+     "paginas": 7,
      "kb": 57
     },
     {
      "cat": "cuestionarios",
      "titulo": "Test T4 a T7 (30 preguntas)",
      "ruta": "asignaturas/economia-energia/cuestionarios/eco-cuestionario-02-test-t4-a-t7-30-preguntas.pdf",
-     "paginas": 6,
+     "paginas": 7,
      "kb": 57
     },
     {
@@ -2485,8 +2485,8 @@
      "cat": "utiles",
      "titulo": "Banco de preguntas cortas de autotest",
      "ruta": "asignaturas/economia-energia/utiles/eco-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
-     "paginas": 3,
-     "kb": 50
+     "paginas": 4,
+     "kb": 51
     }
    ]
   }
