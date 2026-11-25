@@ -1718,11 +1718,130 @@
      "kb": 88
     },
     {
-     "cat": "resueltos",
-     "titulo": "Combustión, ciclos y captura de CO2",
-     "ruta": "asignaturas/ingenieria-termica/resueltos/term-combustion-ciclos-y-captura-de-co2.pdf",
-     "paginas": 5,
-     "kb": 61
+     "cat": "apuntes",
+     "titulo": "Contexto térmico y sistemas de ultra alta temperatura",
+     "ruta": "asignaturas/ingenieria-termica/apuntes/term-teoria-01-contexto-termico-y-uhts.pdf",
+     "paginas": 4,
+     "kb": 59
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "Centrales térmicas avanzadas y captura de CO2",
+     "ruta": "asignaturas/ingenieria-termica/apuntes/term-teoria-02-centrales-termicas-avanzadas-y-captura-de-co2.pdf",
+     "paginas": 4,
+     "kb": 63
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "Combustión e impacto ambiental",
+     "ruta": "asignaturas/ingenieria-termica/apuntes/term-teoria-03-combustion-e-impacto-ambiental.pdf",
+     "paginas": 4,
+     "kb": 58
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "Fuentes de energía térmica y futuro",
+     "ruta": "asignaturas/ingenieria-termica/apuntes/term-teoria-04-fuentes-de-energia-termica-y-futuro.pdf",
+     "paginas": 4,
+     "kb": 57
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Contexto térmico: demanda y emisiones",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-01-contexto-termico-demanda-y-emisiones.pdf",
+     "paginas": 2,
+     "kb": 46
+    },
+    {
+     "cat": "fichas",
+     "titulo": "UHTS: sistemas de ultra alta temperatura",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-02-uhts-sistemas-de-ultra-alta-temperatura.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Ciclo Rankine supercrítico y ultrasupercrítico",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-03-ciclo-rankine-supercritico-y-ultrasupercritico.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Ciclo Brayton y ciclo combinado",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-04-ciclo-brayton-y-ciclo-combinado.pdf",
+     "paginas": 2,
+     "kb": 48
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Captura de CO2: post, pre y oxicombustión",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-05-captura-de-co2-post-pre-y-oxicombustion.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Transporte y almacenamiento de CO2",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-06-transporte-y-almacenamiento-de-co2.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Combustión: estequiometría y exceso de aire",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-07-combustion-estequiometria-y-exceso-de-aire.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Reducción de NOx y SOx",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-08-reduccion-de-nox-y-sox.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Bombas de calor y COP",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-09-bombas-de-calor-y-cop.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Refrigeración por absorción",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-10-refrigeracion-por-absorcion.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "District heating y cooling",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-11-district-heating-y-cooling.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Vectores energéticos: hidrógeno y amoníaco",
+     "ruta": "asignaturas/ingenieria-termica/fichas/term-ficha-12-vectores-energeticos-hidrogeno-y-amoniaco.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "formulario",
+     "titulo": "Formulario y chuleta",
+     "ruta": "asignaturas/ingenieria-termica/formulario/term-formulario-y-chuleta.pdf",
+     "paginas": 2,
+     "kb": 51
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de termodinámica térmica, captura y combustión con resultados",
+     "ruta": "asignaturas/ingenieria-termica/ejercicios/term-ejercicios-01-ejercicios-de-termodinamica-termica-captura-y-combustion-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 48
     },
     {
      "cat": "ejercicios",
@@ -1732,11 +1851,60 @@
      "kb": 39
     },
     {
-     "cat": "formulario",
-     "titulo": "Formulario y chuleta",
-     "ruta": "asignaturas/ingenieria-termica/formulario/term-formulario-y-chuleta.pdf",
+     "cat": "resueltos",
+     "titulo": "Combustión, ciclos y captura de CO2",
+     "ruta": "asignaturas/ingenieria-termica/resueltos/term-combustion-ciclos-y-captura-de-co2.pdf",
+     "paginas": 5,
+     "kb": 61
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test de ciclos, captura de CO2 y centrales avanzadas (30 preguntas)",
+     "ruta": "asignaturas/ingenieria-termica/cuestionarios/term-cuestionario-01-test-de-ciclos-captura-de-co2-y-centrales-avanzadas-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 57
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test de combustión, emisiones, bombas de calor y vectores (30 preguntas)",
+     "ruta": "asignaturas/ingenieria-termica/cuestionarios/term-cuestionario-02-test-de-combustion-emisiones-bombas-de-calor-y-vectores-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 56
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: análisis de una central térmica con captura de CO2",
+     "ruta": "asignaturas/ingenieria-termica/trabajos/term-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
      "paginas": 2,
-     "kb": 51
+     "kb": 42
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/ingenieria-termica/utiles/term-utiles-01-glosario-es-en.pdf",
+     "paginas": 3,
+     "kb": 38
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/ingenieria-termica/utiles/term-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 33
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/ingenieria-termica/utiles/term-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 34
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/ingenieria-termica/utiles/term-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 50
     }
    ]
   },
