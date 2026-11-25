@@ -110,6 +110,13 @@
    "docs": [
     {
      "cat": "guia",
+     "titulo": "Guía de estudio global por tipo de problema",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/guia/geee-guia-de-estudio-global-por-tipo-de-problema.pdf",
+     "paginas": 16,
+     "kb": 173
+    },
+    {
+     "cat": "guia",
      "titulo": "Guía de estudio y hoja de ruta",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/guia/geee-guia-de-estudio.pdf",
      "paginas": 4,
@@ -123,39 +130,11 @@
      "kb": 293
     },
     {
-     "cat": "ejercicios",
-     "titulo": "T1. Conceptos básicos: frecuencia, filtros y CC/CC",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t1-conceptos-basicos-frecuencia-filtros-y-cc-cc.pdf",
-     "paginas": 5,
-     "kb": 77
-    },
-    {
-     "cat": "resueltos",
-     "titulo": "T1. Conceptos básicos: frecuencia, filtros y CC/CC",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t1-conceptos-basicos-frecuencia-filtros-y-cc-cc.pdf",
-     "paginas": 23,
-     "kb": 237
-    },
-    {
      "cat": "apuntes",
      "titulo": "T2. Modelado y estabilidad",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t2-modelado-y-estabilidad.pdf",
      "paginas": 24,
      "kb": 413
-    },
-    {
-     "cat": "ejercicios",
-     "titulo": "T2. Modelado y estabilidad",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t2-modelado-y-estabilidad.pdf",
-     "paginas": 6,
-     "kb": 84
-    },
-    {
-     "cat": "resueltos",
-     "titulo": "T2. Modelado y estabilidad",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t2-modelado-y-estabilidad.pdf",
-     "paginas": 27,
-     "kb": 334
     },
     {
      "cat": "apuntes",
@@ -165,20 +144,6 @@
      "kb": 153
     },
     {
-     "cat": "ejercicios",
-     "titulo": "T3. Almacenamiento de energía eléctrica",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t3-almacenamiento-de-energia-electrica.pdf",
-     "paginas": 5,
-     "kb": 70
-    },
-    {
-     "cat": "resueltos",
-     "titulo": "T3. Almacenamiento de energía eléctrica",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t3-almacenamiento-de-energia-electrica.pdf",
-     "paginas": 18,
-     "kb": 132
-    },
-    {
      "cat": "apuntes",
      "titulo": "T4. Paneles fotovoltaicos",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t4-paneles-fotovoltaicos.pdf",
@@ -186,25 +151,151 @@
      "kb": 196
     },
     {
-     "cat": "ejercicios",
-     "titulo": "T4. Paneles fotovoltaicos",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t4-paneles-fotovoltaicos.pdf",
-     "paginas": 5,
-     "kb": 71
-    },
-    {
-     "cat": "resueltos",
-     "titulo": "T4. Paneles fotovoltaicos",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t4-paneles-fotovoltaicos.pdf",
-     "paginas": 16,
-     "kb": 183
-    },
-    {
      "cat": "apuntes",
      "titulo": "T5. Rectificadores e inversores",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/apuntes/geee-t5-rectificadores-e-inversores.pdf",
      "paginas": 29,
      "kb": 386
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Series de Fourier y THD",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-01-series-de-fourier-y-thd.pdf",
+     "paginas": 2,
+     "kb": 52
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Filtros pasivos RC y LC",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-02-filtros-pasivos-rc-y-lc.pdf",
+     "paginas": 2,
+     "kb": 49
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Convertidor reductor (buck)",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-03-convertidor-reductor-buck.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Convertidor elevador (boost)",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-04-convertidor-elevador-boost.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Convertidor buck-boost y SEPIC",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-05-convertidor-buck-boost-y-sepic.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Modos de conducción: CCM y DCM",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-06-modos-de-conduccion-ccm-y-dcm.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Modelado en pequeña señal",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-07-modelado-en-pequena-senal.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Estabilidad: Bode y márgenes",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-08-estabilidad-bode-y-margenes.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Control de lazo: PI y compensación",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-09-control-de-lazo-pi-y-compensacion.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Baterías y estado de carga",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-10-baterias-y-estado-de-carga.pdf",
+     "paginas": 2,
+     "kb": 46
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Panel FV y MPPT: P&O e INC",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-11-panel-fv-y-mppt-p-o-e-inc.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Rectificadores no controlados y controlados",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-12-rectificadores-no-controlados-y-controlados.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Inversor monofásico y SPWM",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-13-inversor-monofasico-y-spwm.pdf",
+     "paginas": 2,
+     "kb": 46
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Inversor trifásico y modulación",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-14-inversor-trifasico-y-modulacion.pdf",
+     "paginas": 2,
+     "kb": 49
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Semiconductores de potencia: diodo, MOSFET e IGBT",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/fichas/geee-ficha-15-semiconductores-de-potencia-diodo-mosfet-e-igbt.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "formulario",
+     "titulo": "Formulario de toda la asignatura",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/formulario/geee-formulario-de-toda-la-asignatura.pdf",
+     "paginas": 10,
+     "kb": 164
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "T1. Conceptos básicos: frecuencia, filtros y CC/CC",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t1-conceptos-basicos-frecuencia-filtros-y-cc-cc.pdf",
+     "paginas": 5,
+     "kb": 77
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "T2. Modelado y estabilidad",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t2-modelado-y-estabilidad.pdf",
+     "paginas": 6,
+     "kb": 84
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "T3. Almacenamiento de energía eléctrica",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t3-almacenamiento-de-energia-electrica.pdf",
+     "paginas": 5,
+     "kb": 70
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "T4. Paneles fotovoltaicos",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/ejercicios/geee-t4-paneles-fotovoltaicos.pdf",
+     "paginas": 5,
+     "kb": 71
     },
     {
      "cat": "ejercicios",
@@ -215,24 +306,87 @@
     },
     {
      "cat": "resueltos",
+     "titulo": "T1. Conceptos básicos: frecuencia, filtros y CC/CC",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t1-conceptos-basicos-frecuencia-filtros-y-cc-cc.pdf",
+     "paginas": 23,
+     "kb": 237
+    },
+    {
+     "cat": "resueltos",
+     "titulo": "T2. Modelado y estabilidad",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t2-modelado-y-estabilidad.pdf",
+     "paginas": 27,
+     "kb": 334
+    },
+    {
+     "cat": "resueltos",
+     "titulo": "T3. Almacenamiento de energía eléctrica",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t3-almacenamiento-de-energia-electrica.pdf",
+     "paginas": 18,
+     "kb": 132
+    },
+    {
+     "cat": "resueltos",
+     "titulo": "T4. Paneles fotovoltaicos",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t4-paneles-fotovoltaicos.pdf",
+     "paginas": 16,
+     "kb": 183
+    },
+    {
+     "cat": "resueltos",
      "titulo": "T5. Rectificadores e inversores",
      "ruta": "asignaturas/gestion-electronica-energia-electrica/resueltos/geee-t5-rectificadores-e-inversores.pdf",
      "paginas": 21,
      "kb": 164
     },
     {
-     "cat": "formulario",
-     "titulo": "Formulario de toda la asignatura",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/formulario/geee-formulario-de-toda-la-asignatura.pdf",
-     "paginas": 10,
-     "kb": 164
+     "cat": "cuestionarios",
+     "titulo": "Test 1: Fourier, filtros, convertidores y control (30 preguntas)",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/cuestionarios/geee-cuestionario-01-test-1-fourier-filtros-convertidores-y-control-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 61
     },
     {
-     "cat": "guia",
-     "titulo": "Guía de estudio global por tipo de problema",
-     "ruta": "asignaturas/gestion-electronica-energia-electrica/guia/geee-guia-de-estudio-global-por-tipo-de-problema.pdf",
-     "paginas": 16,
-     "kb": 173
+     "cat": "cuestionarios",
+     "titulo": "Test 2: control, baterías, paneles, rectificadores e inversores (30 preguntas)",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/cuestionarios/geee-cuestionario-02-test-2-control-baterias-paneles-rectificadores-e-inversores-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 63
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: diseño de un convertidor CC/CC",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/trabajos/geee-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/utiles/geee-utiles-01-glosario-es-en.pdf",
+     "paginas": 3,
+     "kb": 40
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/utiles/geee-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 31
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/utiles/geee-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 37
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/gestion-electronica-energia-electrica/utiles/geee-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 56
     }
    ],
    "sim": {
