@@ -603,11 +603,116 @@
      "kb": 82
     },
     {
-     "cat": "resueltos",
-     "titulo": "Seis problemas tipo (energía primaria, cogeneración, pinch, VEEI, reactiva)",
-     "ruta": "asignaturas/eficiencia-energetica/resueltos/ef-seis-problemas-tipo-energia-primaria-cogeneracion-pinch-veei-reactiva.pdf",
-     "paginas": 6,
-     "kb": 67
+     "cat": "apuntes",
+     "titulo": "T1. Introducción, conceptos y legislación",
+     "ruta": "asignaturas/eficiencia-energetica/apuntes/ef-teoria-01-t1-introduccion-conceptos-y-legislacion.pdf",
+     "paginas": 4,
+     "kb": 59
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T2. Eficiencia en la edificación e iluminación",
+     "ruta": "asignaturas/eficiencia-energetica/apuntes/ef-teoria-02-t2-eficiencia-en-la-edificacion-e-iluminacion.pdf",
+     "paginas": 4,
+     "kb": 63
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T3. Eficiencia térmica en la industria",
+     "ruta": "asignaturas/eficiencia-energetica/apuntes/ef-teoria-03-t3-eficiencia-termica-en-la-industria.pdf",
+     "paginas": 4,
+     "kb": 59
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T4. Eficiencia eléctrica en la industria",
+     "ruta": "asignaturas/eficiencia-energetica/apuntes/ef-teoria-04-t4-eficiencia-electrica-en-la-industria.pdf",
+     "paginas": 4,
+     "kb": 54
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Conceptos de eficiencia energética y factores de paso",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-01-conceptos-de-eficiencia-energetica-y-factores-de-paso.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Demanda térmica, carga y grados-día",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-02-demanda-termica-carga-y-grados-dia.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Transmitancia térmica y envolvente",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-03-transmitancia-termica-y-envolvente.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "CTE HE0, HE1 y certificación energética",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-04-cte-he0-he1-y-certificacion-energetica.pdf",
+     "paginas": 2,
+     "kb": 37
+    },
+    {
+     "cat": "fichas",
+     "titulo": "HULC: simulación energética de edificios",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-05-hulc-simulacion-energetica-de-edificios.pdf",
+     "paginas": 2,
+     "kb": 37
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Magnitudes fotométricas",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-06-magnitudes-fotometricas.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Cálculo luminotécnico y VEEI",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-07-calculo-luminotecnico-y-veei.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Cogeneración: fundamentos y tecnologías",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-08-cogeneracion-fundamentos-y-tecnologias.pdf",
+     "paginas": 2,
+     "kb": 38
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Cogeneración: PES y REE",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-09-cogeneracion-pes-y-ree.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Recuperación de calor y método pinch",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-10-recuperacion-de-calor-y-metodo-pinch.pdf",
+     "paginas": 2,
+     "kb": 46
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Certificados de ahorro energético (CAE)",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-11-certificados-de-ahorro-energetico-cae.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Energía reactiva y armónicos",
+     "ruta": "asignaturas/eficiencia-energetica/fichas/ef-ficha-12-energia-reactiva-y-armonicos.pdf",
+     "paginas": 2,
+     "kb": 44
     },
     {
      "cat": "formulario",
@@ -617,11 +722,18 @@
      "kb": 51
     },
     {
-     "cat": "simulacros",
-     "titulo": "Simulacro de examen con soluciones",
-     "ruta": "asignaturas/eficiencia-energetica/simulacros/ef-simulacro-de-examen-con-soluciones.pdf",
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de los temas 1 y 2 con resultados",
+     "ruta": "asignaturas/eficiencia-energetica/ejercicios/ef-ejercicios-01-ejercicios-de-los-temas-1-y-2-con-resultados.pdf",
      "paginas": 3,
      "kb": 51
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de los temas 3 y 4 con resultados",
+     "ruta": "asignaturas/eficiencia-energetica/ejercicios/ef-ejercicios-02-ejercicios-de-los-temas-3-y-4-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 53
     },
     {
      "cat": "ejercicios",
@@ -629,6 +741,69 @@
      "ruta": "asignaturas/eficiencia-energetica/ejercicios/ef-ejercicios-propuestos-con-resultados.pdf",
      "paginas": 3,
      "kb": 39
+    },
+    {
+     "cat": "resueltos",
+     "titulo": "Seis problemas tipo (energía primaria, cogeneración, pinch, VEEI, reactiva)",
+     "ruta": "asignaturas/eficiencia-energetica/resueltos/ef-seis-problemas-tipo-energia-primaria-cogeneracion-pinch-veei-reactiva.pdf",
+     "paginas": 6,
+     "kb": 67
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro de examen con soluciones",
+     "ruta": "asignaturas/eficiencia-energetica/simulacros/ef-simulacro-de-examen-con-soluciones.pdf",
+     "paginas": 3,
+     "kb": 51
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test T1 y T2 (30 preguntas)",
+     "ruta": "asignaturas/eficiencia-energetica/cuestionarios/ef-cuestionario-01-test-t1-y-t2-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 56
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test T3 y T4 (30 preguntas)",
+     "ruta": "asignaturas/eficiencia-energetica/cuestionarios/ef-cuestionario-02-test-t3-y-t4-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 57
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: auditoría energética simplificada de una instalación",
+     "ruta": "asignaturas/eficiencia-energetica/trabajos/ef-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/eficiencia-energetica/utiles/ef-utiles-01-glosario-es-en.pdf",
+     "paginas": 3,
+     "kb": 37
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/eficiencia-energetica/utiles/ef-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 30
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/eficiencia-energetica/utiles/ef-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 37
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/eficiencia-energetica/utiles/ef-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 54
     }
    ]
   },
@@ -825,7 +1000,7 @@
      "titulo": "Glosario ES/EN",
      "ruta": "asignaturas/energia-nuclear/utiles/nuc-utiles-01-glosario-es-en.pdf",
      "paginas": 3,
-     "kb": 38
+     "kb": 39
     },
     {
      "cat": "utiles",
