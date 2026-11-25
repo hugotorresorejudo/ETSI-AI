@@ -262,11 +262,123 @@
      "kb": 94
     },
     {
-     "cat": "resueltos",
-     "titulo": "Cinco problemas de diseño",
-     "ruta": "asignaturas/energias-renovables/resueltos/taer-cinco-problemas-de-diseno.pdf",
-     "paginas": 6,
-     "kb": 74
+     "cat": "apuntes",
+     "titulo": "T1. Radiación solar y módulos fotovoltaicos",
+     "ruta": "asignaturas/energias-renovables/apuntes/taer-teoria-01-t1-radiacion-solar-y-modulos-fotovoltaicos.pdf",
+     "paginas": 4,
+     "kb": 64
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T2. Inversores, campos y plantas fotovoltaicas",
+     "ruta": "asignaturas/energias-renovables/apuntes/taer-teoria-02-t2-inversores-campos-y-plantas-fotovoltaicas.pdf",
+     "paginas": 4,
+     "kb": 56
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T3. Sistema eléctrico de un parque eólico",
+     "ruta": "asignaturas/energias-renovables/apuntes/taer-teoria-03-t3-sistema-electrico-de-un-parque-eolico.pdf",
+     "paginas": 4,
+     "kb": 60
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T4. Energía solar térmica de alta temperatura",
+     "ruta": "asignaturas/energias-renovables/apuntes/taer-teoria-04-t4-energia-solar-termica-de-alta-temperatura.pdf",
+     "paginas": 4,
+     "kb": 55
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Posición solar y radiación extraterrestre",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-01-posicion-solar-y-radiacion-extraterrestre.pdf",
+     "paginas": 2,
+     "kb": 49
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Módulo fotovoltaico y curva I-V",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-02-modulo-fotovoltaico-y-curva-i-v.pdf",
+     "paginas": 2,
+     "kb": 50
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Asociación serie-paralelo de módulos",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-03-asociacion-serie-paralelo-de-modulos.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Inversores FV y dimensionado de cadenas",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-04-inversores-fv-y-dimensionado-de-cadenas.pdf",
+     "paginas": 2,
+     "kb": 46
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Campos fotovoltaicos y seguidores",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-05-campos-fotovoltaicos-y-seguidores.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Índices de producción y performance ratio",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-06-indices-de-produccion-y-performance-ratio.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Bifaciales, híbridas, agrivoltaicas y flotantes",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-07-bifaciales-hibridas-agrivoltaicas-y-flotantes.pdf",
+     "paginas": 2,
+     "kb": 38
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Parque eólico: topología y componentes eléctricos",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-08-parque-eolico-topologia-y-componentes-electricos.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Regulación de tensión y reactiva en un parque eólico",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-09-regulacion-de-tension-y-reactiva-en-un-parque-eolico.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Caída de tensión y flujo de cargas",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-10-caida-de-tension-y-flujo-de-cargas.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Balance energético de un colector solar",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-11-balance-energetico-de-un-colector-solar.pdf",
+     "paginas": 2,
+     "kb": 48
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Central de torre: heliostatos y receptores",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-12-central-de-torre-heliostatos-y-receptores.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Hidrógeno solar y desalación solar",
+     "ruta": "asignaturas/energias-renovables/fichas/taer-ficha-13-hidrogeno-solar-y-desalacion-solar.pdf",
+     "paginas": 2,
+     "kb": 41
     },
     {
      "cat": "formulario",
@@ -276,11 +388,18 @@
      "kb": 49
     },
     {
-     "cat": "simulacros",
-     "titulo": "Simulacro de cuestionario con soluciones",
-     "ruta": "asignaturas/energias-renovables/simulacros/taer-simulacro-de-cuestionario-con-soluciones.pdf",
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de fotovoltaica con resultados",
+     "ruta": "asignaturas/energias-renovables/ejercicios/taer-ejercicios-01-ejercicios-de-fotovoltaica-con-resultados.pdf",
      "paginas": 3,
-     "kb": 47
+     "kb": 58
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de eólica y solar térmica con resultados",
+     "ruta": "asignaturas/energias-renovables/ejercicios/taer-ejercicios-02-ejercicios-de-eolica-y-solar-termica-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 52
     },
     {
      "cat": "ejercicios",
@@ -288,6 +407,69 @@
      "ruta": "asignaturas/energias-renovables/ejercicios/taer-ejercicios-propuestos-con-resultados.pdf",
      "paginas": 3,
      "kb": 42
+    },
+    {
+     "cat": "resueltos",
+     "titulo": "Cinco problemas de diseño",
+     "ruta": "asignaturas/energias-renovables/resueltos/taer-cinco-problemas-de-diseno.pdf",
+     "paginas": 6,
+     "kb": 74
+    },
+    {
+     "cat": "simulacros",
+     "titulo": "Simulacro de cuestionario con soluciones",
+     "ruta": "asignaturas/energias-renovables/simulacros/taer-simulacro-de-cuestionario-con-soluciones.pdf",
+     "paginas": 3,
+     "kb": 47
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test de fotovoltaica (30 preguntas)",
+     "ruta": "asignaturas/energias-renovables/cuestionarios/taer-cuestionario-01-test-de-fotovoltaica-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 58
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test de eólica y solar térmica (30 preguntas)",
+     "ruta": "asignaturas/energias-renovables/cuestionarios/taer-cuestionario-02-test-de-eolica-y-solar-termica-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 58
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: diseño preliminar de una planta fotovoltaica",
+     "ruta": "asignaturas/energias-renovables/trabajos/taer-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/energias-renovables/utiles/taer-utiles-01-glosario-es-en.pdf",
+     "paginas": 3,
+     "kb": 38
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/energias-renovables/utiles/taer-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 33
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/energias-renovables/utiles/taer-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 36
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/energias-renovables/utiles/taer-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 55
     }
    ]
   },
