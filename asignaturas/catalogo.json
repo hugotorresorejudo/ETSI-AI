@@ -11,6 +11,11 @@
    "desc": "Teoría resumida tema a tema, con ejemplos y errores típicos."
   },
   {
+   "id": "fichas",
+   "nombre": "Fichas",
+   "desc": "Fichas cortas que explican un concepto clave de la asignatura."
+  },
+  {
    "id": "formulario",
    "nombre": "Formulario y chuleta",
    "desc": "Las fórmulas y reglas clave en pocas páginas."
@@ -29,6 +34,21 @@
    "id": "simulacros",
    "nombre": "Simulacros de examen",
    "desc": "Exámenes originales con el formato del real y su solución."
+  },
+  {
+   "id": "cuestionarios",
+   "nombre": "Cuestionarios",
+   "desc": "Tests y verdadero o falso con las soluciones razonadas al final."
+  },
+  {
+   "id": "trabajos",
+   "nombre": "Propuestas de trabajo",
+   "desc": "Guiones y rúbricas para preparar un trabajo, sin resolver."
+  },
+  {
+   "id": "utiles",
+   "nombre": "Documentos útiles",
+   "desc": "Glosarios, mapas conceptuales, errores típicos y bancos de preguntas."
   }
  ],
  "asignaturas": [
@@ -633,6 +653,132 @@
      "kb": 85
     },
     {
+     "cat": "apuntes",
+     "titulo": "T2. Fuentes de energía y energía nuclear",
+     "ruta": "asignaturas/energia-nuclear/apuntes/nuc-teoria-01-t2-fuentes-de-energia-y-energia-nuclear.pdf",
+     "paginas": 4,
+     "kb": 58
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T3. Planificación y escenarios energéticos",
+     "ruta": "asignaturas/energia-nuclear/apuntes/nuc-teoria-02-t3-planificacion-y-escenarios.pdf",
+     "paginas": 4,
+     "kb": 51
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T4. Adaptación: LTO, flexibilidad y SMR",
+     "ruta": "asignaturas/energia-nuclear/apuntes/nuc-teoria-03-t4-adaptacion-a-la-transicion.pdf",
+     "paginas": 4,
+     "kb": 55
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "T5 y T6. Proyecciones, análisis y fusión",
+     "ruta": "asignaturas/energia-nuclear/apuntes/nuc-teoria-04-t5-t6-proyecciones-analisis-y-fusion.pdf",
+     "paginas": 4,
+     "kb": 51
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Fisión y reacción en cadena",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-01-fision-y-reaccion-en-cadena.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Combustible, moderador y refrigerante",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-02-combustible-moderador-y-refrigerante.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Reactor PWR (agua a presión)",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-03-reactor-pwr-agua-a-presion.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Reactor BWR (agua en ebullición)",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-04-reactor-bwr-agua-en-ebullicion.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Reactores CANDU y PHWR",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-05-reactores-candu-y-phwr.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "SMR: concepto y tipos",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-06-smr-concepto-y-tipos.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Reactores de Generación IV",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-07-reactores-de-generacion-iv.pdf",
+     "paginas": 2,
+     "kb": 38
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Ciclo del combustible nuclear",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-08-ciclo-del-combustible-nuclear.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Factor de carga y LCOE nuclear",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-09-factor-de-carga-y-lcoe-nuclear.pdf",
+     "paginas": 2,
+     "kb": 39
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Operación a largo plazo (LTO)",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-10-operacion-a-largo-plazo-lto.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Seguimiento de carga y flexibilidad",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-11-seguimiento-de-carga-y-flexibilidad.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Residuos y almacenamiento geológico profundo",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-12-residuos-y-almacenamiento-geologico-profundo.pdf",
+     "paginas": 2,
+     "kb": 39
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Fusión: tokamak, stellarator e ITER",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-13-fusion-tokamak-stellarator-e-iter.pdf",
+     "paginas": 2,
+     "kb": 39
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Escenarios energéticos y papel de la nuclear",
+     "ruta": "asignaturas/energia-nuclear/fichas/nuc-ficha-14-escenarios-energeticos-y-papel-de-la-nuclear.pdf",
+     "paginas": 2,
+     "kb": 39
+    },
+    {
      "cat": "formulario",
      "titulo": "Chuleta de datos y órdenes de magnitud",
      "ruta": "asignaturas/energia-nuclear/formulario/nuc-chuleta-de-datos-y-ordenes-de-magnitud.pdf",
@@ -645,6 +791,62 @@
      "ruta": "asignaturas/energia-nuclear/simulacros/nuc-doce-preguntas-de-desarrollo-con-respuesta-modelo.pdf",
      "paginas": 4,
      "kb": 50
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test T2 y T3 (30 preguntas)",
+     "ruta": "asignaturas/energia-nuclear/cuestionarios/nuc-cuestionario-01-test-t2-y-t3-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 50
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test T4 a T6 (30 preguntas)",
+     "ruta": "asignaturas/energia-nuclear/cuestionarios/nuc-cuestionario-02-test-t4-a-t6-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 49
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Verdadero o falso razonado (40 afirmaciones)",
+     "ruta": "asignaturas/energia-nuclear/cuestionarios/nuc-cuestionario-03-verdadero-o-falso-razonado.pdf",
+     "paginas": 3,
+     "kb": 43
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: escenario regional con el Energy Transition Model",
+     "ruta": "asignaturas/energia-nuclear/trabajos/nuc-trabajo-01-propuesta-escenario-regional-energy-transition-model.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/energia-nuclear/utiles/nuc-utiles-01-glosario-es-en.pdf",
+     "paginas": 3,
+     "kb": 38
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/energia-nuclear/utiles/nuc-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 32
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/energia-nuclear/utiles/nuc-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 34
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/energia-nuclear/utiles/nuc-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 42
     }
    ]
   },
