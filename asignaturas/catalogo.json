@@ -691,11 +691,116 @@
      "kb": 113
     },
     {
-     "cat": "resueltos",
-     "titulo": "Primera prueba: ejercicios resueltos",
-     "ruta": "asignaturas/impactos-medioambientales/resueltos/imp-primera-prueba-ejercicios-resueltos.pdf",
+     "cat": "apuntes",
+     "titulo": "Bloques de la segunda prueba: suelo, salud, agua y recursos",
+     "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-bloques-de-la-segunda-prueba-suelo-salud-agua-y-recursos.pdf",
+     "paginas": 7,
+     "kb": 70
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "Atmósfera: composición, clima y dispersión",
+     "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-teoria-01-atmosfera-composicion-clima-y-dispersion.pdf",
      "paginas": 4,
-     "kb": 85
+     "kb": 66
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "Combustibles y análisis de ciclo de vida",
+     "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-teoria-02-combustibles-y-analisis-de-ciclo-de-vida.pdf",
+     "paginas": 4,
+     "kb": 60
+    },
+    {
+     "cat": "apuntes",
+     "titulo": "Suelo, riesgos, agua y recursos",
+     "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-teoria-03-suelo-riesgos-agua-y-recursos.pdf",
+     "paginas": 4,
+     "kb": 65
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Origen de los combustibles fósiles",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-01-origen-de-los-combustibles-fosiles.pdf",
+     "paginas": 2,
+     "kb": 40
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Tipos de combustibles y poder calorífico",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-02-tipos-de-combustibles-y-poder-calorifico.pdf",
+     "paginas": 2,
+     "kb": 46
+    },
+    {
+     "cat": "fichas",
+     "titulo": "ACV: fases según ISO 14040",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-03-acv-fases-segun-iso-14040.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "fichas",
+     "titulo": "ACV: inventario e impactos",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-04-acv-inventario-e-impactos.pdf",
+     "paginas": 2,
+     "kb": 46
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Contaminantes atmosféricos primarios y secundarios",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-05-contaminantes-atmosfericos-primarios-y-secundarios.pdf",
+     "paginas": 2,
+     "kb": 44
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Efecto invernadero y GWP",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-06-efecto-invernadero-y-gwp.pdf",
+     "paginas": 2,
+     "kb": 50
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Lluvia ácida y smog",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-07-lluvia-acida-y-smog.pdf",
+     "paginas": 2,
+     "kb": 43
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Contaminación del suelo",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-08-contaminacion-del-suelo.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Análisis de riesgos para la salud",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-09-analisis-de-riesgos-para-la-salud.pdf",
+     "paginas": 2,
+     "kb": 45
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Contaminación del agua: DBO, DQO y eutrofización",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-10-contaminacion-del-agua-dbo-dqo-y-eutrofizacion.pdf",
+     "paginas": 2,
+     "kb": 47
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Agotamiento de recursos: reservas y R/P",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-11-agotamiento-de-recursos-reservas-y-r-p.pdf",
+     "paginas": 2,
+     "kb": 42
+    },
+    {
+     "cat": "fichas",
+     "titulo": "Huella de carbono y huella hídrica",
+     "ruta": "asignaturas/impactos-medioambientales/fichas/imp-ficha-12-huella-de-carbono-y-huella-hidrica.pdf",
+     "paginas": 2,
+     "kb": 45
     },
     {
      "cat": "formulario",
@@ -705,18 +810,32 @@
      "kb": 57
     },
     {
-     "cat": "simulacros",
-     "titulo": "Simulacro de la primera prueba (90 minutos)",
-     "ruta": "asignaturas/impactos-medioambientales/simulacros/imp-simulacro-de-la-primera-prueba-90-minutos.pdf",
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de la primera prueba: atmósfera, combustibles y ACV con resultados",
+     "ruta": "asignaturas/impactos-medioambientales/ejercicios/imp-ejercicios-01-ejercicios-de-la-primera-prueba-atmosfera-combustibles-y-acv-con-resultados.pdf",
      "paginas": 3,
-     "kb": 52
+     "kb": 54
     },
     {
-     "cat": "apuntes",
-     "titulo": "Bloques de la segunda prueba: suelo, salud, agua y recursos",
-     "ruta": "asignaturas/impactos-medioambientales/apuntes/imp-bloques-de-la-segunda-prueba-suelo-salud-agua-y-recursos.pdf",
-     "paginas": 7,
-     "kb": 70
+     "cat": "ejercicios",
+     "titulo": "Ejercicios de la segunda prueba: suelo, riesgos, agua y recursos con resultados",
+     "ruta": "asignaturas/impactos-medioambientales/ejercicios/imp-ejercicios-02-ejercicios-de-la-segunda-prueba-suelo-riesgos-agua-y-recursos-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 50
+    },
+    {
+     "cat": "ejercicios",
+     "titulo": "Ejercicios propuestos con resultados",
+     "ruta": "asignaturas/impactos-medioambientales/ejercicios/imp-ejercicios-propuestos-con-resultados.pdf",
+     "paginas": 3,
+     "kb": 39
+    },
+    {
+     "cat": "resueltos",
+     "titulo": "Primera prueba: ejercicios resueltos",
+     "ruta": "asignaturas/impactos-medioambientales/resueltos/imp-primera-prueba-ejercicios-resueltos.pdf",
+     "paginas": 4,
+     "kb": 85
     },
     {
      "cat": "resueltos",
@@ -727,17 +846,66 @@
     },
     {
      "cat": "simulacros",
+     "titulo": "Simulacro de la primera prueba (90 minutos)",
+     "ruta": "asignaturas/impactos-medioambientales/simulacros/imp-simulacro-de-la-primera-prueba-90-minutos.pdf",
+     "paginas": 3,
+     "kb": 52
+    },
+    {
+     "cat": "simulacros",
      "titulo": "Simulacro de la segunda prueba con soluciones",
      "ruta": "asignaturas/impactos-medioambientales/simulacros/imp-simulacro-de-la-segunda-prueba-con-soluciones.pdf",
      "paginas": 4,
      "kb": 48
     },
     {
-     "cat": "ejercicios",
-     "titulo": "Ejercicios propuestos con resultados",
-     "ruta": "asignaturas/impactos-medioambientales/ejercicios/imp-ejercicios-propuestos-con-resultados.pdf",
+     "cat": "cuestionarios",
+     "titulo": "Test de la primera prueba: atmósfera, combustibles y ACV (30 preguntas)",
+     "ruta": "asignaturas/impactos-medioambientales/cuestionarios/imp-cuestionario-01-test-de-la-primera-prueba-atmosfera-combustibles-y-acv-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 55
+    },
+    {
+     "cat": "cuestionarios",
+     "titulo": "Test de la segunda prueba: suelo, riesgos, agua y recursos (30 preguntas)",
+     "ruta": "asignaturas/impactos-medioambientales/cuestionarios/imp-cuestionario-02-test-de-la-segunda-prueba-suelo-riesgos-agua-y-recursos-30-preguntas.pdf",
+     "paginas": 6,
+     "kb": 58
+    },
+    {
+     "cat": "trabajos",
+     "titulo": "Propuesta de trabajo: ACV simplificado de un combustible",
+     "ruta": "asignaturas/impactos-medioambientales/trabajos/imp-trabajo-01-propuesta-de-trabajo-guion-y-rubrica.pdf",
+     "paginas": 2,
+     "kb": 41
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Glosario ES/EN",
+     "ruta": "asignaturas/impactos-medioambientales/utiles/imp-utiles-01-glosario-es-en.pdf",
      "paginas": 3,
-     "kb": 39
+     "kb": 38
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Mapa conceptual de la asignatura",
+     "ruta": "asignaturas/impactos-medioambientales/utiles/imp-utiles-02-mapa-conceptual.pdf",
+     "paginas": 2,
+     "kb": 32
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Errores típicos y trampas de examen",
+     "ruta": "asignaturas/impactos-medioambientales/utiles/imp-utiles-03-errores-tipicos-y-trampas-de-examen.pdf",
+     "paginas": 2,
+     "kb": 37
+    },
+    {
+     "cat": "utiles",
+     "titulo": "Banco de preguntas cortas de autotest",
+     "ruta": "asignaturas/impactos-medioambientales/utiles/imp-utiles-04-banco-de-preguntas-cortas-autotest.pdf",
+     "paginas": 3,
+     "kb": 57
     }
    ],
    "test": {
