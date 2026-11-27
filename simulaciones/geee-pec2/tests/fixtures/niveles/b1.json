@@ -1,0 +1,14 @@
+{
+  "niveles": {
+    "1.1": {
+      "titulo": "Potencia media del ciclo",
+      "objetivo": "Calcula la potencia media.",
+      "dialogo": [{ "quien": "mentora", "texto": "Fixture." }],
+      "ficha": { "titulo": "Ficha", "puntos": ["a"], "formulas": ["P=E/t"] },
+      "carga": "Serie suma tensión, paralelo suma capacidad",
+      "comprobacion": [{ "tipo": "opcion", "pregunta": "?", "opciones": ["a", "b"], "correcta": 0 }],
+      "pistas": ["p1", "p2", "p3"],
+      "exito": "Bien."
+    }
+  }
+}
