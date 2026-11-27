@@ -226,3 +226,18 @@ a.fila .fila__estado { color: var(--ink); }
 }
 .pantalla--nivel .titular--claro, .pantalla--ejercicio .titular--claro { overflow-wrap: anywhere; hyphens: auto; }
 @media (max-width: 640px) { .pantalla--nivel .titular--claro, .pantalla--ejercicio .titular--claro { font-size: 30px; } }
+
+/* Simulacro (Auditoría PEC2) */
+.pantalla--simulacro .pantalla__in { gap: 0; }
+.sim__barra { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 16px; margin: 16px 0 24px; padding: 10px 16px; background: var(--navy); color: var(--on-navy); border-bottom: 3px solid var(--sky); }
+.sim__barra--poco { border-bottom-color: #fff; }
+.sim__crono-etq { font: 700 12px/1 var(--font); letter-spacing: .12em; text-transform: uppercase; flex: 1; }
+.sim__crono { font: 800 28px/1 var(--display); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.sim__ej { padding: 24px 0; border-top: 1px solid var(--line); }
+.sim__ej-t { margin: 0 0 16px; font: 800 22px/1.2 var(--display); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.sim__pts { font: 700 12px/1 var(--font); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); align-self: center; }
+.sim__nota { padding: 24px 0; }
+.sim__desglose { margin: 16px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.sim__desglose li { padding: 8px 0; border-top: 1px solid var(--line); }
+.sim__globo { color: var(--ink-muted); }
+@media (max-width: 600px) { .sim__crono { font-size: 22px; } .sim__crono-etq { display: none; } .sim__barra { justify-content: space-between; } }
