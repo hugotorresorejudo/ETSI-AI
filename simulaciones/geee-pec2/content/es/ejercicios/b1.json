@@ -22,6 +22,15 @@
       ],
       "explicacion": "La batería debe cubrir la energía de un ciclo completo durante todo el tiempo pedido. El resultado es {paso.C_Ah}: en el caso directo son amperios hora, y en el inverso, horas de autonomía."
     },
+    "horas": {
+      "etiqueta": "Autonomía de la batería (h), en el enunciado inverso",
+      "pistas": [
+        "La autonomía es el tiempo que la batería aguanta el ciclo: su energía dividida por la potencia media que consume el nodo.",
+        "t = C_Ah × V_bat / P_med, con C_Ah en amperios hora.",
+        "Primer paso: multiplica la capacidad de {param.C_Ah} Ah por la tensión de {param.Vbat} V, y divide el resultado entre la potencia media."
+      ],
+      "explicacion": "La batería tiene una energía fija, y el ciclo la consume a la potencia media. El tiempo de autonomía es el resultado: {paso.horas} h."
+    },
     "E_J": {
       "etiqueta": "Energía que debe almacenar el banco (J)",
       "pistas": [
