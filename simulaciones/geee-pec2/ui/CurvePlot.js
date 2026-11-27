@@ -73,7 +73,7 @@ export function CurvePlot(el, cfg) {
   }
   function crearPunto(a) {
     const eje = a.eje || 'xy', lim = limites(a);
-    const hit = h('svg:circle', { class: 'geee-hit', r: 20 });
+    const hit = h('svg:circle', { class: 'geee-hit' });
     const c = h('svg:circle', { class: 'geee-pt', r: 8, tabindex: 0, role: 'slider', 'aria-label': `Punto ${a.id}`, 'aria-orientation': eje === 'y' ? 'vertical' : 'horizontal', 'data-id': a.id });
     const t = h('svg:text', { class: 'geee-lbl', 'text-anchor': 'middle', 'pointer-events': 'none', texto: a.id });
     const g = h('svg:g', {}, [hit, c, t]);

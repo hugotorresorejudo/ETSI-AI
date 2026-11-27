@@ -1,20 +1,8 @@
 // Utilidades comunes de los componentes SVG (sin dependencias).
+import { fmt, parseNum } from '../engine/num.js';
+export { fmt, parseNum };
+
 export const NS = 'http://www.w3.org/2000/svg';
-
-const nf = new Map();
-/** Formato es-ES (coma decimal), `cifras` cifras significativas, sin agrupar. */
-export function fmt(x, cifras = 3) {
-  if (!Number.isFinite(x)) return '–';
-  if (!nf.has(cifras)) nf.set(cifras, new Intl.NumberFormat('es-ES', { maximumSignificantDigits: cifras, useGrouping: false }));
-  return nf.get(cifras).format(Math.abs(x) < 1e-12 ? 0 : x);
-}
-
-/** Lee un número con coma o punto decimal; NaN si no es válido. */
-export function leerNum(s) {
-  const t = String(s).trim().replace(/\s+/g, '').replace(',', '.');
-  if (t === '') return NaN;
-  return /^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?$/i.test(t) ? Number(t) : NaN;
-}
 
 export const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 
@@ -79,7 +67,7 @@ export function campoNumero({ etiqueta, valor, paso = 1, min = -Infinity, max = 
   const poner = v => { if (document.activeElement !== input) input.value = fmt(v, 4); };
   const aplicar = v => { if (Number.isFinite(v)) onCambio(clamp(v, min, max)); };
   input.addEventListener('change', () => {
-    const v = leerNum(input.value);
+    const v = parseNum(input.value);
     if (Number.isNaN(v)) { input.value = fmt(valor(), 4); input.setAttribute('aria-invalid', 'true'); return; }
     input.removeAttribute('aria-invalid');
     aplicar(v);
@@ -88,7 +76,7 @@ export function campoNumero({ etiqueta, valor, paso = 1, min = -Infinity, max = 
   input.addEventListener('keydown', e => {
     if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return;
     e.preventDefault();
-    const v = (Number.isNaN(leerNum(input.value)) ? valor() : leerNum(input.value)) + (e.key === 'ArrowUp' ? paso : -paso);
+    const v = (Number.isNaN(parseNum(input.value)) ? valor() : parseNum(input.value)) + (e.key === 'ArrowUp' ? paso : -paso);
     aplicar(v); input.value = fmt(clamp(v, min, max), 4);
   }, { signal });
   const el = h('label', { class: 'geee-campo' }, [h('span', { texto: etiqueta }), input]);
@@ -120,7 +108,7 @@ const CSS = `
 .geee-comp .geee-pt{fill:var(--_navy);stroke:var(--_surf);stroke-width:2;cursor:grab}
 .geee-comp .geee-pt:hover,.geee-comp .geee-arrastrando{fill:var(--_sky)}
 .geee-comp .geee-pt:focus-visible,.geee-comp .geee-foco:focus-visible{outline:3px solid var(--_sky);outline-offset:2px}
-.geee-comp .geee-hit{fill:transparent;cursor:grab}
+.geee-comp .geee-hit{fill:transparent;cursor:grab;pointer-events:all;r:calc(22px / var(--k,1))}
 .geee-comp .geee-campos{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:8px}
 .geee-comp .geee-campo{display:flex;flex-direction:column;gap:2px;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--_ink2)}
 .geee-comp .geee-campo input{width:6.5em;padding:6px 8px;font:inherit;font-weight:400;letter-spacing:0;border:1px solid var(--_ink2);border-radius:0;background:var(--_surf);color:var(--_ink)}
@@ -147,5 +135,8 @@ export function montarBase(el, W, H, titulo) {
   el.replaceChildren();
   const svg = h('svg:svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': titulo, preserveAspectRatio: 'xMidYMid meet' });
   el.append(svg);
+  const k = () => { const w = svg.getBoundingClientRect().width; if (w > 0) svg.style.setProperty('--k', String(w / W)); };
+  k();
+  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(k).observe(svg);
   return svg;
 }

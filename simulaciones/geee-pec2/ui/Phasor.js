@@ -28,7 +28,7 @@ export function Phasor(el, cfg) {
     const g = h('svg:g', {}, [linea, etq]);
     const n = { g, linea, etq, campo: null };
     if (f.arrastrable) {
-      const hit = h('svg:circle', { class: 'geee-hit', r: 22 });
+      const hit = h('svg:circle', { class: 'geee-hit' });
       const pt = h('svg:circle', { class: 'geee-pt', r: 9, tabindex: 0, role: 'slider', 'aria-label': `Ángulo del fasor ${f.id}`, 'aria-valuemin': -180, 'aria-valuemax': 180 });
       g.append(hit, pt); Object.assign(n, { hit, pt });
       const ang = (px, py) => {

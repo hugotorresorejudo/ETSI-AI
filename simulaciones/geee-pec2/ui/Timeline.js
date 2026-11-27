@@ -32,9 +32,9 @@ export function Timeline(el, cfg) {
     bloques.forEach((b, i) => {
       const rect = h('svg:rect', { fill: 'var(--muted,#F3F6F9)', stroke: 'var(--navy,#0B2545)', 'stroke-width': 2 });
       const hP = h('svg:circle', { class: 'geee-pt', r: 8, tabindex: 0, role: 'slider', 'aria-label': `Potencia del modo ${i + 1}`, 'aria-orientation': 'vertical' });
-      const hPh = h('svg:circle', { class: 'geee-hit', r: 20 });
+      const hPh = h('svg:circle', { class: 'geee-hit' });
       const hT = h('svg:rect', { class: 'geee-pt', width: 10, height: 28, tabindex: 0, role: 'slider', 'aria-label': `Duración del modo ${i + 1}` });
-      const hTh = h('svg:rect', { class: 'geee-hit', width: 28, height: 44 });
+      const hTh = h('svg:circle', { class: 'geee-hit' });
       const etq = h('svg:text', { class: 'geee-lbl', 'text-anchor': 'middle', 'pointer-events': 'none' });
       capa.append(rect, etq, hPh, hP, hTh, hT);
       const inicioT = () => bloques.slice(0, i).reduce((s, q) => s + q.t, 0);
@@ -56,9 +56,10 @@ export function Timeline(el, cfg) {
       p.rect.setAttribute('x', x0); p.rect.setAttribute('y', y); p.rect.setAttribute('width', Math.max(0, x1 - x0)); p.rect.setAttribute('height', Math.max(0, H - M.b - y));
       p.hP.setAttribute('cx', (x0 + x1) / 2); p.hP.setAttribute('cy', y); p.hPh.setAttribute('cx', (x0 + x1) / 2); p.hPh.setAttribute('cy', y);
       const yt = Math.min(Math.max(y + 22, M.t + 14), H - M.b - 16);
-      p.hT.setAttribute('x', x1 - 5); p.hT.setAttribute('y', yt); p.hTh.setAttribute('x', x1 - 14); p.hTh.setAttribute('y', yt - 8);
+      p.hT.setAttribute('x', x1 - 5); p.hT.setAttribute('y', yt); p.hTh.setAttribute('cx', x1); p.hTh.setAttribute('cy', yt + 14);
       p.hP.setAttribute('aria-valuetext', `${fmt(b.P)} W`); p.hT.setAttribute('aria-valuetext', `${fmt(b.t)} s`);
-      p.etq.setAttribute('x', (x0 + x1) / 2); p.etq.setAttribute('y', H - M.b - 6); p.etq.textContent = x1 - x0 > 80 ? `Modo ${i + 1}` : '';
+      const cabe = x1 - x0 > 80 && H - M.b - y > 44;
+      p.etq.setAttribute('x', (x0 + x1) / 2); p.etq.setAttribute('y', cabe ? H - M.b - 6 : Math.max(y - 16, M.t + 10)); p.etq.textContent = `Modo ${i + 1}`;
       p.fP.poner(b.P); p.fT.poner(b.t);
     });
     const T = total(), E = bloques.reduce((s, b) => s + b.P * b.t, 0), Pm = T > 0 ? E / T : 0;
