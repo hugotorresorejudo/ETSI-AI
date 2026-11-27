@@ -1,0 +1,288 @@
+{
+  "niveles": {
+    "1.1": {
+      "titulo": "Perfil de consumo cíclico",
+      "objetivo": "Construye el ciclo de consumo del nodo hasta que su potencia media coincida con la del enunciado.",
+      "dialogo": [
+        {"quien": "mentora", "texto": "El nodo no consume de forma constante: alterna modos. Antes de elegir ninguna batería necesitas saber cuánta energía pide de media."},
+        {"quien": "mentora", "texto": "Cada modo aporta energía igual a su potencia por su duración. Un modo a potencia nula cuenta en el tiempo, pero no aporta nada."},
+        {"quien": "sistema", "texto": "Arrastra los bloques de la línea temporal para componer el ciclo. La gráfica muestra la energía acumulada."}
+      ],
+      "ficha": {
+        "titulo": "Potencia media de un ciclo",
+        "puntos": [
+          "El ciclo se repite, así que la potencia media se pondera por la duración total T del ciclo.",
+          "Cada modo aporta una energía igual a su potencia por su duración.",
+          "Un modo de potencia nula ocupa tiempo, pero no aporta energía.",
+          "La energía acumulada crece en línea recta mientras el modo no cambia."
+        ],
+        "formulas": [
+          "\\bar{P} = \\frac{\\sum_i P_i\\, t_i}{T}",
+          "T = \\sum_i t_i",
+          "E(t) = \\int_0^t P(\\tau)\\, d\\tau"
+        ]
+      },
+      "carga": "La potencia media pondera cada modo por su duración.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "Si añades un modo de potencia nula y larga duración, ¿qué ocurre con la potencia media?",
+          "opciones": [
+            "No cambia, porque no consume",
+            "Baja, porque el tiempo total crece y la energía no",
+            "Se iguala a la del modo más potente"
+          ],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "Introduce la potencia media del ciclo que has construido.",
+          "ref": "Pmed"
+        }
+      ],
+      "pistas": [
+        "Pregúntate qué parte del ciclo consume energía y cuánto dura el ciclo completo.",
+        "Usa la media ponderada por tiempo: suma potencia por duración de cada modo y divide entre el periodo total.",
+        "Primer paso: escribe en una columna la potencia P_i y en otra el tiempo t_i de cada modo, y multiplica fila a fila."
+      ],
+      "exito": "Ciclo caracterizado. Ya sabes la potencia que pide el nodo de media."
+    },
+    "1.2": {
+      "titulo": "Capacidad y autonomía",
+      "objetivo": "Ajusta la capacidad de la batería hasta que cubra la autonomía exigida sin agotarse antes.",
+      "dialogo": [
+        {"quien": "mentora", "texto": "Con la potencia media delante, la pregunta es cuántos amperios hora necesitas para aguantar el tiempo pedido."},
+        {"quien": "sistema", "texto": "La tensión en bornes baja con el estado de descarga y con la caída en la resistencia serie. El modelo de la batería aparece en la ficha."},
+        {"quien": "mentora", "texto": "Trabaja con la tensión nominal, que es la que usaremos para el cálculo de la capacidad."}
+      ],
+      "ficha": {
+        "titulo": "Batería: capacidad y energía",
+        "puntos": [
+          "La capacidad se mide en amperios hora, es decir, la carga que la celda entrega hasta agotarse.",
+          "La energía almacenada es la tensión por la capacidad.",
+          "El estado de descarga SoD es la carga entregada entre la capacidad total, y SoC = 1 − SoD.",
+          "El ratio de descarga indica la corriente en múltiplos de la capacidad.",
+          "La tensión en bornes depende del SoD y de la caída en la resistencia serie."
+        ],
+        "formulas": [
+          "C_{Ah} = \\frac{\\bar{P}\\, t}{V_{bat}}",
+          "E = V_{bat}\\, C",
+          "SoD = \\frac{Ah_{entregados}}{Ah_{capacidad}}",
+          "v_{bat} = v_0 - \\Delta v \\cdot SoD - R_s\\, i_{bat}"
+        ]
+      },
+      "carga": "La capacidad en Ah es la energía del ciclo dividida por la tensión.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "Si aumentas la corriente de descarga, ¿qué le pasa a la tensión en bornes?",
+          "opciones": [
+            "Sube, porque la batería se recupera",
+            "Baja, por la caída en la resistencia serie",
+            "No cambia nunca"
+          ],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "Introduce la capacidad que cumple la autonomía del objetivo.",
+          "ref": "C_Ah"
+        }
+      ],
+      "pistas": [
+        "Piensa en la batería como un depósito: la capacidad es cuánta carga cabe y la autonomía es cuánto tiempo dura.",
+        "C_Ah = Pmed × t / Vbat, con t en horas.",
+        "Primer paso: multiplica la potencia media por el tiempo de autonomía y divide el resultado por la tensión nominal de la batería."
+      ],
+      "exito": "Batería dimensionada. Ahora toca ver cómo se agrupan las celdas para obtener esa tensión y esa capacidad."
+    },
+    "1.3": {
+      "titulo": "Celdas en serie y en paralelo",
+      "objetivo": "Forma una rejilla de celdas cuya tensión y capacidad coincidan con las del objetivo.",
+      "dialogo": [
+        {"quien": "mentora", "texto": "Una sola celda rara vez basta. Las celdas se agrupan: en serie suben la tensión y en paralelo suben la capacidad."},
+        {"quien": "sistema", "texto": "Cada celda tiene su resistencia serie. En serie se suman, en paralelo se reparten entre las ramas."},
+        {"quien": "mentora", "texto": "Compara las magnitudes del pack con las de una sola celda antes de dar el montaje por bueno."}
+      ],
+      "ficha": {
+        "titulo": "Agrupaciones de celdas",
+        "puntos": [
+          "En serie se suman las tensiones y las resistencias; la capacidad no cambia.",
+          "En paralelo se suman las capacidades y las corrientes; la tensión no cambia.",
+          "Un pack de n_s celdas en serie y n_p ramas en paralelo tiene tensión n_s V y capacidad n_p C.",
+          "La resistencia serie equivalente del pack es R_s n_s / n_p.",
+          "La corriente máxima del pack es la de sus n_p ramas."
+        ],
+        "formulas": [
+          "V_{pack} = n_s\\, V_{cel}",
+          "C_{pack} = n_p\\, C_{cel}",
+          "R_{s,pack} = \\frac{n_s}{n_p}\\, R_{s,cel}",
+          "E_{pack} = n_s\\, n_p\\, V_{cel}\\, C_{cel}",
+          "I_{max,pack} = n_p\\, I_{max,cel}"
+        ]
+      },
+      "carga": "Serie suma tensión, paralelo suma capacidad.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "Al poner dos celdas iguales en serie, ¿qué le pasa a la capacidad del conjunto?",
+          "opciones": ["Se duplica", "Se mantiene igual", "Se divide por dos"],
+          "correcta": 1
+        },
+        {
+          "tipo": "opcion",
+          "pregunta": "Al poner dos celdas iguales en paralelo, ¿qué le pasa a la tensión del conjunto?",
+          "opciones": ["Se duplica", "Se mantiene igual", "Se divide por dos"],
+          "correcta": 1
+        }
+      ],
+      "pistas": [
+        "Piensa en qué magnitud se suma en cada tipo de conexión: una cadena de celdas acumula tensión, varias ramas acumulan capacidad.",
+        "V_pack = n_s V_cel y C_pack = n_p C_cel.",
+        "Primer paso: cuenta cuántas celdas van seguidas en cada rama y cuántas ramas hay en paralelo."
+      ],
+      "exito": "Pack montado. Ya conoces su tensión, su capacidad y su corriente máxima."
+    },
+    "1.4": {
+      "titulo": "El supercondensador",
+      "objetivo": "Elige la tensión mínima de trabajo hasta que la energía útil entre las dos tensiones sea la que pide el enunciado.",
+      "dialogo": [
+        {"quien": "mentora", "texto": "El supercondensador no se descarga a tensión constante. Su tensión cae a medida que entrega carga, así que la energía útil depende de entre qué tensiones trabajes."},
+        {"quien": "sistema", "texto": "La corriente vale la capacidad por la derivada de la tensión. La energía se obtiene integrando esa potencia en el tiempo."},
+        {"quien": "mentora", "texto": "Por eso la energía útil no es la tensión por la capacidad, sino la diferencia de cuadrados de las dos tensiones."}
+      ],
+      "ficha": {
+        "titulo": "Energía en un supercondensador",
+        "puntos": [
+          "La corriente es la capacidad por la derivada de la tensión.",
+          "La energía almacenada es proporcional al cuadrado de la tensión.",
+          "La energía útil entre dos tensiones es la diferencia de sus cuadrados.",
+          "Subir la tensión mínima de trabajo reduce mucho la energía útil.",
+          "Entrega potencias muy altas y se carga y descarga en segundos."
+        ],
+        "formulas": [
+          "i_{sc} = C\\, \\frac{dv_{sc}}{dt}",
+          "E = \\tfrac{1}{2} C (V_{max}^2 - V_{min}^2)",
+          "P = v_{sc}\\, i_{sc} = C\\, v_{sc}\\, \\frac{dv_{sc}}{dt}"
+        ]
+      },
+      "carga": "La energía útil es la diferencia de cuadrados de tensiones.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "Con la tensión máxima fija, ¿qué pasa con la energía útil si subes la tensión mínima de trabajo?",
+          "opciones": ["Aumenta", "Disminuye", "No cambia"],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "Introduce la energía que se almacena entre las dos tensiones del nivel.",
+          "ref": "E_J"
+        }
+      ],
+      "pistas": [
+        "Mira cómo cae la tensión del supercondensador a medida que entrega carga: no es constante.",
+        "E = ½ C (V_max² − V_min²).",
+        "Primer paso: eleva al cuadrado la tensión máxima y la mínima, y resta el segundo resultado al primero."
+      ],
+      "exito": "Energía útil entendida. Ahora sabes qué parte del supercondensador puedes aprovechar."
+    },
+    "1.5": {
+      "titulo": "Banco de supercondensadores",
+      "objetivo": "Dimensiona el banco para que dure lo mismo que la batería con el mínimo peso posible.",
+      "dialogo": [
+        {"quien": "mentora", "texto": "Ahora la pregunta de diseño: con la energía que pide el ciclo, cuántas celdas hacen falta de verdad."},
+        {"quien": "sistema", "texto": "El número de celdas en serie lo fija la tensión máxima. El número de ramas en paralelo lo fija la capacidad total."},
+        {"quien": "mentora", "texto": "El peso y la corriente máxima salen después, a partir del número de celdas y de ramas. Redondea siempre hacia arriba."}
+      ],
+      "ficha": {
+        "titulo": "Banco de supercondensadores",
+        "puntos": [
+          "La tensión máxima del banco fija el número de celdas en serie n_s.",
+          "La capacidad total necesaria fija el número de ramas en paralelo n_p.",
+          "La capacidad total del banco se obtiene de la energía útil y de la diferencia de cuadrados de tensiones.",
+          "El peso y la corriente máxima se calculan a partir del número de celdas y de ramas.",
+          "Como no existen fracciones de celda ni de rama, n_s y n_p se redondean hacia arriba."
+        ],
+        "formulas": [
+          "C_T = \\frac{2 E}{V_{max}^2 - V_{min}^2}",
+          "n_s = \\left\\lceil \\frac{V_{max}}{V_{cel}} \\right\\rceil",
+          "n_p = \\left\\lceil \\frac{C_T\\, n_s}{C_{cel}} \\right\\rceil",
+          "C_T = \\frac{C_{cel}\\, n_p}{n_s}",
+          "n = n_s\\, n_p",
+          "I_{max,banco} = n_p\\, I_{max,cel}"
+        ]
+      },
+      "carga": "n_s sale de la tensión; n_p, de la capacidad; el peso sigue al número de celdas.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "Para calcular el número de celdas en serie, ¿qué dato del banco usas?",
+          "opciones": ["La capacidad total", "La tensión máxima de trabajo", "La corriente máxima de una celda"],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "Introduce el peso total del banco que cumple el objetivo.",
+          "ref": "peso"
+        }
+      ],
+      "pistas": [
+        "Separa el problema en dos: cuántas celdas cubren la tensión y cuántas cubren la capacidad.",
+        "n_s sale de la tensión máxima; n_p sale de la capacidad total y de n_s.",
+        "Primer paso: divide la tensión máxima del banco entre la tensión nominal de una celda y redondea hacia arriba."
+      ],
+      "exito": "Banco dimensionado. Pasaste de una celda a un banco que cumple tensión y energía."
+    },
+    "1.6": {
+      "titulo": "Ejercicio tipo examen",
+      "objetivo": "Resuelve el ejercicio completo, paso a paso y sin pistas.",
+      "dialogo": [
+        {"quien": "mentora", "texto": "Ya tienes todas las piezas. Ahora importa el orden: primero la energía del ciclo, después la batería y, por último, el banco de supercondensadores."},
+        {"quien": "sistema", "texto": "En el examen cada apartado depende del anterior. Si arrastras un error de un paso, el siguiente se corrige con tu valor, no con el correcto."},
+        {"quien": "mentora", "texto": "Antes de cerrar, comprueba que el banco aguanta el ciclo completo y que las celdas están redondeadas hacia arriba."}
+      ],
+      "ficha": {
+        "titulo": "Método completo del ejercicio",
+        "puntos": [
+          "Calcula la potencia media del ciclo ponderando cada modo por su tiempo.",
+          "Obtén la capacidad o la autonomía de la batería con la potencia media y la tensión.",
+          "Pasa la energía a julios y calcula la capacidad total del banco con sus tensiones máxima y mínima.",
+          "Dimensiona n_s y n_p redondeando siempre hacia arriba.",
+          "Obtén el número total de celdas, el peso y la corriente máxima del banco."
+        ],
+        "formulas": [
+          "\\bar{P} = \\frac{\\sum_i P_i\\, t_i}{T}",
+          "C_{Ah} = \\frac{\\bar{P}\\, t}{V_{bat}}",
+          "E_J = 3600\\, \\bar{P}\\, t",
+          "C_T = \\frac{2 E_J}{V_{max}^2 - V_{min}^2}",
+          "n_s = \\left\\lceil \\frac{V_{max}}{V_{cel}} \\right\\rceil",
+          "n_p = \\left\\lceil \\frac{C_T\\, n_s}{C_{cel}} \\right\\rceil",
+          "n = n_s\\, n_p",
+          "m_{banco} = n\\, m_{cel}",
+          "I_{max,banco} = n_p\\, I_{max,cel}"
+        ]
+      },
+      "carga": "Método completo: potencia media, batería, energía, banco y celdas.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "En el banco de supercondensadores, ¿qué dato fija el número de ramas en paralelo?",
+          "opciones": ["La tensión máxima", "La capacidad total necesaria", "El peso de una celda"],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "Introduce el número total de celdas del banco.",
+          "ref": "n"
+        }
+      ],
+      "pistas": [
+        "Sigue el orden del enunciado: primero la energía del ciclo, después la batería y después el banco.",
+        "Método: potencia media, capacidad o autonomía, energía en julios, C_T, n_s, n_p, peso y corriente máxima.",
+        "Primer paso: calcula la potencia media del ciclo, ponderando cada modo por su tiempo."
+      ],
+      "exito": "Ejercicio completo resuelto. Sigues la misma lógica en el ejercicio de examen."
+    }
+  }
+}

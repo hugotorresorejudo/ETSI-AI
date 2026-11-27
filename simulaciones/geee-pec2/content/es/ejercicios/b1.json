@@ -1,0 +1,97 @@
+{
+  "enunciados": {
+    "directo": "Un nodo sensor sigue este ciclo, que se repite sin interrupción: {param.modos}. Se alimenta de una batería de tensión constante {param.Vbat} V que, con este ciclo, dura {param.horas} h. a) Calcula la capacidad de la batería en Ah. b) Quieres sustituirla por un banco de supercondensadores cuya tensión puede variar entre {param.Vmax} V y {param.Vmin} V, de modo que dure lo mismo. Calcula la energía que debe almacenar, la capacidad total, el número de celdas en serie y en paralelo, el número total de celdas, el peso y la corriente máxima del banco. Celda: tensión nominal {param.celda.V} V, capacidad {param.celda.C} F, corriente máxima {param.celda.Imax} A, peso {param.celda.m_g} g.",
+    "inverso": "Un nodo sensor sigue este ciclo, que se repite sin interrupción: {param.modos}. Se alimenta de una batería de tensión constante {param.Vbat} V con una capacidad de {param.C_Ah} Ah. a) Calcula cuánto tiempo, en horas, dura la batería con este ciclo. b) Quieres sustituirla por un banco de supercondensadores cuya tensión puede variar entre {param.Vmax} V y {param.Vmin} V, de modo que dure lo mismo. Calcula la energía que debe almacenar, la capacidad total, el número de celdas en serie y en paralelo, el número total de celdas, el peso y la corriente máxima del banco. Celda: tensión nominal {param.celda.V} V, capacidad {param.celda.C} F, corriente máxima {param.celda.Imax} A, peso {param.celda.m_g} g."
+  },
+  "pasos": {
+    "Pmed": {
+      "etiqueta": "Potencia media del ciclo (W)",
+      "pistas": [
+        "La potencia media es la energía consumida en un ciclo dividida por su duración. Los modos sin consumo cuentan en el tiempo.",
+        "P_med = (suma de P_i × t_i) / T, donde T es la duración total del ciclo.",
+        "Primer paso: suma los productos potencia por duración de los modos {param.modos} y divide el resultado entre el tiempo total del ciclo."
+      ],
+      "explicacion": "La potencia media es la energía que consume el nodo en un ciclo dividida por la duración de ese ciclo. El resultado es {paso.Pmed} W."
+    },
+    "C_Ah": {
+      "etiqueta": "Capacidad de la batería (Ah) o autonomía (h), según el enunciado",
+      "pistas": [
+        "La batería entrega la potencia media a tensión constante, así que la energía es potencia por tiempo.",
+        "Capacidad = P_med × t / V_bat, con t en horas. Si el dato es la capacidad, despeja t.",
+        "Primer paso: con la potencia media obtenida y la tensión {param.Vbat} V, despeja lo que te pide el enunciado: capacidad si te dan horas, horas si te dan capacidad."
+      ],
+      "explicacion": "La batería debe cubrir la energía de un ciclo completo durante todo el tiempo pedido. El resultado es {paso.C_Ah}: en el caso directo son amperios hora, y en el inverso, horas de autonomía."
+    },
+    "E_J": {
+      "etiqueta": "Energía que debe almacenar el banco (J)",
+      "pistas": [
+        "La energía que debe almacenar el banco es la misma que consume el nodo durante el tiempo de autonomía, pero expresada en julios.",
+        "E_J = P_med × t, con t en segundos. Un julio es un vatio durante un segundo.",
+        "Primer paso: pasa el tiempo de autonomía a segundos (multiplica por los segundos que tiene una hora) y multiplícalo por la potencia media."
+      ],
+      "explicacion": "Como un julio es un vatio durante un segundo, la energía se pasa a julios multiplicando por el número de segundos del tiempo de autonomía. El resultado es {paso.E_J} J."
+    },
+    "C_T": {
+      "etiqueta": "Capacidad total del banco de supercondensadores (F)",
+      "pistas": [
+        "El supercondensador solo entrega la energía que hay entre su tensión máxima y su tensión mínima, no toda la que almacena a tensión máxima.",
+        "E = ½ C_T (V_max² − V_min²), de donde C_T = 2 E / (V_max² − V_min²).",
+        "Primer paso: calcula el cuadrado de {param.Vmax} V y el de {param.Vmin} V, y resta el segundo al primero."
+      ],
+      "explicacion": "La energía almacenada depende del cuadrado de la tensión, así que solo cuenta la diferencia de cuadrados. Con esa diferencia, la capacidad total del banco sale de la energía que hay que almacenar. El resultado es {paso.C_T} F."
+    },
+    "ns": {
+      "etiqueta": "Celdas en serie (n_s)",
+      "pistas": [
+        "Las tensiones de las celdas en serie se suman. El banco tiene que alcanzar su tensión máxima sin quedarse corto.",
+        "n_s = techo de (V_max / V_cel), redondeando siempre hacia arriba.",
+        "Primer paso: divide la tensión máxima del banco entre la tensión nominal de una celda, {param.celda.V} V, y redondea hacia arriba al entero siguiente."
+      ],
+      "explicacion": "Hacen falta {paso.ns} celdas en serie para que la tensión máxima del banco quede cubierta. Si redondeas hacia abajo, el banco no llega a la tensión que necesitas."
+    },
+    "np": {
+      "etiqueta": "Ramas en paralelo (n_p)",
+      "pistas": [
+        "Las capacidades se suman en paralelo. Cada rama tiene varias celdas en serie y aporta una capacidad.",
+        "n_p = techo de (C_T × n_s / C_cel), redondeando siempre hacia arriba.",
+        "Primer paso: multiplica la capacidad total del banco por el número de celdas en serie, y divide el resultado entre la capacidad de una celda, {param.celda.C} F."
+      ],
+      "explicacion": "Cada rama aporta la capacidad de una cadena de {paso.ns} celdas en serie, así que hacen falta {paso.np} ramas en paralelo para alcanzar la capacidad total. No existe una fracción de rama, por eso se redondea hacia arriba."
+    },
+    "n": {
+      "etiqueta": "Número total de celdas (n)",
+      "pistas": [
+        "El número total de celdas es el de celdas en serie por el de ramas en paralelo.",
+        "n = n_s × n_p.",
+        "Primer paso: multiplica el número de celdas en serie por el número de ramas en paralelo que acabas de calcular."
+      ],
+      "explicacion": "El banco se compone de {paso.n} celdas en total, repartidas en {paso.ns} celdas en serie por {paso.np} ramas en paralelo."
+    },
+    "peso": {
+      "etiqueta": "Peso total del banco (g)",
+      "pistas": [
+        "El peso depende del número de celdas, no de la tensión ni de la capacidad por separado.",
+        "Peso = n × peso de una celda.",
+        "Primer paso: multiplica el número total de celdas por el peso de una celda de la ficha, {param.celda.m_g} g."
+      ],
+      "explicacion": "Cada celda pesa lo que indica la ficha, así que el peso total es el número de celdas por el peso unitario. El resultado es {paso.peso} g."
+    },
+    "Imax": {
+      "etiqueta": "Corriente máxima del banco (A)",
+      "pistas": [
+        "Las celdas en serie dejan pasar la misma corriente, y las ramas en paralelo se suman.",
+        "I_max banco = n_p × I_max celda.",
+        "Primer paso: multiplica el número de ramas en paralelo por la corriente máxima de una celda, {param.celda.Imax} A."
+      ],
+      "explicacion": "Cada rama admite la corriente máxima de una celda, así que la corriente total admisible del banco es la suma de las ramas. El resultado es {paso.Imax} A."
+    }
+  },
+  "errores": {
+    "b1.sin_vmin": "Has calculado la energía como si el supercondensador se descargara hasta cero. Solo se puede aprovechar la energía entre la tensión máxima y la mínima del enunciado: revisa qué restas en la fórmula de la energía.",
+    "b1.vnom_por_vmax": "Para dimensionar el número de celdas en serie tienes que usar la tensión máxima del banco, no la tensión nominal de una celda. Repite el cociente con la tensión que el banco debe alcanzar como máximo.",
+    "b1.ns_por_np": "Has mezclado los dos dimensionados. El número de celdas en serie sale de la tensión y el número de ramas en paralelo sale de la capacidad, así que cada uno debe salir de su condición.",
+    "b1.np_sin_redondear": "El número de ramas en paralelo tiene que ser un entero, y para no quedarte por debajo de la capacidad necesaria hay que redondear hacia arriba. Revisa el redondeo de n_p.",
+    "b1.energia_en_wh": "Has usado la energía en vatios hora en una fórmula que pide julios. Antes de calcular la capacidad total del banco, comprueba las unidades de la energía y pásala a julios.",
+    "b1.imax_con_ns": "La corriente máxima del banco depende de las ramas en paralelo, no del número de celdas en serie. Revisa qué magnitud multiplicas por la corriente máxima de una celda."
+  }
+}
