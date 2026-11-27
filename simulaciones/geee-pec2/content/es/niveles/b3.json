@@ -1,0 +1,221 @@
+{
+  "niveles": {
+    "3.1": {
+      "titulo": "Construir una cuadrada",
+      "objetivo": "Ajusta los armónicos impares hasta que su suma se parezca a la cuadrada de referencia.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Antes de conectar el inversor a la red, hay que saber qué forma de onda produce." },
+        { "quien": "mentora", "texto": "Una cuadrada pura se descompone en senoidales de orden impar, y cada una tiene una amplitud que baja al subir el orden." },
+        { "quien": "sistema", "texto": "Activa los armónicos uno a uno y compara la suma con la referencia." }
+      ],
+      "ficha": {
+        "titulo": "Serie de Fourier de la onda cuadrada",
+        "puntos": [
+          "Una onda cuadrada simétrica solo tiene armónicos de orden impar.",
+          "La amplitud pico del armónico de orden n es 4A/(nπ), siendo A la amplitud de la cuadrada.",
+          "El valor eficaz total es la raíz de la suma de los cuadrados de los eficaces de cada armónico.",
+          "La distorsión armónica total (THD) compara la suma de los armónicos con el fundamental."
+        ],
+        "formulas": [
+          "x(t)=\\sum_{n\\,\\text{impar}} \\frac{4A}{n\\pi}\\sin(n\\omega t)",
+          "V_{ef}^2=\\sum_n V_{ef,n}^2",
+          "THD=\\frac{\\sqrt{I_{ef}^2-I_{ef,1}^2}}{I_{ef,1}}"
+        ]
+      },
+      "carga": "Una cuadrada es la suma de senoidales impares y sus amplitudes bajan con el orden.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "¿Qué armónicos aparecen en la serie de una onda cuadrada simétrica?",
+          "opciones": ["Solo los pares", "Solo los impares", "Todos con la misma amplitud", "Solo el fundamental"],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "¿Cuánto vale la THD de una senoidal pura, sin armónicos? Introduce el valor.",
+          "ref": "THD"
+        }
+      ],
+      "pistas": [
+        "Fíjate en el espectro: solo aparecen barras en los órdenes impares.",
+        "La amplitud pico del armónico n es 4A/(nπ). Para el fundamental, n vale 1.",
+        "Calcula primero la amplitud del fundamental y compárala con la de la cuadrada."
+      ],
+      "exito": "Has reconstruido la cuadrada con sus armónicos impares. Ahora sabes medir su distorsión."
+    },
+    "3.2": {
+      "titulo": "Potencia con armónicos",
+      "objetivo": "Elige los armónicos de tensión y de corriente, con sus desfases, hasta que la potencia media alcance el valor objetivo.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Con armónicos, la potencia media no se obtiene simplemente multiplicando tensión por corriente." },
+        { "quien": "mentora", "texto": "Solo aportan potencia media los armónicos que tienen la misma frecuencia en tensión y en corriente." },
+        { "quien": "sistema", "texto": "Cada pareja de armónicos aporta su propia potencia, y el total es la suma de todas." }
+      ],
+      "ficha": {
+        "titulo": "Potencia activa con armónicos",
+        "puntos": [
+          "La potencia activa total es la suma de las potencias de cada armónico.",
+          "Un armónico de tensión solo produce potencia media si la corriente tiene el mismo orden.",
+          "Un armónico que no tiene pareja en la otra magnitud no aporta nada a la potencia media.",
+          "La potencia reactiva se obtiene a partir de la aparente y de la activa."
+        ],
+        "formulas": [
+          "P=\\sum_{n} V_{ef,n}\\,I_{ef,n}\\cos\\varphi_n",
+          "S=V_{ef}\\,I_{ef}",
+          "Q=\\sqrt{S^2-P^2}"
+        ]
+      },
+      "carga": "Solo producen potencia media los armónicos de igual orden en tensión y corriente.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "La tensión tiene fundamental y tercer armónico, y la corriente tiene solo el fundamental. ¿Cuánta potencia media aporta el tercer armónico de tensión?",
+          "opciones": ["Toda la potencia aparente", "Ninguna, porque no hay corriente de ese orden", "La mitad de la potencia del fundamental", "Solo potencia reactiva"],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "Con la tensión y la corriente que has ajustado, ¿cuál es la potencia activa total? Introduce el valor en W.",
+          "ref": "P"
+        }
+      ],
+      "pistas": [
+        "Pregunta primero si los dos armónicos que comparas tienen la misma frecuencia.",
+        "P se obtiene sumando V_n I_n cos φ_n solo para los órdenes que aparecen en tensión y en corriente.",
+        "Calcula primero la potencia del fundamental, con la tensión fundamental y la corriente fundamental."
+      ],
+      "exito": "Ya sabes que la potencia media depende del emparejamiento de armónicos y de sus desfases."
+    },
+    "3.3": {
+      "titulo": "Factor de potencia y THD",
+      "objetivo": "Ajusta la forma de la corriente y su desfase hasta que el factor de potencia alcance el valor objetivo.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Un factor de potencia bajo no siempre viene del desfase: la distorsión también lo reduce." },
+        { "quien": "sistema", "texto": "Compara la corriente senoidal desfasada, la cuadrada y la cuadrada con ángulo alfa." },
+        { "quien": "mentora", "texto": "Una corriente cuadrada con ángulo alfa es lo típico de un rectificador: su eficaz es menor que el de la cuadrada completa." }
+      ],
+      "ficha": {
+        "titulo": "Factor de potencia y distorsión",
+        "puntos": [
+          "El factor de potencia es la relación entre la potencia activa y la potencia aparente.",
+          "Con tensión senoidal, el factor de potencia se descompone en un factor de distorsión K_d y un factor de desplazamiento K_θ.",
+          "Una corriente cuadrada con ángulo alfa tiene un valor eficaz menor que la cuadrada completa.",
+          "Aunque el fundamental esté en fase con la tensión, la distorsión reduce el factor de potencia."
+        ],
+        "formulas": [
+          "FP=\\frac{P}{S}=\\frac{\\cos\\varphi}{\\sqrt{1+THD^2}}=K_d\\,K_\\theta",
+          "K_d=\\frac{I_{ef,1}}{I_{ef}}",
+          "K_\\theta=\\cos\\varphi_1",
+          "I_{ef}=A\\sqrt{\\frac{\\pi-2\\alpha}{\\pi}}"
+        ]
+      },
+      "carga": "El FP es K_d por K_θ: la distorsión y el desfase lo reducen.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "Si la corriente es senoidal y está en fase con la tensión, ¿cuánto vale el factor de potencia?",
+          "opciones": ["Cero", "La mitad", "Uno", "Igual a la THD"],
+          "correcta": 2
+        },
+        {
+          "tipo": "opcion",
+          "pregunta": "Si la corriente se distorsiona pero su fundamental no cambia, ¿qué le pasa al factor de potencia?",
+          "opciones": ["Sube", "Se mantiene", "Baja", "Se vuelve negativo"],
+          "correcta": 2
+        }
+      ],
+      "pistas": [
+        "Piensa qué parte de la corriente transporta potencia activa y cuál solo aumenta la aparente.",
+        "Usa FP igual a cos φ dividido por la raíz de 1 más THD al cuadrado, con la THD calculada a partir del fundamental.",
+        "Calcula primero el valor eficaz total de la corriente y el del fundamental."
+      ],
+      "exito": "Ya distingues la caída del factor de potencia por desfase de la causada por distorsión."
+    },
+    "3.4": {
+      "titulo": "Inversor a red",
+      "objetivo": "Ajusta el ángulo del inversor respecto a la red hasta que la potencia activa entregada alcance el valor objetivo.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Ahora conectamos el inversor a la red a través de una bobina." },
+        { "quien": "mentora", "texto": "La corriente del fundamental nace de la diferencia entre la tensión del inversor y la de red, dividida por la reactancia de la bobina." },
+        { "quien": "sistema", "texto": "Mueve el ángulo y observa a la vez el diagrama fasorial, la corriente y la potencia." }
+      ],
+      "ficha": {
+        "titulo": "Inversor conectado a red por bobina",
+        "puntos": [
+          "La bobina L actúa como impedancia de acoplo entre el inversor y la red.",
+          "La corriente del fundamental es la diferencia fasorial de tensiones dividida por la reactancia del fundamental.",
+          "Cada armónico de orden n se calcula con una reactancia n veces mayor que la del fundamental.",
+          "Solo el fundamental aporta potencia activa, porque la red es senoidal.",
+          "El factor de potencia del inversor usa la tensión eficaz de su onda; el de la red usa la tensión de red."
+        ],
+        "formulas": [
+          "\\bar I_1=\\frac{\\bar V_1-\\bar V_{red}}{j\\omega L}",
+          "I_n=\\frac{V_n}{n\\omega L}",
+          "P=V_{red}\\,\\mathrm{Re}(\\bar I_1)",
+          "FP_{inv}=\\frac{P}{V_{inv,ef}\\,I_{ef}}",
+          "FP_{red}=\\frac{P}{V_{red,ef}\\,I_{ef}}"
+        ]
+      },
+      "carga": "La corriente sale de la diferencia fasorial entre inversor y red, sobre la bobina.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "En la bobina, ¿qué relación de fase hay entre la tensión y la corriente del fundamental?",
+          "opciones": [
+            "La corriente va adelantada un ángulo recto respecto a la tensión de la bobina",
+            "La corriente va retrasada un ángulo recto respecto a la tensión de la bobina",
+            "Están en fase",
+            "No hay relación de fase"
+          ],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "Introduce la potencia activa que el inversor entrega a la red, en W.",
+          "ref": "P"
+        }
+      ],
+      "pistas": [
+        "Dibuja los fasores de la tensión del inversor y de la red, y mira cuál es la diferencia entre ambos.",
+        "La corriente del fundamental es la diferencia de tensiones fasoriales dividida por jωL.",
+        "Empieza calculando la tensión eficaz del fundamental de la onda del inversor."
+      ],
+      "exito": "El inversor ya entrega potencia a la red, y sabes de dónde sale su corriente."
+    },
+    "3.5": {
+      "titulo": "Ejercicio tipo examen",
+      "objetivo": "Resuelve el ejercicio completo sin medidores ni pistas, como en el examen.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Ahora el enunciado llega sin ayudas, igual que en el examen." },
+        { "quien": "sistema", "texto": "Cada apartado tiene su peso en la nota. Puedes repasar las fichas antes de empezar." }
+      ],
+      "ficha": {
+        "titulo": "Pasos del ejercicio de inversor",
+        "puntos": [
+          "Calcula primero los fundamentales de la onda del inversor y de la red.",
+          "Continúa con los armónicos no nulos, cada uno con su reactancia.",
+          "Después calcula la potencia activa y los dos factores de potencia."
+        ],
+        "formulas": [
+          "V_{1,ef}=\\frac{4V_{DC}\\cos\\alpha}{\\pi\\sqrt{2}}",
+          "V_{inv,ef}=V_{DC}\\sqrt{\\frac{\\pi-2\\alpha}{\\pi}}"
+        ]
+      },
+      "carga": "Ejercicio completo: tensiones, corrientes, potencia y factores de potencia.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "En la onda cuadrada del inversor, ¿qué tensión eficaz se usa para su factor de potencia?",
+          "opciones": ["La tensión de red", "La tensión continua VDC", "El valor de pico del fundamental", "La tensión del tercer armónico"],
+          "correcta": 1
+        }
+      ],
+      "pistas": [
+        "Repasa el enunciado: qué pide cada apartado y cuál es su peso en la nota.",
+        "Usa las fórmulas de las fichas de inversor y de factor de potencia.",
+        "Empieza por la tensión eficaz del fundamental de la onda del inversor."
+      ],
+      "exito": "Has resuelto el ejercicio completo. Repítelo con otra variante para afianzarlo."
+    }
+  }
+}

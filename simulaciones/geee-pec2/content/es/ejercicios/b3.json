@@ -1,0 +1,88 @@
+{
+  "enunciados": {
+    "cuadrada": "Un inversor genera una onda cuadrada de amplitud {param.VDC} V, que oscila entre +{param.VDC} V y −{param.VDC} V, y la conecta a una red de {param.Vred} V eficaces y {param.f} Hz mediante una bobina de {param.L_mH} mH. La onda del inversor va desfasada {param.phi} grados respecto a la tensión de red. Calcula la tensión eficaz del fundamental V1, la del armónico de orden {param.k}, Vk, las corrientes eficaces I1 e Ik, la potencia activa P entregada a la red y los factores de potencia FP_inv y FP_red. Para la corriente eficaz total usa solo los dos primeros armónicos no nulos.",
+    "cuasicuadrada": "Un inversor genera una onda cuasicuadrada de amplitud {param.VDC} V. En cada semiciclo, la onda permanece a cero durante {param.alpha} grados al principio y al final, por lo que cada armónico de orden n se multiplica por el coseno de n veces alfa. La onda se conecta a una red de {param.Vred} V eficaces y {param.f} Hz mediante una bobina de {param.L_mH} mH, con un desfase de {param.phi} grados respecto a la red. Calcula V1, la tensión eficaz del armónico de orden {param.k}, Vk, las corrientes I1 e Ik, la potencia activa P, FP_inv y FP_red. Para la corriente eficaz total usa solo los dos primeros armónicos no nulos, y ten en cuenta la tensión eficaz de la onda del inversor.",
+    "inverso_phi": "Un inversor genera una onda cuadrada de amplitud {param.VDC} V con un tramo nulo de {param.alpha} grados en cada extremo de semiciclo. Si ese valor es cero, la onda es una cuadrada completa. La onda se conecta a una red de {param.Vred} V eficaces y {param.f} Hz mediante una bobina de {param.L_mH} mH. Se sabe que el inversor entrega a la red una potencia activa de {param.P} W. Calcula el desfase phi de la onda del inversor respecto a la red que produce esa potencia y, a partir de él, V1, la tensión eficaz del armónico de orden {param.k}, Vk, las corrientes I1 e Ik, FP_inv y FP_red. Para la corriente eficaz total usa solo los dos primeros armónicos no nulos."
+  },
+  "pasos": {
+    "V1": {
+      "etiqueta": "Tensión eficaz del fundamental del inversor",
+      "pistas": [
+        "Piensa en el primer armónico de la onda que genera el inversor, no en la onda completa.",
+        "La amplitud pico del fundamental es 4VDC/π multiplicada por el coseno de alfa, y se pasa a eficaz dividiendo entre la raíz de dos.",
+        "Empieza por la amplitud pico del fundamental, con VDC igual a {param.VDC} V y alfa igual a {param.alpha} grados."
+      ],
+      "explicacion": "La tensión eficaz del fundamental vale {paso.V1} V. Es el primer armónico de la onda del inversor, y es el que se compara con la tensión de red para impulsar la corriente a través de la bobina."
+    },
+    "Vk": {
+      "etiqueta": "Tensión eficaz del segundo armónico no nulo",
+      "pistas": [
+        "Busca el siguiente armónico impar cuya amplitud no se anula; su orden viene en el enunciado.",
+        "La amplitud pico del armónico de orden n es 4VDC cos(nα)/(nπ), y su eficaz es esa amplitud dividida entre la raíz de dos.",
+        "Sustituye n por {param.k} en la fórmula del armónico y calcula el eficaz."
+      ],
+      "explicacion": "El segundo armónico no nulo, de orden {param.k}, vale {paso.Vk} V eficaces. Su amplitud es menor que la del fundamental porque la onda cuadrada reparte la energía entre armónicos cada vez más pequeños."
+    },
+    "I1": {
+      "etiqueta": "Corriente eficaz del fundamental",
+      "pistas": [
+        "La corriente sale de la diferencia entre la tensión del inversor y la de red, sobre la reactancia de la bobina.",
+        "I1 es igual a (V1 menos Vred) dividido por jωL, con ω igual a 2πf y L en henrios.",
+        "Calcula primero la reactancia de la bobina a la frecuencia de red, con {param.f} Hz y {param.L_mH} mH convertidos a henrios."
+      ],
+      "explicacion": "La corriente del fundamental vale {paso.I1} A eficaces. Sale de la diferencia fasorial entre la tensión del inversor y la de red, dividida por la reactancia de la bobina a la frecuencia de red."
+    },
+    "Ik": {
+      "etiqueta": "Corriente eficaz del segundo armónico no nulo",
+      "pistas": [
+        "El armónico de orden n se reparte sobre una reactancia n veces mayor que la del fundamental.",
+        "Ik es igual a Vk dividido por k ω L, donde k es el orden del armónico.",
+        "Calcula la reactancia de la bobina a la frecuencia del armónico de orden {param.k}."
+      ],
+      "explicacion": "La corriente del armónico de orden {param.k} vale {paso.Ik} A eficaces. Como su reactancia es mayor que la del fundamental, un armónico de orden alto produce mucha menos corriente."
+    },
+    "P": {
+      "etiqueta": "Potencia activa entregada a la red",
+      "pistas": [
+        "Piensa qué componente de la corriente produce potencia media cuando la red es senoidal.",
+        "P es la tensión de red por la parte real de la corriente del fundamental; los demás armónicos no aportan.",
+        "Calcula la parte real de I1 tomando la tensión de red como referencia de ángulo."
+      ],
+      "explicacion": "La potencia activa vale {paso.P} W. Solo el fundamental aporta potencia media, porque la red es senoidal: el armónico de orden {param.k} tiene corriente, pero no tiene tensión de red de su misma frecuencia, así que su potencia media es nula."
+    },
+    "FP_inv": {
+      "etiqueta": "Factor de potencia visto desde el inversor",
+      "pistas": [
+        "Compara la potencia activa con la aparente que suministra el inversor con su propia tensión de salida.",
+        "FP_inv es P dividido por Vinv,ef por Ief, donde Ief es la raíz de la suma de los cuadrados de I1 e Ik.",
+        "Calcula primero Ief a partir de I1 e Ik, y después la tensión eficaz de la onda del inversor."
+      ],
+      "explicacion": "El factor de potencia visto desde el inversor vale {paso.FP_inv}. Se usa la tensión eficaz de la onda que genera el inversor, que en la cuadrada es VDC y con ángulo alfa se reduce a VDC por la raíz de (π menos 2 alfa) entre π."
+    },
+    "FP_red": {
+      "etiqueta": "Factor de potencia visto desde la red",
+      "pistas": [
+        "La red es senoidal, así que el denominador usa su tensión eficaz y no la del inversor.",
+        "FP_red es P dividido por Vred,ef por Ief.",
+        "Usa la misma corriente eficaz total que calculaste para el inversor."
+      ],
+      "explicacion": "El factor de potencia visto desde la red vale {paso.FP_red}. Como la red es senoidal, su tensión eficaz es la de red, y ese es el valor que va en el denominador."
+    },
+    "phi": {
+      "etiqueta": "Ángulo de desfase entre el inversor y la red",
+      "pistas": [
+        "Busca el ángulo que hace que la potencia activa sea la del enunciado; la potencia crece al aumentar el ángulo en este rango.",
+        "La potencia activa es la tensión de red por la parte real de I1, y I1 depende del ángulo; prueba ángulos en orden creciente.",
+        "Empieza con un ángulo pequeño y compara la potencia que obtienes con {param.P} W."
+      ],
+      "explicacion": "El ángulo de desfase vale {paso.phi} grados. Con él se calculan las demás magnitudes del ejercicio: la tensión del fundamental, las corrientes y los factores de potencia."
+    }
+  },
+  "errores": {
+    "b3.pico_por_eficaz": "Has usado un valor de pico donde se pedía un valor eficaz. Para cada armónico, el valor eficaz es su pico dividido entre la raíz de dos. Revisa qué magnitud pide cada apartado antes de dar el resultado.",
+    "b3.xl_sin_n": "Has usado la reactancia del fundamental para un armónico. Un armónico de orden n tiene una reactancia n veces mayor, así que hay que multiplicar por el orden antes de dividir.",
+    "b3.p_con_armonico": "Has sumado en la potencia activa un armónico que no es del fundamental. Con la red senoidal, solo el fundamental aporta potencia media; revisa qué componentes entran en P.",
+    "b3.fp_con_i1": "Has calculado el factor de potencia con la corriente del fundamental. El denominador debe llevar la corriente eficaz total, que suma todos los armónicos considerados.",
+    "b3.vinv_v1": "Has usado la tensión del fundamental como tensión eficaz del inversor. Para el factor de potencia del inversor hay que usar la tensión eficaz de la onda completa que genera el inversor, y recuerda cómo se obtiene en la cuadrada."
+  }
+}
