@@ -191,3 +191,80 @@ test('inverso_phi coincide con el motor', () => {
   const r = inversorRed({ Vred, f, VDC, phiDeg: paso(ej, 'phi').valor, L: L_mH / 1000, alphaDeg: alpha });
   assert.ok(Math.abs(r.P - P) < 1e-3);
 });
+
+// Alumno coherente: encadena sus propios valores redondeados a `cifras` cifras.
+function alumno(ej, cifras, cambios = {}) {
+  const usados = Object.fromEntries(ej.pasos.map((p) => [p.id, p.valor]));
+  const resp = {};
+  for (const p of ej.pasos) {
+    let v = p.recalc && p.depende.length ? p.recalc(usados) : p.valor;
+    if (p.id in cambios) v = cambios[p.id](usados, p);
+    if (p.tipo === 'num') v = Number(v.toPrecision(cifras));
+    usados[p.id] = v; resp[p.id] = v;
+  }
+  return resp;
+}
+
+test('redondeo a 3 cifras en cadena: sin fallos (b1, b2, b3)', () => {
+  for (const [b, vs] of Object.entries(VARIANTES)) {
+    for (const variante of vs) {
+      for (const s of seeds) {
+        const ej = GENERADORES[b](s, { variante });
+        for (const cifras of [3, 4]) {
+          const c = corregir(ej, alumno(ej, cifras));
+          const malos = Object.entries(c.pasos).filter(([, r]) => r.estado !== 'ok').map(([id]) => id);
+          assert.deepEqual(malos, [], `${b}/${variante} ${s} (${cifras} cifras)`);
+        }
+      }
+    }
+  }
+});
+
+test('b2 con Pin = Pout y resto coherente: solo Pin falla', () => {
+  let n = 0;
+  for (const s of seeds) {
+    const ej = GENERADORES.b2(s, { variante: 'convertidor' });
+    if (ej.params.eta === 100) continue;
+    const c = corregir(ej, alumno(ej, 3, { Pin: (u) => u.Pout }));
+    assert.equal(c.pasos.Pin.errorId, 'b2.sin_eta', s);
+    for (const id of ['Pout', 'v_fc', 'i_fc', 'i_ft', 'v_ft']) assert.equal(c.pasos[id].estado, 'ok', `${s} ${id}`);
+    n++;
+  }
+  assert.ok(n > 500);
+});
+
+test('b1: np del alumno con C_T redondeado a 3 cifras da ok', () => {
+  const ej = GENERADORES.b1('r3', { variante: 'directo' });
+  const c = corregir(ej, alumno(ej, 3));
+  assert.equal(c.pasos.np.estado, 'ok');
+  assert.equal(c.pasos.np.arrastre, false);
+});
+
+test('separacion minima del 3 % entre error tipico y valor correcto', () => {
+  for (const [b, vs] of Object.entries(VARIANTES)) {
+    for (const variante of vs) {
+      for (const s of seeds) {
+        const ej = GENERADORES[b](s, { variante });
+        for (const p of ej.pasos) {
+          if (p.tipo !== 'num') continue;
+          for (const e of p.errores) {
+            const d = Math.abs(e.valor - p.valor) / Math.abs(p.valor);
+            assert.ok(d < 1e-9 || d >= 0.03, `${b}/${variante} ${s} ${p.id}/${e.id} d=${d}`);
+          }
+        }
+      }
+    }
+  }
+});
+
+test('b2 convertidor: i_ft antes de v_ft; raiz fuera en i_ft acredita v_ft por arrastre', () => {
+  const ej = GENERADORES.b2('o1', { variante: 'convertidor' });
+  assert.deepEqual(ej.pasos.map((p) => p.id), ['Pout', 'Pin', 'v_fc', 'i_fc', 'i_ft', 'v_ft']);
+  const { Voc } = ej.params;
+  const e = paso(ej, 'i_ft').errores.find((x) => x.id === 'b2.raiz_fuera').valor;
+  const Rth = (Voc - ej.params.V1) / ej.params.I1;
+  const c = corregir(ej, { ...exactas(ej), i_ft: e, v_ft: Voc - Rth * e });
+  assert.equal(c.pasos.i_ft.errorId, 'b2.raiz_fuera');
+  assert.equal(c.pasos.v_ft.estado, 'ok');
+  assert.equal(c.pasos.v_ft.arrastre, true);
+});

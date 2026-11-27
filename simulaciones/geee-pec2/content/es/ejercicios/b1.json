@@ -97,7 +97,7 @@
   },
   "errores": {
     "b1.sin_vmin": "Has calculado la energía como si el supercondensador se descargara hasta cero. Solo se puede aprovechar la energía entre la tensión máxima y la mínima del enunciado: revisa qué restas en la fórmula de la energía.",
-    "b1.vnom_por_vmax": "Para dimensionar el número de celdas en serie tienes que usar la tensión máxima del banco, no la tensión nominal de una celda. Repite el cociente con la tensión que el banco debe alcanzar como máximo.",
+    "b1.vnom_por_vmax": "Has usado la tensión de la batería en lugar de la tensión máxima del banco en la diferencia de cuadrados. En la capacidad total entran la tensión máxima y la mínima de los supercondensadores, no la tensión nominal de la batería. Repite el cálculo con esos dos valores.",
     "b1.ns_por_np": "Has mezclado los dos dimensionados. El número de celdas en serie sale de la tensión y el número de ramas en paralelo sale de la capacidad, así que cada uno debe salir de su condición.",
     "b1.np_sin_redondear": "El número de ramas en paralelo tiene que ser un entero, y para no quedarte por debajo de la capacidad necesaria hay que redondear hacia arriba. Revisa el redondeo de n_p.",
     "b1.energia_en_wh": "Has usado la energía en vatios hora en una fórmula que pide julios. Antes de calcular la capacidad total del banco, comprueba las unidades de la energía y pásala a julios.",

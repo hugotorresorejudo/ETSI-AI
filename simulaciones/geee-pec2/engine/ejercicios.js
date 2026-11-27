@@ -21,15 +21,30 @@ const r3 = (x) => Math.round(x * 1000) / 1000;
 const ok = Number.isFinite;
 
 // Hasta 200 intentos con la semilla; si no, semillas derivadas. Nunca devuelve algo sin validar.
-function muestrear(seed, intento) {
+function muestrear(seed, intento, construir) {
   for (let j = 0; j < 30; j++) {
     const rng = makeRng(j === 0 ? seed : `${seed}#${j}`);
     for (let k = 0; k < 200; k++) {
       const r = intento(rng);
-      if (r) return r;
+      if (!r) continue;
+      const out = construir(r);
+      if (separados(out.pasos)) return out;
     }
   }
   throw new Error(`No se pudo generar un ejercicio válido para la semilla ${seed}`);
+}
+
+// Cada error típico (paso num) debe distar al menos un 3 % del valor correcto.
+// Se exime el idéntico por construcción (eta = 100, Vbat = Vmax).
+function separados(pasos) {
+  for (const p of pasos) {
+    if (p.tipo !== 'num') continue;
+    for (const e of p.errores) {
+      const d = Math.abs(e.valor - p.valor) / Math.abs(p.valor);
+      if (d > 1e-9 && d < 0.03) return false;
+    }
+  }
+  return true;
 }
 
 function elegirVariante(bloque, seed, opts, pesos) {
@@ -58,7 +73,7 @@ function textoModos(modos) {
 
 function genB1(seed, opts) {
   const variante = elegirVariante('b1', seed, opts);
-  const p = muestrear(seed, (rng) => {
+  const { params, pasos } = muestrear(seed, (rng) => {
     const nm = rng.pick([2, 3]);
     const Ps = [0.05, 0.1, 0.125, 0.2, 0.25, 0.5, 1, 2, 5];
     const ts = [0.5, 1, 2, 2.5, 5, 8, 10];
@@ -76,16 +91,17 @@ function genB1(seed, opts) {
     if (variante === 'directo') {
       horas = rng.pick([10, 12, 16, 20, 24, 30, 36, 48]);
       C_Ah = capacidadBateria({ Pmed, Vbat, horas }).C_Ah;
+      if (C_Ah > 10) return null;
     } else {
       C_Ah = rng.pick([0.5, 1, 1.5, 1.8, 2, 2.5, 3, 4, 5]);
       horas = (C_Ah * Vbat) / Pmed;
-      if (horas < 1 || horas > 500) return null;
+      if (horas < 1 || horas > 100) return null;
     }
     const E_J = Pmed * horas * 3600;
     const b = bancoSC({ E_J, Vmax, Vmin, celda });
     if (!(b.np >= 10 && b.np <= 5000) || !ok(b.C_T)) return null;
     return { modos, Pmed, Vbat, celda, Vmax, Vmin, horas, C_Ah, E_J, b };
-  });
+  }, (p) => {
   const { modos, Pmed, Vbat, celda, Vmax, Vmin, horas, C_Ah, E_J, b } = p;
   const params = { modos: textoModos(modos), modosLista: modos, Vbat, Vmax, Vmin, celda };
   if (variante === 'directo') params.horas = horas; else params.C_Ah = C_Ah;
@@ -123,13 +139,15 @@ function genB1(seed, opts) {
     paso({ id: 'Imax', unidad: 'A', valor: b.Imax, tex: 'I_{max}=n_p I_{celda}', sustitucion: `Imax = ${b.np}·${fmt(celda.Imax)}`, depende: ['np'], recalc: (e) => e.np * celda.Imax,
       errores: [{ id: 'b1.imax_con_ns', valor: b.ns * celda.Imax }] }),
   );
+  return { params, pasos };
+  });
   return ensamblar('b1', seed, variante, params, pasos);
 }
 
 // ---------- Bloque 2: panel FV ----------
 function genB2(seed, opts) {
   const variante = elegirVariante('b2', seed, opts, ['convertidor', 'convertidor', 'bateria', 'carga_corriente', 'resistencia']);
-  const p = muestrear(seed, (rng) => {
+  const { params, pasos } = muestrear(seed, (rng) => {
     const Isc = rng.int(5, 40);
     const I1 = sig(Isc * (0.75 + 0.2 * rng.next()));
     const V1 = rng.int(8, 40);
@@ -169,7 +187,7 @@ function genB2(seed, opts) {
     }
     if (pt.modo === 'sin_suministro' || !(pt.v > 0 && pt.i > 0)) return null;
     return { panel, params, m, pt };
-  });
+  }, (p) => {
   const { panel, params, m } = p;
   const { Isc, V1, Voc } = panel;
   const pasos = [];
@@ -189,10 +207,10 @@ function genB2(seed, opts) {
         errores: [{ id: 'b2.raiz_fuera', valor: pp.fc.descartada }, { id: 'b2.tramo_equivocado', valor: vFcMal }] }),
       paso({ id: 'i_fc', unidad: 'A', valor: pp.fc.i, tex: 'i=I_{sc}-v/R_N', sustitucion: `i = ${fmt(Isc)} − v/${fmt(m.RN)}`, depende: ['v_fc'], recalc: (e) => iDeV(e.v_fc),
         errores: [{ id: 'b2.raiz_fuera', valor: iDeV(pp.fc.descartada) }, { id: 'b2.tramo_equivocado', valor: (Voc - vFcMal) / m.Rth }] }),
-      paso({ id: 'v_ft', unidad: 'V', valor: pp.ft.v, tex: 'v=V_{oc}-R_{th} i', sustitucion: `v = ${fmt(Voc)} − ${fmt(m.Rth)}·i`, depende: ['Pin'], recalc: (e) => { const r = puntoPotencia(panel, e.Pin).ft; return r.v ?? NaN; },
-        errores: [{ id: 'b2.raiz_fuera', valor: vDeI(pp.ft.descartada) }, { id: 'b2.tramo_equivocado', valor: vFtMal }] }),
-      paso({ id: 'i_ft', unidad: 'A', valor: pp.ft.i, tex: 'i\\,(V_{oc}-R_{th} i)=P_{in}', sustitucion: `i en (0, ${fmt(panel.I1)}) A`, depende: ['v_ft'], recalc: (e) => (Voc - e.v_ft) / m.Rth,
+      paso({ id: 'i_ft', unidad: 'A', valor: pp.ft.i, tex: 'i\\,(V_{oc}-R_{th} i)=P_{in}', sustitucion: `i en (0, ${fmt(panel.I1)}) A`, depende: ['Pin'], recalc: (e) => puntoPotencia(panel, e.Pin).ft.i ?? NaN,
         errores: [{ id: 'b2.raiz_fuera', valor: pp.ft.descartada }, { id: 'b2.tramo_equivocado', valor: iDeV(vFtMal) }] }),
+      paso({ id: 'v_ft', unidad: 'V', valor: pp.ft.v, tex: 'v=V_{oc}-R_{th} i', sustitucion: `v = ${fmt(Voc)} − ${fmt(m.Rth)}·i`, depende: ['i_ft'], recalc: (e) => vDeI(e.i_ft),
+        errores: [{ id: 'b2.raiz_fuera', valor: vDeI(pp.ft.descartada) }, { id: 'b2.tramo_equivocado', valor: vFtMal }] }),
     );
   } else {
     const { pt } = p;
@@ -222,19 +240,21 @@ function genB2(seed, opts) {
       paso({ id: 'modo', unidad: '', tipo: 'int', valor: modo, tex: '0:\\ \\text{corriente},\\ 1:\\ \\text{tensión}', sustitucion: `V1 = ${fmt(V1)} V`, depende: ['v'], recalc: (e) => modoDeV(e.v), errores: [{ id: 'b2.tramo_equivocado', valor: 1 - modo }] }),
     );
   }
+  return { params, pasos };
+  });
   return ensamblar('b2', seed, variante, params, pasos);
 }
 
 // ---------- Bloque 3: inversor y armónicos ----------
 function genB3(seed, opts) {
   const variante = elegirVariante('b3', seed, opts);
-  const p = muestrear(seed, (rng) => {
+  const { params, pasos } = muestrear(seed, (rng) => {
     const Vred = rng.pick([110, 200, 220, 230, 240]);
     const f = rng.pick([50, 50, 50, 60]);
     const VDC = rng.pick([150, 200, 220, 250, 300, 350, 400]);
     const L_mH = rng.int(1, 10);
     const L = L_mH / 1000;
-    const alpha = variante === 'cuadrada' ? 0 : rng.pick([10, 15, 20, 30, 30, 36, 40, 45]);
+    const alpha = variante === 'cuadrada' ? 0 : rng.pick([...(variante === 'inverso_phi' ? [0, 0] : []), 10, 15, 20, 30, 30, 36, 40, 45]);
     let phi = rng.int(30, 250) / 10, Pdato;
     if (variante === 'inverso_phi') {
       const P0 = inversorRed({ Vred, f, VDC, phiDeg: phi, L, alphaDeg: alpha }).P;
@@ -243,9 +263,9 @@ function genB3(seed, opts) {
       phi = phiParaP({ Vred, f, VDC, L, alphaDeg: alpha, P: Pdato });
     }
     const r = inversorRed({ Vred, f, VDC, phiDeg: phi, L, alphaDeg: alpha });
-    if (!(r.nz.length === 2 && r.P > 0 && r.I1.mag >= 10 && r.I1.mag <= 100 && r.FP_red >= 0.6 && r.FP_red <= 0.95)) return null;
+    if (!(r.nz.length === 2 && r.P > 0 && r.I1.mag >= 10 && r.I1.mag <= 100 && r.FP_red >= 0.6 && r.FP_red <= 0.95 && r.FP_inv >= 0.5)) return null;
     return { Vred, f, VDC, L_mH, L, alpha, phi, Pdato, r };
-  });
+  }, (p) => {
   const { Vred, f, VDC, L_mH, L, alpha, r } = p;
   const k = r.nz[1];
   const params = { Vred, f, VDC, L_mH, L, alpha, k };
@@ -278,6 +298,8 @@ function genB3(seed, opts) {
       recalc: (e) => e.P / (Vred * Math.hypot(e.I1, e.Ik)),
       errores: [{ id: 'b3.fp_con_i1', valor: P / (Vred * I1.mag) }] }),
   );
+  return { params, pasos };
+  });
   return ensamblar('b3', seed, variante, params, pasos);
 }
 
@@ -310,25 +332,25 @@ export function corregir(ej, respuestas = {}) {
   let nota = 0;
   for (const p of ej.pasos) {
     const dado = leer(respuestas ? respuestas[p.id] : undefined, p.tipo);
-    // Arrastre: algún antecedente está en fallo o se aceptó solo por arrastre.
-    const afectado = p.recalc && p.depende.some((d) => pasos[d] && (pasos[d].estado === 'fallo' || pasos[d].arrastre));
-    const rec = afectado ? p.recalc(usados) : undefined;
-    const recOk = afectado && typeof rec === 'number' && ok(rec);
-    const esperado = recOk ? rec : p.valor;
+    // Se recalcula con las respuestas del alumno si respondió algún antecedente; arrastre solo si alguno falló.
+    const respondido = p.recalc && p.depende.some((d) => pasos[d] && pasos[d].estado !== 'vacio');
+    const cascada = p.recalc && p.depende.some((d) => pasos[d] && (pasos[d].estado === 'fallo' || pasos[d].arrastre));
+    const rec = respondido ? p.recalc(usados) : undefined;
+    const recOk = respondido && typeof rec === 'number' && ok(rec);
+    const esperado = cascada && recOk ? rec : p.valor;
     let res;
     if (dado === null) {
       res = { estado: 'vacio', esperado, errorId: null, arrastre: false };
     } else if (coincide(p.tipo, dado, p.valor)) {
       res = { estado: 'ok', esperado: p.valor, errorId: null, arrastre: false };
     } else if (recOk && coincide(p.tipo, dado, rec)) {
-      res = { estado: 'ok', esperado: rec, errorId: null, arrastre: true };
+      res = { estado: 'ok', esperado: rec, errorId: null, arrastre: !!cascada };
     } else {
       const e = p.errores.find((x) => coincide(p.tipo, dado, x.valor, true));
       res = { estado: 'fallo', esperado, errorId: e ? e.id : null, arrastre: false };
     }
     if (res.estado === 'ok') nota += p.peso;
-    if (dado !== null && res.estado !== 'ok') usados[p.id] = dado;
-    else if (res.arrastre) usados[p.id] = dado;
+    if (dado !== null) usados[p.id] = dado;
     pasos[p.id] = res;
   }
   return { pasos, nota: Math.min(ej.puntos, Math.round(nota * 1e9) / 1e9) };
