@@ -194,11 +194,20 @@
         "puntos": [
           "Calcula primero los fundamentales de la onda del inversor y de la red.",
           "Continúa con los armónicos no nulos, cada uno con su reactancia.",
-          "Después calcula la potencia activa y los dos factores de potencia."
+          "Después calcula la potencia activa y los dos factores de potencia.",
+          "La corriente del fundamental sale de la diferencia fasorial de tensiones dividida por la reactancia de la bobina.",
+          "Cada armónico de orden n usa una reactancia n veces mayor; la corriente eficaz total usa solo los armónicos que te pide el enunciado.",
+          "Solo el fundamental aporta potencia activa, porque la red es senoidal.",
+          "El factor de potencia del inversor usa su tensión eficaz; el de la red usa la tensión de red."
         ],
         "formulas": [
           "V_{1,ef}=\\frac{4V_{DC}\\cos\\alpha}{\\pi\\sqrt{2}}",
-          "V_{inv,ef}=V_{DC}\\sqrt{\\frac{\\pi-2\\alpha}{\\pi}}"
+          "V_{inv,ef}=V_{DC}\\sqrt{\\frac{\\pi-2\\alpha}{\\pi}}",
+          "\\bar I_1=\\frac{\\bar V_1-\\bar V_{red}}{j\\omega L}",
+          "I_n=\\frac{V_n}{n\\omega L}",
+          "P=V_{red}\\,\\mathrm{Re}(\\bar I_1)",
+          "FP_{inv}=\\frac{P}{V_{inv,ef}\\,I_{ef}}",
+          "FP_{red}=\\frac{P}{V_{red,ef}\\,I_{ef}}"
         ]
       },
       "carga": "Ejercicio completo: tensiones, corrientes, potencia y factores de potencia.",

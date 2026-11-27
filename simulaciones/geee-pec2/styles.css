@@ -132,7 +132,7 @@ a.fila .fila__estado { color: var(--ink); }
 
 /* Nivel y ejercicio (pantallas de trabajo en claro) */
 .pantalla--nivel .pantalla__in, .pantalla--ejercicio .pantalla__in { padding-top: 48px; padding-bottom: 56px; gap: 0; }
-.app { --ok: #1E7F4F; --ok-soft: #E7F4EC; --bad: #C62F22; --bad-soft: #FBEAE7; }
+.app { --ok: #1A7044; --ok-soft: #E7F4EC; --bad: #B82A1E; --bad-soft: #FBEAE7; }
 .dialogo { display: flex; flex-direction: column; gap: 10px; max-width: 760px; margin: 0 0 24px; }
 .globo { padding: 14px 18px; border: 1px solid var(--line); background: var(--muted); max-width: 640px; }
 .globo--mentora { border-color: var(--navy); background: var(--surface); }

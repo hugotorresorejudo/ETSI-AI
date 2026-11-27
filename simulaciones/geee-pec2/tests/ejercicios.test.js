@@ -268,3 +268,16 @@ test('b2 convertidor: i_ft antes de v_ft; raiz fuera en i_ft acredita v_ft por a
   assert.equal(c.pasos.v_ft.estado, 'ok');
   assert.equal(c.pasos.v_ft.arrastre, true);
 });
+
+test('b1: las potencias de los modos del ciclo son todas distintas (1000 semillas)', () => {
+  for (const variante of VARIANTES.b1) {
+    for (const s of seeds) {
+      const P = GENERADORES.b1(s, { variante }).params.modosLista.map((m) => m.P);
+      assert.equal(new Set(P).size, P.length, `${s}/${variante}: potencias repetidas ${P.join(', ')}`);
+    }
+  }
+});
+
+test('b3: inverso_phi nunca genera alpha = 0 (el enunciado habla de un tramo nulo)', () => {
+  for (const s of seeds) assert.ok(GENERADORES.b3(s, { variante: 'inverso_phi' }).params.alpha > 0, s);
+});

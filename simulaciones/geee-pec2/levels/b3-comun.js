@@ -54,6 +54,8 @@ const CSS = `
 .b3-btn:hover{background:var(--b3-navy);color:#fff}
 .b3-btn:focus-visible{outline:3px solid var(--b3-sky);outline-offset:2px}
 .b3 .geee-comp{min-width:0}
+.b3 .geee-btn{min-width:44px;min-height:44px}
+.b3-ctl input[type=range]{min-height:44px}
 @media (max-width:480px){.b3-panel{padding:10px}.b3-lect dd{font-size:18px}.b3-ctl input[type=range]{flex-basis:100%}}
 `;
 

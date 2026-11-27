@@ -252,11 +252,17 @@
         "puntos": [
           "Calcula primero la potencia de salida y después la de entrada.",
           "Resuelve la cuadrática de cada tramo y descarta la raíz que cae fuera.",
-          "Comprueba que la tensión y la corriente que obtienes cumplen la ecuación del panel."
+          "Comprueba que la tensión y la corriente que obtienes cumplen la ecuación del panel.",
+          "Las resistencias de los equivalentes salen de la pendiente de cada tramo: R_N en el de corriente y R_th en el de tensión.",
+          "En el tramo de corriente se resuelve la tensión; en el de tensión, la corriente.",
+          "Si el enunciado da otra carga (batería, corriente o resistencia), busca el punto donde la recta de la carga corta a la curva del panel y mira en qué tramo cae."
         ],
         "formulas": [
           "P_{out} = V_{bat}\\, I_{out}",
-          "P_{in} = \\frac{P_{out}}{\\eta}"
+          "P_{in} = \\frac{P_{out}}{\\eta}",
+          "R_N = \\frac{V_1}{I_{sc} - I_1}, \\quad R_{th} = \\frac{V_{oc} - V_1}{I_1}",
+          "v_p \\left(I_{sc} - \\frac{v_p}{R_N}\\right) = P_{in}",
+          "i_p \\left(V_{oc} - R_{th}\\, i_p\\right) = P_{in}"
         ]
       },
       "carga": "Resuelve en orden: potencia de salida, de entrada y puntos de trabajo.",

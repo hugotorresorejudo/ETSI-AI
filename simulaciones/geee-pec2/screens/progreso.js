@@ -18,7 +18,7 @@ export function montar(cont, ctx) {
         h('span', { class: 'fila__id' }, id),
         h('span', { class: 'fila__tit' }, tituloNivel(ctx.niveles, id)),
         estrellas(n?.estrellas || 0),
-        h('span', { class: 'fila__estado' }, n ? `${n.intentos} ${t.intentos}` : '-'));
+        h('span', { class: 'fila__estado' }, n ? `${n.intentos} ${n.intentos === 1 ? t.intento : t.intentos}` : '-'));
     })));
 
   const fecha = (f) => { const d = new Date(f); return Number.isNaN(d.getTime()) ? String(f || '') : d.toLocaleDateString('es-ES'); };

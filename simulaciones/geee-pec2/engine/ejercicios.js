@@ -80,6 +80,7 @@ function genB1(seed, opts) {
     const modos = [];
     for (let i = 0; i < nm; i++) modos.push({ P: rng.pick(Ps), t: rng.pick(ts) });
     if (nm === 3) modos[rng.int(0, 2)].P = 0;
+    if (new Set(modos.map((m) => m.P)).size < nm) return null; // potencias todas distintas
     const { Pmed } = potenciaMedia(modos);
     if (!(Pmed > 0)) return null;
     const Vbat = rng.pick([3, 3.3, 3.6, 3.7, 4]);
@@ -254,7 +255,7 @@ function genB3(seed, opts) {
     const VDC = rng.pick([150, 200, 220, 250, 300, 350, 400]);
     const L_mH = rng.int(1, 10);
     const L = L_mH / 1000;
-    const alpha = variante === 'cuadrada' ? 0 : rng.pick([...(variante === 'inverso_phi' ? [0, 0] : []), 10, 15, 20, 30, 30, 36, 40, 45]);
+    const alpha = variante === 'cuadrada' ? 0 : rng.pick([10, 15, 20, 30, 30, 36, 40, 45]);
     let phi = rng.int(30, 250) / 10, Pdato;
     if (variante === 'inverso_phi') {
       const P0 = inversorRed({ Vred, f, VDC, phiDeg: phi, L, alphaDeg: alpha }).P;

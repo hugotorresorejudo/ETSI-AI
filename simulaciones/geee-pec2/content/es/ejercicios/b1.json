@@ -14,7 +14,7 @@
       "explicacion": "La potencia media es la energía que consume el nodo en un ciclo dividida por la duración de ese ciclo. El resultado es {paso.Pmed} W."
     },
     "C_Ah": {
-      "etiqueta": "Capacidad de la batería (Ah) o autonomía (h), según el enunciado",
+      "etiqueta": "Capacidad de la batería (Ah)",
       "pistas": [
         "La batería entrega la potencia media a tensión constante, así que la energía es potencia por tiempo.",
         "Capacidad = P_med × t / V_bat, con t en horas. Si el dato es la capacidad, despeja t.",
@@ -23,7 +23,7 @@
       "explicacion": "La batería debe cubrir la energía de un ciclo completo durante todo el tiempo pedido. El resultado es {paso.C_Ah}: en el caso directo son amperios hora, y en el inverso, horas de autonomía."
     },
     "horas": {
-      "etiqueta": "Autonomía de la batería (h), en el enunciado inverso",
+      "etiqueta": "Autonomía de la batería (h)",
       "pistas": [
         "La autonomía es el tiempo que la batería aguanta el ciclo: su energía dividida por la potencia media que consume el nodo.",
         "t = C_Ah × V_bat / P_med, con C_Ah en amperios hora.",
