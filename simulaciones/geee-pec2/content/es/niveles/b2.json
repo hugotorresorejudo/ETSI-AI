@@ -1,0 +1,283 @@
+{
+  "niveles": {
+    "2.1": {
+      "titulo": "La curva I-V",
+      "objetivo": "Localiza el punto de máxima potencia en el codo de la curva del panel.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Esta es la cubierta solar. Antes de conectar nada, hay que entender la curva del panel." },
+        { "quien": "mentora", "texto": "La curva tiene dos tramos. A la izquierda, el panel se comporta como fuente de corriente; a la derecha, como fuente de tensión." },
+        { "quien": "mentora", "texto": "El codo de la curva es el punto de máxima potencia. Mueve sus puntos y mira cómo cambia la curva P-V." }
+      ],
+      "ficha": {
+        "titulo": "Curva I-V lineal a tramos",
+        "puntos": [
+          "Modo fuente de corriente: la tensión está entre cero y V_1, y la corriente baja poco al subir la tensión.",
+          "Modo fuente de tensión: la tensión está entre V_1 y V_oc.",
+          "El punto de máxima potencia, MPP, está en el codo (V_1, I_1).",
+          "La potencia es P = v_p i_p, y en el codo vale V_1 I_1.",
+          "Un MPPT por perturbar y observar busca ese codo: si al cambiar el ciclo de trabajo sube la potencia se sigue en la misma dirección, y si baja se invierte."
+        ],
+        "formulas": [
+          "P = v_p\\, i_p",
+          "P_{mpp} = V_1\\, I_1",
+          "P(t) > P(t-\\Delta t) \\rightarrow d(t+\\Delta t) = d(t) + \\Delta d",
+          "P(t) < P(t-\\Delta t) \\rightarrow d(t+\\Delta t) = d(t) - \\Delta d"
+        ]
+      },
+      "carga": "El codo de la curva I-V es el punto de máxima potencia.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "¿Dónde está el punto de máxima potencia de la curva de un panel?",
+          "opciones": [
+            "En la corriente de cortocircuito, con tensión nula",
+            "En el codo, con tensión V_1 y corriente I_1",
+            "En la tensión de circuito abierto, con corriente nula"
+          ],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "Con el codo de la curva fijado, ¿cuánto vale la potencia en el punto de máxima potencia?",
+          "ref": "P_mpp"
+        }
+      ],
+      "pistas": [
+        "Mira la forma de la curva: hay un punto donde deja de ser un tramo de corriente y pasa a ser un tramo de tensión.",
+        "La potencia es P = v_p i_p. En el codo, P_mpp = V_1 I_1.",
+        "Localiza el codo con V_1 = {param.V1} V y I_1 = {param.I1} A, y calcula la potencia que da en ese punto."
+      ],
+      "exito": "Has localizado el punto de máxima potencia en el codo de la curva."
+    },
+    "2.2": {
+      "titulo": "Asociar módulos",
+      "objetivo": "Asocia módulos en serie y en paralelo hasta que la curva resultante coincida con la curva objetivo.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Un solo módulo no siempre da la tensión ni la corriente que necesitas. Hay que asociarlos." },
+        { "quien": "mentora", "texto": "En serie se suman las tensiones y la corriente es la de un módulo. En paralelo se suman las corrientes y la tensión es la de un módulo." },
+        { "quien": "sistema", "texto": "Reto: iguala la curva resultante a la curva objetivo mientras cambias el número de módulos en serie y en paralelo." }
+      ],
+      "ficha": {
+        "titulo": "Asociación de módulos",
+        "puntos": [
+          "En serie, las tensiones de los módulos se suman y la corriente es la de uno solo.",
+          "En paralelo, las corrientes se suman y la tensión es la de uno solo.",
+          "Con n_s módulos en serie y n_p ramas en paralelo, la curva se escala en tensión y en corriente."
+        ],
+        "formulas": [
+          "v_{asoc} = n_s\\, v_p",
+          "i_{asoc} = n_p\\, i_p",
+          "P_{asoc} = n_s\\, n_p\\, v_p\\, i_p"
+        ]
+      },
+      "carga": "En serie se suman las tensiones; en paralelo, las corrientes.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "¿Qué ocurre al conectar dos módulos iguales en serie?",
+          "opciones": [
+            "La tensión se duplica y la corriente se mantiene",
+            "La corriente se duplica y la tensión se mantiene",
+            "La tensión y la corriente se duplican"
+          ],
+          "correcta": 0
+        }
+      ],
+      "pistas": [
+        "Piensa en cómo se suman las tensiones cuando los módulos van uno detrás de otro, y en lo que pasa con la corriente.",
+        "En serie, v_asoc = n_s v_p. En paralelo, i_asoc = n_p i_p.",
+        "Multiplica la tensión de un módulo, V_1 = {param.V1} V, por el número de módulos en serie que hayas elegido."
+      ],
+      "exito": "La curva asociada coincide con la curva objetivo."
+    },
+    "2.3": {
+      "titulo": "Equivalentes Norton y Thevenin",
+      "objetivo": "Construye los equivalentes Norton y Thevenin que reproducen la curva en el tramo elegido.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Un panel se puede sustituir por un equivalente sencillo, válido para cada tramo de su curva." },
+        { "quien": "mentora", "texto": "El equivalente Norton sirve en el tramo de corriente, y el Thevenin en el tramo de tensión." },
+        { "quien": "sistema", "texto": "Elige un punto de la curva y ajusta la fuente y la resistencia hasta que la curva equivalente coincida." }
+      ],
+      "ficha": {
+        "titulo": "Equivalentes del panel",
+        "puntos": [
+          "Norton: fuente de corriente I_sc en paralelo con R_N. Sirve en el tramo de corriente.",
+          "Thevenin: fuente de tensión V_oc en serie con R_th. Sirve en el tramo de tensión.",
+          "Cada resistencia sale de la pendiente de su tramo."
+        ],
+        "formulas": [
+          "R_N = \\frac{V_1}{I_{sc} - I_1}",
+          "i_p = I_{sc} - \\frac{v_p}{R_N}",
+          "R_{th} = \\frac{V_{oc} - V_1}{I_1}",
+          "v_p = V_{oc} - R_{th}\\, i_p"
+        ]
+      },
+      "carga": "Norton sirve en el tramo de corriente; Thevenin, en el de tensión.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "¿En qué tramo de la curva es válido el equivalente Norton?",
+          "opciones": [
+            "En el tramo de tensión, entre V_1 y V_oc",
+            "En el tramo de corriente, con tensión entre cero y V_1",
+            "En cualquier punto de la curva"
+          ],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "Calcula la resistencia del equivalente Norton del panel.",
+          "ref": "R_N"
+        }
+      ],
+      "pistas": [
+        "El equivalente Norton es una fuente de corriente en paralelo con una resistencia. La resistencia sale de la pendiente del tramo de corriente.",
+        "R_N = V_1 / (Isc - I_1). Para el Thevenin, R_th = (Voc - V_1) / I_1.",
+        "Calcula primero R_N con V_1 = {param.V1} V, Isc = {param.Isc} A e I_1 = {param.I1} A."
+      ],
+      "exito": "Equivalentes obtenidos: la curva queda reproducida en su tramo."
+    },
+    "2.4": {
+      "titulo": "¿Qué impone la carga?",
+      "objetivo": "Conecta la carga indicada y localiza el punto de operación del panel.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "El panel no trabaja solo: lo que hay conectado decide en qué punto de su curva se queda." },
+        { "quien": "mentora", "texto": "Una batería fija la tensión. Una carga de corriente fija la corriente. Una resistencia impone una recta que pasa por el origen." },
+        { "quien": "sistema", "texto": "Arrastra la recta de carga o cambia la carga. El punto de operación es donde se cortan la curva y la recta." }
+      ],
+      "ficha": {
+        "titulo": "Punto de operación",
+        "puntos": [
+          "Con batería, la tensión del panel es la de la batería y la corriente sale de la curva.",
+          "Con carga de corriente, la corriente del panel es la de la carga y la tensión sale de la curva.",
+          "Con resistencia, la recta de carga pasa por el origen y corta la curva.",
+          "El punto de operación es la intersección de la curva del panel con la recta de carga.",
+          "Si la tensión queda en el tramo de corriente, el modo es corriente; si queda en el de tensión, el modo es tensión."
+        ],
+        "formulas": [
+          "v_p = V_{bat}",
+          "i_p = I_L",
+          "v_p = R_L\\, i_p",
+          "v_p < V_1 \\Rightarrow \\text{modo corriente}",
+          "v_p > V_1 \\Rightarrow \\text{modo tensión}"
+        ]
+      },
+      "carga": "La carga fija la tensión o la corriente del panel según su tipo.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "Con una batería conectada directamente al panel, ¿qué queda fijado?",
+          "opciones": [
+            "La corriente del panel",
+            "La tensión del panel",
+            "La potencia del panel"
+          ],
+          "correcta": 1
+        },
+        {
+          "tipo": "opcion",
+          "pregunta": "¿Qué es el punto de operación?",
+          "opciones": [
+            "El punto de máxima potencia del panel",
+            "La intersección de la curva del panel con la recta de carga",
+            "El valor de la resistencia interna del panel"
+          ],
+          "correcta": 1
+        }
+      ],
+      "pistas": [
+        "Pregúntate qué magnitud fija la carga: la tensión, la corriente o la relación entre ambas.",
+        "Batería: v_p = V_bat. Carga de corriente: i_p = I_L. Resistencia: v_p = R_L i_p.",
+        "Compara la tensión de la batería con V_1 = {param.V1} V para saber en qué tramo queda el panel."
+      ],
+      "exito": "Punto de operación localizado en la intersección de la curva con la recta de carga."
+    },
+    "2.5": {
+      "titulo": "El convertidor de corriente",
+      "objetivo": "Halla el punto de trabajo del panel con el convertidor, en modo fuente de corriente y en modo fuente de tensión.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Ahora el panel alimenta una batería a través de un convertidor. El convertidor saca del panel la potencia que la batería necesita, más las pérdidas." },
+        { "quien": "mentora", "texto": "Con esa potencia, la curva del panel corta a la hipérbola en dos puntos, uno en cada tramo. Solo uno de los dos cae dentro de su tramo." },
+        { "quien": "sistema", "texto": "Ajusta la corriente de salida, la tensión de la batería y el rendimiento. Observa las dos raíces de cada cuadrática." }
+      ],
+      "ficha": {
+        "titulo": "Convertidor de corriente y punto de trabajo",
+        "puntos": [
+          "La potencia de salida es V_bat por I_out, y la de entrada es esa potencia dividida entre el rendimiento.",
+          "Con P_in fijada, la curva del panel corta a la hipérbola de potencia constante.",
+          "Cada cuadrática tiene dos raíces: solo una cae dentro del tramo de su modo.",
+          "En el tramo de corriente se resuelve la tensión; en el de tensión, la corriente."
+        ],
+        "formulas": [
+          "P_{in} = \\frac{V_{bat}\\, I_{out}}{\\eta}",
+          "v_p \\left(I_{sc} - \\frac{v_p}{R_N}\\right) = P_{in}",
+          "i_p \\left(V_{oc} - R_{th}\\, i_p\\right) = P_{in}",
+          "P_p = v_p\\, i_p"
+        ]
+      },
+      "carga": "La potencia de entrada es la de salida dividida entre el rendimiento.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "¿Por qué se descarta una de las dos raíces de la cuadrática?",
+          "opciones": [
+            "Porque siempre es negativa",
+            "Porque cae fuera del tramo en el que se supone que trabaja el panel",
+            "Porque las dos raíces son siempre iguales"
+          ],
+          "correcta": 1
+        },
+        {
+          "tipo": "num",
+          "pregunta": "¿Cuánto vale la potencia que el convertidor extrae del panel?",
+          "ref": "P_in"
+        }
+      ],
+      "pistas": [
+        "Piensa en la potencia que el panel debe entregar para que la batería reciba la suya, teniendo en cuenta las pérdidas.",
+        "P_in = V_bat I_out / η. Después, en cada tramo, resuelve la cuadrática de la potencia y comprueba que la raíz cae dentro del intervalo.",
+        "Calcula primero la potencia de salida con V_bat = {param.Vbat} V e I_out = {param.Iout} A."
+      ],
+      "exito": "Punto de trabajo hallado en los dos modos del convertidor."
+    },
+    "2.6": {
+      "titulo": "Ejercicio tipo examen",
+      "objetivo": "Resuelve el ejercicio completo con el convertidor y responde a cada apartado.",
+      "dialogo": [
+        { "quien": "mentora", "texto": "Esta es la prueba del bloque: un enunciado generado, sin manipulación guiada." },
+        { "quien": "mentora", "texto": "Trabaja en orden: potencia de salida, potencia de entrada y, después, los dos puntos de trabajo." }
+      ],
+      "ficha": {
+        "titulo": "Orden de resolución",
+        "puntos": [
+          "Calcula primero la potencia de salida y después la de entrada.",
+          "Resuelve la cuadrática de cada tramo y descarta la raíz que cae fuera.",
+          "Comprueba que la tensión y la corriente que obtienes cumplen la ecuación del panel."
+        ],
+        "formulas": [
+          "P_{out} = V_{bat}\\, I_{out}",
+          "P_{in} = \\frac{P_{out}}{\\eta}"
+        ]
+      },
+      "carga": "Resuelve en orden: potencia de salida, de entrada y puntos de trabajo.",
+      "comprobacion": [
+        {
+          "tipo": "opcion",
+          "pregunta": "Si el rendimiento del convertidor baja, ¿qué ocurre con la potencia que se extrae del panel?",
+          "opciones": [
+            "Disminuye",
+            "Aumenta",
+            "No cambia"
+          ],
+          "correcta": 1
+        }
+      ],
+      "pistas": [
+        "Ordena el problema en pasos: salida, entrada y después los dos tramos.",
+        "P_out = V_bat I_out y P_in = P_out / η.",
+        "Empieza por la potencia de salida con V_bat = {param.Vbat} V e I_out = {param.Iout} A."
+      ],
+      "exito": "Ejercicio resuelto en orden, con las dos hipótesis del convertidor."
+    }
+  }
+}

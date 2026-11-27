@@ -1,0 +1,96 @@
+{
+  "enunciados": {
+    "convertidor": "Un panel fotovoltaico tiene una curva lineal a tramos, con corriente de cortocircuito Isc = {param.Isc} A, corriente en el codo I1 = {param.I1} A, tensión en el codo V1 = {param.V1} V y tensión de circuito abierto Voc = {param.Voc} V. El panel alimenta una batería de {param.Vbat} V a través de un convertidor dc/dc con rendimiento {param.eta}, y el convertidor entrega a la batería una corriente de {param.Iout} A. Calcula la potencia de salida y la potencia de entrada del convertidor. Después, halla el punto de trabajo del panel en dos hipótesis: primero, suponiendo que el panel trabaja como fuente de corriente; después, suponiendo que trabaja como fuente de tensión.",
+    "bateria": "Un panel fotovoltaico tiene una curva lineal a tramos, con corriente de cortocircuito Isc = {param.Isc} A, corriente en el codo I1 = {param.I1} A, tensión en el codo V1 = {param.V1} V y tensión de circuito abierto Voc = {param.Voc} V. El panel se conecta directamente a una batería de {param.Vbat} V, sin convertidor. Calcula la tensión y la corriente de trabajo del panel, e indica en qué modo trabaja: 0 si es modo fuente de corriente y 1 si es modo fuente de tensión.",
+    "carga_corriente": "Un panel fotovoltaico tiene una curva lineal a tramos, con corriente de cortocircuito Isc = {param.Isc} A, corriente en el codo I1 = {param.I1} A, tensión en el codo V1 = {param.V1} V y tensión de circuito abierto Voc = {param.Voc} V. El panel se conecta directamente a una carga que demanda una corriente de {param.IL} A. Calcula la tensión y la corriente de trabajo del panel, e indica en qué modo trabaja: 0 si es modo fuente de corriente y 1 si es modo fuente de tensión.",
+    "resistencia": "Un panel fotovoltaico tiene una curva lineal a tramos, con corriente de cortocircuito Isc = {param.Isc} A, corriente en el codo I1 = {param.I1} A, tensión en el codo V1 = {param.V1} V y tensión de circuito abierto Voc = {param.Voc} V. El panel se conecta directamente a una resistencia de {param.RL} Ω. Calcula la tensión y la corriente de trabajo del panel, e indica en qué modo trabaja: 0 si es modo fuente de corriente y 1 si es modo fuente de tensión."
+  },
+  "pasos": {
+    "Pout": {
+      "etiqueta": "Potencia de salida del convertidor",
+      "pistas": [
+        "Piensa en la potencia que recibe la batería: depende de su tensión y de la corriente que le llega.",
+        "P_out = V_bat I_out. La potencia de salida es el producto de la tensión de la batería por la corriente de salida.",
+        "Multiplica la tensión de la batería, {param.Vbat} V, por la corriente de salida, {param.Iout} A."
+      ],
+      "explicacion": "La potencia que llega a la batería es {paso.Pout} W, producto de su tensión por la corriente de salida."
+    },
+    "Pin": {
+      "etiqueta": "Potencia de entrada al convertidor",
+      "pistas": [
+        "El convertidor tiene pérdidas, así que el panel le entrega más potencia de la que sale hacia la batería.",
+        "P_in = P_out / η, donde η es el rendimiento del convertidor.",
+        "Divide la potencia de salida que acabas de calcular entre el rendimiento {param.eta}."
+      ],
+      "explicacion": "Con el rendimiento incluido, el panel entrega {paso.Pin} W al convertidor."
+    },
+    "v_fc": {
+      "etiqueta": "Tensión en el tramo de fuente de corriente",
+      "pistas": [
+        "Supón primero que el panel trabaja en el tramo de fuente de corriente, es decir, con tensión menor que V_1.",
+        "En ese tramo, i = Isc - v / R_N, así que la potencia cumple v (Isc - v / R_N) = P_in, con R_N = V_1 / (Isc - I_1).",
+        "Calcula primero R_N con V_1 = {param.V1} V, Isc = {param.Isc} A e I_1 = {param.I1} A."
+      ],
+      "explicacion": "En el tramo de fuente de corriente, la tensión del punto de trabajo es {paso.v_fc} V, la raíz que queda entre cero y V_1."
+    },
+    "i_fc": {
+      "etiqueta": "Corriente en el tramo de fuente de corriente",
+      "pistas": [
+        "Con la tensión ya conocida, la corriente sale de la recta del tramo de corriente.",
+        "i = Isc - v / R_N, o bien i = P_in / v.",
+        "Sustituye la tensión que has obtenido en la recta del tramo de corriente."
+      ],
+      "explicacion": "En este modo, la corriente del punto de trabajo es {paso.i_fc} A."
+    },
+    "v_ft": {
+      "etiqueta": "Tensión en el tramo de fuente de tensión",
+      "pistas": [
+        "Ahora supón que el panel trabaja en el tramo de fuente de tensión, con tensión entre V_1 y Voc y corriente menor que I_1.",
+        "En ese tramo, v = Voc - R_th i, con R_th = (Voc - V_1) / I_1. La potencia i (Voc - R_th i) debe valer P_in.",
+        "Calcula primero R_th con Voc = {param.Voc} V, V_1 = {param.V1} V e I_1 = {param.I1} A."
+      ],
+      "explicacion": "En el tramo de fuente de tensión, la tensión del punto de trabajo es {paso.v_ft} V."
+    },
+    "i_ft": {
+      "etiqueta": "Corriente en el tramo de fuente de tensión",
+      "pistas": [
+        "Resuelve la cuadrática de potencia en el tramo de tensión. La raíz que sirve es la que tiene corriente menor que I_1.",
+        "i (Voc - R_th i) = P_in, con R_th = (Voc - V_1) / I_1.",
+        "Escribe la ecuación con Voc = {param.Voc} V, V_1 = {param.V1} V, I_1 = {param.I1} A y la potencia de entrada."
+      ],
+      "explicacion": "En este modo, la corriente del punto de trabajo es {paso.i_ft} A."
+    },
+    "v": {
+      "etiqueta": "Tensión de trabajo del panel",
+      "pistas": [
+        "Piensa qué impone la carga conectada: una batería fija la tensión, mientras que una resistencia o una carga de corriente no.",
+        "Batería: v_p = V_bat. Resistencia: v_p = R_L i_p. Carga de corriente en el tramo de corriente: v_p = R_N (Isc - I_L).",
+        "Compara la tensión que impone la carga con V_1 = {param.V1} V para saber en qué tramo trabaja el panel."
+      ],
+      "explicacion": "La tensión de trabajo del panel resulta {paso.v} V."
+    },
+    "i": {
+      "etiqueta": "Corriente de trabajo del panel",
+      "pistas": [
+        "Mira qué magnitud fija la carga. La corriente sale de la curva del tramo en el que trabaja el panel.",
+        "En el tramo de corriente, i = Isc - v / R_N; en el de tensión, i = (Voc - v) / R_th; con carga de corriente, i = I_L.",
+        "Si la carga no fija la corriente, sustituye la tensión que has obtenido en la ecuación del tramo correspondiente."
+      ],
+      "explicacion": "La corriente de trabajo del panel es {paso.i} A."
+    },
+    "modo": {
+      "etiqueta": "Modo de operación (0 corriente, 1 tensión)",
+      "pistas": [
+        "Fíjate en si la tensión de trabajo queda antes o después del codo de la curva.",
+        "Modo 0 (fuente de corriente) si la tensión es menor que V_1; modo 1 (fuente de tensión) si es mayor.",
+        "Compara la tensión de trabajo que acabas de obtener con V_1 = {param.V1} V."
+      ],
+      "explicacion": "El modo resultante es {paso.modo}: 0 si el panel trabaja como fuente de corriente y 1 si trabaja como fuente de tensión."
+    }
+  },
+  "errores": {
+    "b2.sin_eta": "Has tomado la potencia de entrada igual a la de salida. El convertidor tiene pérdidas, así que el panel le entrega más potencia de la que llega a la batería. Divide la potencia de salida entre el rendimiento y repite el cálculo.",
+    "b2.raiz_fuera": "Has usado una raíz de la cuadrática que cae fuera del tramo en el que supusiste que trabajaba el panel. Comprueba que la tensión o la corriente de cada raíz está dentro del intervalo de su tramo, y descarta la que no cumple.",
+    "b2.tramo_equivocado": "Has resuelto la ecuación de un tramo que no corresponde al punto de trabajo. Decide primero en qué tramo está el panel, comparando su tensión con V_1, y usa la ecuación de ese tramo."
+  }
+}
