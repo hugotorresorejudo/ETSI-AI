@@ -29,6 +29,7 @@ export function inversorRed({ Vred, f, VDC, phiDeg, L, alphaDeg = 0 }) {
 export function phiParaP({ Vred, f, VDC, L, alphaDeg = 0, P }) {
   let lo = 0, hi = 60;
   const p = (phiDeg) => inversorRed({ Vred, f, VDC, phiDeg, L, alphaDeg }).P;
+  if (!(P >= p(lo) && P <= p(hi))) return NaN; // fuera del rango alcanzable
   for (let k = 0; k < 80; k++) {
     const mid = (lo + hi) / 2;
     if (p(mid) < P) lo = mid; else hi = mid;

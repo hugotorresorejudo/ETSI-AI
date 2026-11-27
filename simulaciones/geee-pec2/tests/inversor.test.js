@@ -76,3 +76,34 @@ test('phiParaP invierte inversorRed', () => {
     assert.ok(Math.abs(phiParaP({ ...base, P }) - phi) < 0.01);
   }
 });
+
+test('inversorRed: alpha 30, valores a mano', () => {
+  // Vred 200, VDC 250, phi 10°, L 2 mH, f 50 Hz, alpha 30°.
+  // Armónicos: cos(1·30°) = √3/2; cos(3·30°) = 0 (nulo); cos(5·30°) = cos150° = -√3/2.
+  const Vred = 200, VDC = 250, L = 2e-3, phi = 10 * Math.PI / 180, w = 2 * Math.PI * 50;
+  const V1 = 4 * VDC / (Math.PI * SQ2) * (Math.sqrt(3) / 2);       // ≈ 195,0 V
+  const V5 = 4 * VDC / (5 * Math.PI * SQ2) * (Math.sqrt(3) / 2);   // ≈ 39,0 V (ef = |pico|/√2)
+  // I1 = (V1∠φ − Vred)/(jωL) = (V1 sinφ)/(ωL) − j (V1 cosφ − Vred)/(ωL)
+  const I1re = V1 * Math.sin(phi) / (w * L);
+  const I1im = -(V1 * Math.cos(phi) - Vred) / (w * L);
+  const I1mag = Math.hypot(I1re, I1im);
+  const I5 = V5 / (5 * w * L);
+  const Ief = Math.hypot(I1mag, I5);
+  const P = Vred * I1re;
+  const Vinv = VDC * Math.sqrt((Math.PI - 2 * Math.PI / 6) / Math.PI);  // 250·√(2/3)
+  const r = inversorRed({ Vred, f: 50, VDC, phiDeg: 10, L, alphaDeg: 30 });
+  assert.deepEqual(r.nz, [1, 5]);
+  aprox(r.V[1], V1, 1e-9); aprox(r.V[5], V5, 1e-9);
+  assert.ok(r.V[5] > 0);
+  aprox(r.I[5], I5, 1e-9); aprox(r.I1.mag, I1mag, 1e-9);
+  aprox(r.I1.deg, Math.atan2(I1im, I1re) * 180 / Math.PI, 1e-9);
+  aprox(r.Ief, Ief, 1e-9); aprox(r.P, P, 1e-9);
+  aprox(r.FP_red, P / (Vred * Ief), 1e-9);
+  aprox(r.FP_inv, P / (Vinv * Ief), 1e-9);
+});
+
+test('phiParaP fuera de rango devuelve NaN', () => {
+  const base = { Vred: 220, f: 50, VDC: 250, L: 3e-3, alphaDeg: 0 };
+  assert.ok(Number.isNaN(phiParaP({ ...base, P: 1e9 })));
+  assert.ok(Number.isNaN(phiParaP({ ...base, P: -1 })));
+});
