@@ -4,21 +4,22 @@ import { potenciaMedia, capacidadBateria, autonomiaBateria, packBateria, energia
 
 const ap = (a, b, tol = 1e-6) => assert.ok(Math.abs(a - b) <= tol, `${a} != ${b}`);
 
-test('PEC2 2025 Ej. 1', () => {
+test('PEC2 2025 Ej. 1 (encadenado desde los modos)', () => {
   const p = potenciaMedia([{ P: 2, t: 2 }, { P: 0.125, t: 8 }]);
   ap(p.Pmed, 0.5); ap(p.T, 10);
-  const c = capacidadBateria({ Pmed: 0.5, Vbat: 4, horas: 16 });
+  const c = capacidadBateria({ Pmed: p.Pmed, Vbat: 4, horas: 16 });
   ap(c.C_Ah, 2); ap(c.E_Wh, 8); ap(c.E_J, 28800);
-  const b = bancoSC({ E_J: 28800, Vmax: 5, Vmin: 2.5, celda: { V: 2.5, C: 5, Imax: 3.4, m_g: 1 } });
+  ap(c.C_Ah * 4 * 3600, 28800);
+  const b = bancoSC({ E_J: c.C_Ah * 4 * 3600, Vmax: 5, Vmin: 2.5, celda: { V: 2.5, C: 5, Imax: 3.4, m_g: 1 } });
   ap(b.C_T, 3072); assert.equal(b.ns, 2); assert.equal(b.np, 1229);
   assert.equal(b.n, 2458); ap(b.peso_g, 2458); ap(b.Imax, 4178.6, 1e-6);
 });
-test('Enero 2026 Ej. 1', () => {
-  const p = potenciaMedia([{ P: 0.5, t: 1 }, { P: 0, t: 1 }]);
-  ap(p.Pmed, 0.25);
-  const c = capacidadBateria({ Pmed: 0.25, Vbat: 4, horas: 30 });
+test('Enero 2026 Ej. 1 (encadenado desde los modos)', () => {
+  const p = potenciaMedia([{ P: 2, t: 0.5 }, { P: 0.2, t: 5 }, { P: 0, t: 2.5 }]);
+  ap(p.Pmed, 0.25); ap(p.T, 8);
+  const c = capacidadBateria({ Pmed: p.Pmed, Vbat: 4, horas: 30 });
   ap(c.C_Ah, 1.875);
-  const b = bancoSC({ E_J: c.E_J, Vmax: 5, Vmin: 2.5, celda: { V: 2.5, C: 10, Imax: 3, m_g: 1 } });
+  const b = bancoSC({ E_J: c.C_Ah * 4 * 3600, Vmax: 5, Vmin: 2.5, celda: { V: 2.5, C: 10, Imax: 3, m_g: 1 } });
   ap(b.C_T, 2880); assert.equal(b.ns, 2); assert.equal(b.np, 576);
   assert.equal(b.n, 1152); ap(b.peso_g, 1152); ap(b.Imax, 1728);
 });
