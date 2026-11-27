@@ -52,12 +52,10 @@ export function montar(cont, ctx) {
         h('ul', { class: 'lista' }, NIVELES[b].map((id) => filaNivel(id, { bloqueado: !abierto(id), destino: `/nivel/${id}?modo=campana&s=${semilla}` }))));
     });
     const aud = auditoriaAbierta();
-    const audFila = aud
-      ? h('a', { class: 'fila', href: rutaCarga('/simulacro') }, h('span', { class: 'fila__id' }, 'PEC2'), h('span', { class: 'fila__tit' }, ui.menu.auditoria), h('span', { class: 'fila__estado' }, ui.menu.abrir))
-      : h('div', { class: 'fila fila--bloqueada', 'aria-disabled': 'true' }, h('span', { class: 'fila__id' }, 'PEC2'), h('span', { class: 'fila__tit' }, ui.menu.auditoria), h('span', { class: 'fila__estado' }, ui.menu.bloqueado));
+    const audFila = h('a', { class: 'fila', href: rutaCarga('/simulacro') }, h('span', { class: 'fila__id' }, 'PEC2'), h('span', { class: 'fila__tit' }, ui.menu.auditoria), h('span', { class: 'fila__estado' }, ui.menu.abrir));
     return h('div', null,
       h('div', { class: 'zonas' }, cols),
-      h('div', { class: 'auditoria' }, audFila, aud ? null : h('p', { class: 'nota' }, ui.menu.auditoriaBloqueada)));
+      h('div', { class: 'auditoria' }, audFila, aud ? null : h('p', { class: 'nota' }, ui.menu.auditoriaAviso)));
   }
 
   function selectorBloque(id, alCambiar) {

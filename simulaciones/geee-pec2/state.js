@@ -1,3 +1,8 @@
+// Forma de ultimoResultado (r), que escriben level-host, exam-view y simulacro con guardarResultado(r)
+// y que lee #/resultados:
+//   { tipo: 'nivel' | 'ejercicio' | 'simulacro', id?: '1.2', bloque?: 'b1', variante?: string, modo?: 'campana' | 'bloques',
+//     estrellas?: 0..3, nota?: number, puntos?: number,
+//     pasos?: { [pasoId]: 'ok' | 'fallo' | 'vacio' }, errores?: string[] /* IDs tipo 'b1.sin_vmin' */ }
 // Estado persistente. Único punto de acceso a localStorage, siempre con try/catch y respaldo en memoria.
 export const CLAVE = 'etsiai.geee-pec2.v1';
 

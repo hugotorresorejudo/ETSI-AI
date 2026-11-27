@@ -41,6 +41,8 @@
 .btn:hover { background: #12345F; }
 .btn--sky { background: var(--sky); border-color: var(--sky); color: var(--navy); }
 .btn--sky:hover { background: #33B9EE; border-color: #33B9EE; }
+.app--neg .btn--sky { background: #FFFFFF; border-color: #FFFFFF; color: var(--navy); }
+.app--neg .btn--sky:hover { background: #E6EDF4; border-color: #E6EDF4; }
 .btn--ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
 .btn--ghost:hover { background: var(--muted); }
 .btn--neg { background: transparent; color: #fff; border-color: rgba(255,255,255,.7); }
@@ -51,7 +53,7 @@
 /* Barra de carga */
 .carga__barra { display: flex; align-items: center; gap: 20px; max-width: 560px; }
 .barra { flex: 1; height: 6px; background: rgba(255,255,255,.18); }
-.barra i { display: block; height: 100%; background: var(--sky); transition: width .25s linear; }
+.barra i { display: block; height: 100%; background: var(--sky); }
 .carga__pct { min-width: 4ch; font: 700 14px/1 var(--font); font-variant-numeric: tabular-nums; }
 
 /* Menú */
@@ -127,4 +129,3 @@ a.fila .fila__estado { color: var(--ink); }
   .titular { font-size: 44px; }
   .acciones .btn { flex: 1 1 100%; }
 }
-@media (prefers-reduced-motion: reduce) { .barra i { transition: none; } }

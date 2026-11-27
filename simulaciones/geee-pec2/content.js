@@ -44,7 +44,7 @@ export const UI_DEFECTO = {
     abrir: 'Abrir',
     zonaCompleta: 'Completada',
     auditoria: 'Auditoría',
-    auditoriaBloqueada: 'Se abre al superar el nivel final de las tres zonas.',
+    auditoriaAviso: 'Te faltan zonas por completar; puedes hacerla igualmente.',
     estrellas: 'estrellas',
     sinNiveles: 'Los niveles de este bloque todavía no están disponibles.',
   },
