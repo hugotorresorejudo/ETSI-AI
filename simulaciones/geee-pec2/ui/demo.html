@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:,">
+<title>Demo de componentes SVG | GEEE PEC2</title>
+<style>
+  :root{--navy:#0B2545;--sky:#00A8E8;--surface:#FFFFFF;--muted:#F3F6F9;--line:#DCE3EA;--ink:#0B2545;--ink-muted:#4F6279;--on-navy:#FFFFFF}
+  *{box-sizing:border-box;border-radius:0}
+  body{margin:0;padding:16px;font-family:Inter,system-ui,sans-serif;background:var(--surface);color:var(--ink)}
+  h1{font-weight:800;letter-spacing:-.035em;font-size:28px;margin:0 0 16px}
+  h2{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+  main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px;max-width:1200px}
+  section{background:var(--muted);border:1px solid var(--line);padding:16px;min-width:0}
+  .log{font-size:13px;color:var(--ink-muted);margin:8px 0 0}
+</style>
+</head>
+<body>
+<h1>Componentes SVG</h1>
+<main>
+  <section><h2>CurvePlot</h2><div id="curve"></div><p class="log" id="log-curve">Sin arrastre</p></section>
+  <section><h2>CellGrid</h2><div id="grid"></div><p class="log" id="log-grid">ns=3, np=2</p></section>
+  <section><h2>Timeline</h2><div id="time"></div><p class="log" id="log-time">Sin cambios</p></section>
+  <section><h2>Phasor</h2><div id="phasor"></div><p class="log" id="log-phasor">Sin arrastre</p></section>
+  <section><h2>Spectrum</h2><div id="spec"></div><p class="log" id="log-spec">Sin cambios</p></section>
+  <section><h2>Waveform</h2><div id="wave"></div></section>
+  <section><h2>ProximityMeter</h2><div id="prox"></div>
+    <label class="log">Distancia <input id="prox-in" type="range" min="0" max="100" value="60" aria-label="Distancia al objetivo"></label></section>
+</main>
+<script type="module">
+import { CurvePlot } from './CurvePlot.js';
+import { CellGrid } from './CellGrid.js';
+import { Timeline } from './Timeline.js';
+import { Phasor } from './Phasor.js';
+import { Spectrum } from './Spectrum.js';
+import { Waveform } from './Waveform.js';
+import { ProximityMeter } from './ProximityMeter.js';
+import { fmt } from './svg.js';
+const $ = id => document.getElementById(id);
+
+// Curva I-V lineal a tramos: (0,Isc) - (V1,I1) - (Voc,0)
+const iv = { Isc: 8, I1: 7.2, V1: 30, Voc: 38 };
+const curvasIV = () => [
+  { id: 'iv', estilo: 'activa', puntos: [[0, iv.Isc], [iv.V1, iv.I1], [iv.Voc, 0]] },
+  { id: 'ref', estilo: 'ref', puntos: [[0, 8], [30, 7.2], [38, 0]] },
+  { id: 'carga', estilo: 'base', puntos: [[0, 0], [38, 38 / 5]] },
+];
+const arrIV = () => [
+  { id: 'Isc', x: 0, y: iv.Isc, eje: 'y', min: 0, max: 12 },
+  { id: 'MPP', x: iv.V1, y: iv.I1, eje: 'xy', min: [1, 0], max: [37, 12] },
+  { id: 'Voc', x: iv.Voc, y: 0, eje: 'x', min: 20, max: 50 },
+];
+const cp = CurvePlot($('curve'), {
+  ejes: { x: { min: 0, max: 50, etiqueta: 'V (V)' }, y: { min: 0, max: 12, etiqueta: 'I (A)' } },
+  curvas: curvasIV(), arrastrables: arrIV(),
+  onArrastre(id, x, y) {
+    if (id === 'Isc') iv.Isc = y; else if (id === 'Voc') iv.Voc = x; else { iv.V1 = x; iv.I1 = y; }
+    $('log-curve').textContent = `${id}: x=${fmt(x)}, y=${fmt(y)}`;
+    cp.actualizar({ curvas: curvasIV(), arrastrables: arrIV() });
+  },
+});
+
+const cg = CellGrid($('grid'), { nsMax: 6, npMax: 5, ns: 3, np: 2,
+  onCambio(ns, np) { $('log-grid').textContent = `ns=${ns}, np=${np}`; } });
+
+const tl = Timeline($('time'), { bloques: [{ P: 2, t: 40 }, { P: 0.2, t: 120 }, { P: 5, t: 20 }], Pmax: 8, Tmax: 240,
+  onCambio(b) { $('log-time').textContent = b.map(x => `${fmt(x.P)} W x ${fmt(x.t)} s`).join('; '); } });
+
+const ph = Phasor($('phasor'), { fasores: [
+  { id: 'V', mag: 1, deg: 0, estilo: 'base' },
+  { id: 'I', mag: 0.8, deg: -30, estilo: 'activa', arrastrable: true },
+  { id: 'Iref', mag: 0.6, deg: 25, estilo: 'ref' }],
+  onArrastre(id, deg) { $('log-phasor').textContent = `${id}: ${fmt(deg)} grados`; } });
+
+let barras = [1, 3, 5, 7, 9].map(n => ({ n, valor: 4 / (n * Math.PI), activo: n <= 3 }));
+const sp = Spectrum($('spec'), { barras, onToggle(n) {
+  barras = barras.map(b => b.n === n ? { ...b, activo: !b.activo } : b);
+  sp.actualizar({ barras }); $('log-spec').textContent = `Armónico ${n} ${barras.find(b => b.n === n).activo ? 'activado' : 'apagado'}`; } });
+
+const t = Array.from({ length: 201 }, (_, i) => i / 200 * 0.04);
+Waveform($('wave'), { series: [
+  { t, y: t.map(x => Math.sign(Math.sin(2 * Math.PI * 50 * x))), estilo: 'ref' },
+  { t, y: t.map(x => (4 / Math.PI) * (Math.sin(2 * Math.PI * 50 * x) + Math.sin(2 * Math.PI * 150 * x) / 3)), estilo: 'activa' },
+  { t, y: t.map(x => 0.9 * Math.sin(2 * Math.PI * 50 * x)), estilo: 'base' }] });
+
+const pm = ProximityMeter($('prox'), { dist01: 0.6 });
+$('prox-in').addEventListener('input', e => pm.actualizar({ dist01: e.target.value / 100 }));
+
+window.__demo = { cp, cg, tl, ph, sp, pm };
+</script>
+</body>
+</html>
