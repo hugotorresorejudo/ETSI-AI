@@ -1,0 +1,68 @@
+{
+  "menu": {
+    "modos": {
+      "campana": "Campaña completa",
+      "bloques": "Por bloques",
+      "suelto": "Ejercicio suelto",
+      "simulacro": "Simulacro PEC2",
+      "progreso": "Progreso",
+      "ajustes": "Ajustes"
+    },
+    "descripciones": {
+      "campana": "La historia completa, con zonas en cualquier orden y auditoría al final.",
+      "bloques": "Elige un bloque y trabaja sus niveles, con o sin narrativa.",
+      "suelto": "Un ejercicio tipo examen generado al instante, sin historia.",
+      "simulacro": "Va directo a la auditoría: tres ejercicios y nota sobre 10.",
+      "progreso": "Estrellas por nivel, intentos y notas de los simulacros.",
+      "ajustes": "Narrativa, cronómetro y reinicio del progreso."
+    }
+  },
+  "carga": {
+    "prefijo": "Preparando el nivel"
+  },
+  "resultados": {
+    "titulo": "Resultados",
+    "estrellas": "Estrellas",
+    "aciertos": "Aciertos por paso",
+    "erroresDetectados": "Errores típicos detectados",
+    "repetir": "Repetir con otra variante",
+    "siguiente": "Siguiente nivel",
+    "volverMenu": "Volver al menú"
+  },
+  "ajustes": {
+    "titulo": "Ajustes",
+    "narrativa": "Mostrar la narrativa",
+    "cronometro": "Cronómetro en la auditoría",
+    "reiniciar": "Reiniciar progreso",
+    "confirmarReinicio": "Se borrarán estrellas, intentos y simulacros. ¿Quieres continuar?"
+  },
+  "simulacro": {
+    "titulo": "Auditoría PEC2",
+    "instrucciones": "Tres ejercicios generados, con pesos de 3, 3 y 4 puntos. Sin pistas ni medidores. Al entregar verás la nota y la resolución de cada paso.",
+    "empezar": "Empezar simulacro",
+    "entregar": "Entregar",
+    "tiempoRestante": "Tiempo restante",
+    "nota": "Nota",
+    "desglose": "Desglose por apartado",
+    "verResolucion": "Ver resolución completa"
+  },
+  "progreso": {
+    "titulo": "Progreso",
+    "nivelesCompletados": "Niveles completados",
+    "simulacros": "Simulacros",
+    "sinIntentos": "Todavía no hay intentos registrados"
+  },
+  "nivel": {
+    "ficha": "Ficha teórica",
+    "objetivo": "Objetivo",
+    "comprobar": "Comprobar",
+    "pista": "Pista",
+    "resolucion": "Resolución",
+    "otraVariante": "Otra variante",
+    "siguiente": "Siguiente nivel",
+    "menu": "Volver al menú"
+  },
+  "errores": {
+    "noNumero": "Introduce un número"
+  }
+}

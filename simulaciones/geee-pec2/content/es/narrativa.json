@@ -1,0 +1,139 @@
+{
+  "mentora": {
+    "nombre": "Irene Calvo Ruiz",
+    "rol": "Ingeniera del laboratorio de Gestión Electrónica de la Energía Eléctrica"
+  },
+  "titulo": {
+    "titulo": "Estación Solar ETSI",
+    "subtitulo": "GEEE | PEC2 | Laboratorio interactivo",
+    "boton": "Empezar"
+  },
+  "campana": {
+    "intro": [
+      {
+        "quien": "mentora",
+        "texto": "Bienvenido a la Estación Solar ETSI. El campus necesita una estación autónoma que mida el entorno y envíe sus datos. Vas a ponerla en marcha."
+      },
+      {
+        "quien": "mentora",
+        "texto": "La estación tiene tres partes: el nodo sensor, la cubierta solar y la conexión a red. Cada una corresponde a un bloque de la asignatura."
+      },
+      {
+        "quien": "sistema",
+        "texto": "Puedes abrir las zonas en el orden que quieras. Dentro de cada zona, los niveles se desbloquean en orden. La auditoría cierra la campaña."
+      }
+    ],
+    "zonas": {
+      "b1": {
+        "nombre": "Nodo sensor",
+        "lugar": "Caseta de medida, planta baja",
+        "intro": [
+          {
+            "quien": "mentora",
+            "texto": "Este es el nodo sensor. Mide, guarda y envía datos aunque no haya sol ni red en ese momento."
+          },
+          {
+            "quien": "mentora",
+            "texto": "El nodo necesita almacenamiento. Lo primero es saber cuánta energía consume el ciclo de medida."
+          },
+          {
+            "quien": "sistema",
+            "texto": "Trabajarás con baterías y, después, con supercondensadores. La ficha teórica de cada nivel tiene las fórmulas de los apuntes."
+          }
+        ],
+        "cierre": [
+          {
+            "quien": "mentora",
+            "texto": "Bien. El nodo ya tiene su almacenamiento dimensionado. Comprueba siempre que aguanta el ciclo completo."
+          },
+          {
+            "quien": "sistema",
+            "texto": "Zona completada. Puedes pasar a la cubierta solar cuando quieras."
+          }
+        ]
+      },
+      "b2": {
+        "nombre": "Cubierta solar",
+        "lugar": "Tejado del edificio de laboratorios",
+        "intro": [
+          {
+            "quien": "mentora",
+            "texto": "La cubierta solar alimenta el nodo. El panel no se comporta como una fuente ideal: su corriente cae a medida que sube la tensión."
+          },
+          {
+            "quien": "mentora",
+            "texto": "Lo que importa es el punto de trabajo, es decir, el punto donde la curva del panel se cruza con la carga conectada."
+          },
+          {
+            "quien": "sistema",
+            "texto": "Empieza por la curva I-V. Después verás cómo cambia el punto de trabajo según la carga y el convertidor."
+          }
+        ],
+        "cierre": [
+          {
+            "quien": "mentora",
+            "texto": "Esa es la clave. La misma carga puede imponer la corriente o la tensión del panel, y de ese modo se decide el punto de trabajo."
+          },
+          {
+            "quien": "sistema",
+            "texto": "Zona completada. Queda la conexión a red."
+          }
+        ]
+      },
+      "b3": {
+        "nombre": "Conexión a red",
+        "lugar": "Cuadro de conexión y sala de inversores",
+        "intro": [
+          {
+            "quien": "mentora",
+            "texto": "El inversor convierte la energía continua en alterna y la entrega a la red. Su salida no es senoidal."
+          },
+          {
+            "quien": "mentora",
+            "texto": "Una onda cuadrada contiene armónicos. Cada uno circula de forma distinta por la bobina, y eso cambia la potencia y el factor de potencia."
+          },
+          {
+            "quien": "sistema",
+            "texto": "Trabajarás con la serie de Fourier, la bobina de acoplamiento y el ángulo del inversor respecto a la red."
+          }
+        ],
+        "cierre": [
+          {
+            "quien": "mentora",
+            "texto": "Solo el fundamental aporta potencia activa a la red. Los armónicos de corriente aumentan la corriente eficaz, pero no la aportan."
+          },
+          {
+            "quien": "sistema",
+            "texto": "Zona completada. Si los tres bloques están superados, la auditoría ya está disponible."
+          }
+        ]
+      }
+    }
+  },
+  "auditoria": {
+    "intro": [
+      {
+        "quien": "mentora",
+        "texto": "Esta es la auditoría. Son tres ejercicios generados con el formato de la PEC2, y no tienen pistas ni medidores."
+      },
+      {
+        "quien": "mentora",
+        "texto": "Si activas el cronómetro, tendrás un tiempo limitado. Al entregar verás la nota, el desglose por apartado y la resolución completa."
+      },
+      {
+        "quien": "sistema",
+        "texto": "Cuando estés listo, pulsa Empezar. El intento quedará guardado en tu historial."
+      }
+    ],
+    "cierre": [
+      {
+        "quien": "mentora",
+        "texto": "Revisa primero los pasos fallados. Un error arrastrado de un paso anterior no se cuenta en cascada, así que basta con corregir su origen."
+      },
+      {
+        "quien": "sistema",
+        "texto": "Auditoría entregada. Puedes consultar el intento en Progreso."
+      }
+    ]
+  }
+}
